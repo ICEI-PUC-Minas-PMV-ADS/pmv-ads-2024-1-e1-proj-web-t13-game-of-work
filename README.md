@@ -1,12 +1,13 @@
 # Título do Projeto
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`1° Semestre de 2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Uma plataforma web front-end que facilite a alocação de trabalhadores em equipes de projetos com base em suas
+competências, utilizando a gamificação como ferramenta de engajamento esimplificação para o processo de formação de equipes.
 
 ## Integrantes
 
@@ -19,7 +20,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
   
 ## Orientador
 
-* Nome completo do professor
+* Hayala Nepomuceno Curto
 
 # Documentação
 
