@@ -1,6 +1,6 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+[O mercado de Projetos exige a capacidade de formar equipes altamente eficientes e competentes para a execução das atividades. No entanto, alocar trabalhadores nas equipes certas, considerando suas habilidades e competências, pode ser um desafio. A utilização da gamificação como ferramenta para construção de equipes, combinando competências individuais com a necessidade do Projeto, oferece uma solução promissora para este desafio.]
 
 ## Problema
 [Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
