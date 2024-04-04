@@ -13,14 +13,18 @@ O objetivo deste projeto é desenvolver uma plataforma web front-end que facilit
 Como objetivos específicos, podemos destacar:
 
    ●	Desenvolver um sistema para cadastrar as competências e habilidades dos funcionários;
+   
    ●	Implementar elementos da gamificação para engajamento e estímulo da participação dos usuários;
+   
    ●	Desenvolver uma funcionalidade que recomende a formação de equipes baseando-se nas competências dos funcionários e nas necessidades dos projetos;
+  
    ●	Implementar uma interface intuitiva que facilite o acesso dos funcionários para cadastramento das competências e dos gestores para as recomendações de formação de equipes.
  
 ## Justificativa
 
 Segundo a Dias, da plataforma Gupy, que administra processos seletivos de grandes empresas do Brasil:
-     “quando uma empresa busca por talentos para completar seu time, ela analisa a competência profissional de cada indivíduo. Porém, há diversas habilidades e comportamentos que formam um bom colaborador. Por isso, é importante que o gestor de RH avalie essas competências para selecionar os candidatos ideais para a organização. Afinal, é preciso garantir que o profissional irá se adequar ao seu cargo”. (DIAS, 2023)
+
+“quando uma empresa busca por talentos para completar seu time, ela analisa a competência profissional de cada indivíduo. Porém, há diversas habilidades e comportamentos que formam um bom colaborador. Por isso, é importante que o gestor de RH avalie essas competências para selecionar os candidatos ideais para a organização. Afinal, é preciso garantir que o profissional irá se adequar ao seu cargo”. (DIAS, 2023)
 
 Pensando nisso, criamos uma plataforma que possibilita a alocação de trabalhadores com base em suas competências e habilidades que podem melhorar significativamente a produtividade e a satisfação no trabalho. Além disso, a utilização de elementos de gamificação pode aumentar o engajamento dos envolvidos, simplificando o processo de formação de equipes.
 
