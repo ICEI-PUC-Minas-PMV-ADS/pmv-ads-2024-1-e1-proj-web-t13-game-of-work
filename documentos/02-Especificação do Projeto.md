@@ -29,6 +29,10 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 |--------------------|---------------------------|----------------------------------|
 | Gestor de Projetos | Poder criar uma equipe com as competências necessários para seu sucesso.| Para que o projeto esteja sendo conduzido pela as melhores opções e os mais confiáveis profissionais, gerando resultados positivos. |
 | ...                | ...                       | ...                              |
+| Funcionário | Quero receber recomendações de projetos com base nas minhas competências. | Para desenvolvimento profissional. |
+| Funcionário | Poder analisar os projetos da empresa e ver o que o mercado está pedindo de competência atualmente. | Para poder estar sempre por dentro do mercado e me desenvolver de forma a adquirir oportunidade nos projetos mais importantes e grandes da empresa. |
+| RH | Quero cadastrar os funcionários e suas competências. | Para manter o controle sobre as informações dos funcionários. |
+
 
 ## Requisitos do Projeto
 
