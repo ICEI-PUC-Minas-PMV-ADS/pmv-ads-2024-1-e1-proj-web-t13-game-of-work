@@ -52,14 +52,14 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
     <figcaption>Tela - Cadastro
 </figure>
 
-</br>
+<h4><b>Modal - Cadastro de funcionário</b></h4>
 
 <figure> 
   <img src="img/cadastroFuncionario.png">
     <figcaption>Modal - Cadastro de funcionário
 </figure>
 
-</br>
+<h4><b>Modal - Cadastro de projeto</b></h4>
 
 <figure> 
   <img src="img/cadastroProjeto.png">
