@@ -1,74 +1,71 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
-
 ## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
+A metodologia ágil escolhida para o desenvolvimento deste projeto é o Scrum, que se concentra no trabalho em equipe, melhoria contínua e outros princípios originados do Manifesto Ágil.
+Além disso, estamos utilizando o Kanban como complemento, segundo Anderson (2010), criador do método,  “o Kanban proporciona uma visão clara e transparente do fluxo de trabalho, permitindo que as equipes identifiquem e resolvam gargalos de forma proativa".
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+Neste sentido, estamos aproveitando sua vantagem de fornecer uma visualização clara e em tempo real do fluxo de trabalho. Permitindo que toda a equipe e que as partes interessadas acompanhem o status e o progresso das tarefas de forma eficiente.
 
 ### Divisão de Papéis
 
-A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
+No que diz respeito ao desenvolvimento do projeto via Scrum, a equipe está organizada da seguinte maneira:
+
 - Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
 - Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
 - Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
 - Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
-
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-
-
-### Etiquetas
-<p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
-
-<ul>
-  <li>Bug (Erro no código)</li>
-  <li>Desenvolvimento (Development)</li>
-  <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
-  <li>Testes (Tests)</li>
+Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe está utilizando o Trello como ferramenta principal. Abaixo, fornecemos uma visão detalhada de como estamos usando o Trello para gerenciar nosso trabalho:
+  **Quadros**: Os quadros no Trello representam nossos projetos ou iniciativas. Eles são a camada mais alta de organização e podem conter várias listas, cada uma representando uma fase ou etapa do nosso processo de trabalho.
+  **Listas**: Nossas listas estão divididas em quatro etapas principais: "Product Backlog”, “To Do”, “Doing” e “Done”.
+  **Cartões**: Utilizamos cartões no Trello para representar as diferentes tarefas e atividades do projeto. Cada cartão é uma unidade individual de trabalho e contém detalhes relevantes, como descrição da tarefa, prazos, anexos e links úteis. 
+  **Etiquetas**: As tarefas são etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
+      <li>- Grupo 1</li>
+      - Grupo 2 
+      - Grupo 3
+      - Testes 
+      - Desenvolvimento
+      - Erro
+      - Infraestrutura 
+      - Documentação
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://drive.google.com/file/d/1Bh61_e8RqUi9PJ0_Sga191CW4OHOI0SS/view?usp=drive_link"
+    <figcaption>Figura 1: Legenda Etiquetas - Trello</figcaption>
 </figure> 
-  
+Fonte: Elaborado pelos autores
+
+O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/QLNL5JT6/gameofwork e é apresentado, no estado atual, na figura abaixo:
+
+<figure> 
+  <img src="https://drive.google.com/file/d/1qgT3WtRz3zvvgpYCSTHqaSO1YsjNsqdh/view?usp=drive_link"
+    <figcaption>Figura 2: Tela Inicial - Trello</figcaption>
+</figure> 
+Fonte: Elaborado pelos autores
+
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+As ferramentas empregadas no projeto são:
+  - Repositório de código
+  - Ferramentas de gerenciamento do projeto
+  - Ferramentas de desenho de tela 
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+O repositório de código é uma ferramenta essencial para qualquer projeto de desenvolvimento de software. Ele fornece um ambiente onde os desenvolvedores podem escrever, editar e depurar o código-fonte do aplicativo. As ferramentas de gerenciamento desempenham um papel fundamental na colaboração eficaz da equipe, especialmente em projetos distribuídos ou remotos. Essas ferramentas permitem que a equipe atue de forma colaborativa na organização, no gerenciamento do tempo e comunicação. 
+
+As ferramentas de desenho de tela, também conhecidas como ferramentas de wireframing, são utilizadas para criar esboços e protótipos de interfaces de usuário. Elas permitem que os designers visualizem e comuniquem suas ideias de design de forma rápida e eficiente. O Figma é uma das ferramentas mais populares nesta categoria, oferecendo recursos poderosos para criar wireframes, protótipos interativos e colaborar em tempo real com outros membros da equipe.
+
+Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub, Trello e Figma, apresentadas com seu propósito na tabela que se segue.
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
-
+| Repositório de código fonte         | GitHub                             | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/teams/game-of-work                  |
+| Documentos do projeto               | GitHub                             | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/teams/game-of-work                  |
+| Projeto de Interface                | Figma                              | https://www.figma.com/files/project/221108630/Team-project?fuid=1360379528622743875|
+| Gerenciamento do Projeto            | GitHub Projects e Trello           | https://trello.com/c/hm4FWjKb/7-prot%C3%B3tipo                                     |
 
 ### Estratégia de Organização de Codificação 
 
