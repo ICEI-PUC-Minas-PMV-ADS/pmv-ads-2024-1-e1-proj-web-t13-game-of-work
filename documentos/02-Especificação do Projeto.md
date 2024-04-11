@@ -32,11 +32,11 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td> 1 - Ficha de cada funcionário de claro entendimento. 
-  2 - Acesso único de gestor com todas as informações necessárias. 
-  3 - Possibilidade de alterar as fichas dos funcionários, possibilitando inserir observações. 
-  4 - Acesso a todos os projetos na sua gestão.
-  5 - Possibilidade de análise das fichas dos funcionários e de alocação nos projetos.</td>
+<td> 1 - Ficha de cada funcionário de claro entendimento.<td>  
+<td> 2 - Acesso único de gestor com todas as informações necessárias.<td>  
+<td> 3 - Possibilidade de alterar as fichas dos funcionários, possibilitando inserir observações.<td>  
+<td> 4 - Acesso a todos os projetos na sua gestão.<td> 
+<td> 5 - Possibilidade de análise das fichas dos funcionários e de alocação nos projetos.</td>
 </tr>
 </tbody>
 </table>
