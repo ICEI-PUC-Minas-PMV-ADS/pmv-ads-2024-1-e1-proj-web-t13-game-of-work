@@ -19,18 +19,23 @@ No que diz respeito ao desenvolvimento do projeto via Scrum, a equipe está orga
 ### Processo
 
 Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe está utilizando o Trello como ferramenta principal. Abaixo, fornecemos uma visão detalhada de como estamos usando o Trello para gerenciar nosso trabalho:
+
   **Quadros**: Os quadros no Trello representam nossos projetos ou iniciativas. Eles são a camada mais alta de organização e podem conter várias listas, cada uma representando uma fase ou etapa do nosso processo de trabalho.
+  
   **Listas**: Nossas listas estão divididas em quatro etapas principais: "Product Backlog”, “To Do”, “Doing” e “Done”.
+  
   **Cartões**: Utilizamos cartões no Trello para representar as diferentes tarefas e atividades do projeto. Cada cartão é uma unidade individual de trabalho e contém detalhes relevantes, como descrição da tarefa, prazos, anexos e links úteis. 
+  
   **Etiquetas**: As tarefas são etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
-      <li>- Grupo 1</li>
-      - Grupo 2 
-      - Grupo 3
-      - Testes 
-      - Desenvolvimento
-      - Erro
-      - Infraestrutura 
-      - Documentação
+
+- Grupo 1
+- Grupo 2
+- Grupo 3
+- Testes Desenvolvimento
+- Erro
+- Infraestrutura
+- Documentação
+
 </ul>
 
 <figure> 
