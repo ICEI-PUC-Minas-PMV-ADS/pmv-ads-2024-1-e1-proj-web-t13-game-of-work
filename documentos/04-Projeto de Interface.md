@@ -30,7 +30,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
 <p>A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de se cadastrar.</p>
 
 <figure> 
-  <img src="img/login.png">
+  <img src="img/loginScreen.png">
     <figcaption>Tela - Lista de projetos
 </figure>
 <hr> 
