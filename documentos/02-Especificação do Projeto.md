@@ -20,7 +20,7 @@
 </tbody>
 </table>
 
-|Perfil 01: Gestor de Projetos| |
+|Perfil 01: Gestor de Projetos| 
 |--------------------|---------------------------|
 | Descrição: | É o responsável pela montagem da equipe, tem a necessidade de saber todas as habilidades que o projeto precisa, e quais funcionários as têm, para melhor distribui-los. |
 | Necessidades: | 1 - Ficha de cada funcionário de claro entendimento. 
