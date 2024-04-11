@@ -42,6 +42,7 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
 |ID    | Descrição                | Prioridade |
+|--------------------|---------------------------|----------------------------------|
 | RF- 01 | Tela de login, com acesso diferente para cada perfil de usuário. | ALTA | 
 | RF- 02 | Local de navegação intuitivo sem dificuldade de entendimento. | ALTA | 
 | RF- 03 | Área de observações para os gestores colocarem informações úteis para o projeto. | MÉDIA | 
@@ -64,9 +65,8 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
-
 |ID      | Descrição               |Prioridade |
+|--------------------|---------------------------|----------------------------------|
 | RNF-01 | A aplicação deve ter a utilização de cores não tão fortes para não incomodar a vista. | ALTA | 
 | RNF- 02 | A aplicação deve poder alternar entre modo claro e modo escuro. | BAIXA | 
 | RNF-03 | O site deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge. | ALTA | 
