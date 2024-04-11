@@ -28,7 +28,6 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
 | Gestor de Projetos | Poder criar uma equipe com as competências necessários para seu sucesso.| Para que o projeto esteja sendo conduzido pela as melhores opções e os mais confiáveis profissionais, gerando resultados positivos. |
-| ...                | ...                       | ...                              |
 | Funcionário | Quero receber recomendações de projetos com base nas minhas competências. | Para desenvolvimento profissional. |
 | Funcionário | Poder analisar os projetos da empresa e ver o que o mercado está pedindo de competência atualmente. | Para poder estar sempre por dentro do mercado e me desenvolver de forma a adquirir oportunidade nos projetos mais importantes e grandes da empresa. |
 | RH | Quero cadastrar os funcionários e suas competências. | Para manter o controle sobre as informações dos funcionários. |
@@ -46,6 +45,23 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 |-------|---------------------------------|----|
 | RF-01 |  ...                    | ...   | 
 |  ...  |  ...                    | ...   |
+| RF- 01 | Tela de login, com acesso diferente para cada perfil de usuário. | ALTA | 
+| RF- 02 | Local de navegação intuitivo sem dificuldade de entendimento. | ALTA | 
+| RF- 03 | Área de observações para os gestores colocarem informações úteis para o projeto. | MÉDIA | 
+| RF-04 | Na ficha do funcionário, deve ter um local para colocar o nível de cada competência. | ALTA | 
+| RF-05 | Na ficha do funcionário, deve ter uma imagem/avatar do mesmo. | BAIXA | 
+| RF-06 | Na ficha do funcionário, deve ter seu objetivo profissional. | BAIXA | 
+| RF-07 | Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico). | MÉDIA | 
+| RF-08 | Deve conter um breve resumo sobre o funcionário. | BAIXA | 
+| RF-09 | Opção de demonstrar os projetos que o funcionário participou anteriormente. | MÉDIA | 
+| RF-10 | Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo. | MÉDIA | 
+| RF-11 | Acessibilidade para dispositivos mobile. | BAIXA | 
+| RF-12 | Deve permitir que faça o cadastro de um usuário. | ALTA | 
+| RF-13 | Deve permitir que o usuário faça o login na sua conta. | ALTA | 
+| RF-14 | Deve permitir que faça o cadastro de um projeto. | ALTA | 
+| RF-15 | Deve exibir uma lista com os funcionários cadastrados. | ALTA | 
+| RF-16 | Exibir ficha do funcionário. | ALTA | 
+| RF-17 | O sistema deve permitir a associação de um funcionário a uma matrícula. | MÉDIA | 
 
 **Prioridade: Alta / Média / Baixa. 
 
