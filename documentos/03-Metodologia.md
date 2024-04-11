@@ -6,6 +6,7 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto é o Scrum, q
 Além disso, estamos utilizando o Kanban como complemento, segundo Anderson (2010), criador do método,  “o Kanban proporciona uma visão clara e transparente do fluxo de trabalho, permitindo que as equipes identifiquem e resolvam gargalos de forma proativa".
 
 Neste sentido, estamos aproveitando sua vantagem de fornecer uma visualização clara e em tempo real do fluxo de trabalho. Permitindo que toda a equipe e que as partes interessadas acompanhem o status e o progresso das tarefas de forma eficiente.
+<hr>
 
 ### Divisão de Papéis
 
@@ -15,6 +16,7 @@ No que diz respeito ao desenvolvimento do projeto via Scrum, a equipe está orga
 - Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
 - Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
 - Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
+<hr>
 
 ### Processo
 
@@ -49,6 +51,7 @@ O quadro kanban do grupo no Trello está disponível no link https://trello.com/
   <img src="img/TRELLO.png"
     <figcaption>Figura 2: Tela Inicial - Trello</figcaption>
 </figure> 
+<hr>
 
 ### Ferramentas
 
