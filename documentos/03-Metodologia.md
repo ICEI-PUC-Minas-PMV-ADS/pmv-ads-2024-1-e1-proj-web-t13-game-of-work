@@ -36,10 +36,10 @@ Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe est�
 - Infraestrutura
 - Documentação
 
-</ul>
+Figura 1: Legenda Etiquetas - Trello
 
 <figure> 
-  <img src="https://drive.google.com/file/d/1Bh61_e8RqUi9PJ0_Sga191CW4OHOI0SS/view?usp=drive_link"
+  <img src="img/ETIQUETAS.png"
     <figcaption>Figura 1: Legenda Etiquetas - Trello</figcaption>
 </figure> 
 Fonte: Elaborado pelos autores
