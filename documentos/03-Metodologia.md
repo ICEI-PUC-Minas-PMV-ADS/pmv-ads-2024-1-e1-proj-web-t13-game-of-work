@@ -36,21 +36,18 @@ Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe est�
 - Infraestrutura
 - Documentação
 
-Figura 1: Legenda Etiquetas - Trello
 
 <figure> 
   <img src="img/ETIQUETAS.png"
-    <figcaption>Fonte: Elaborado pelos autores</figcaption>
+    <figcaption>Figura 1: Legenda Etiquetas - Trello</figcaption>
 </figure> 
-
+<hr>
 
 O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/QLNL5JT6/gameofwork e é apresentado, no estado atual, na figura abaixo:
 
-Figura 2: Tela Inicial - Trello
-
 <figure> 
   <img src="img/TRELLO.png"
-    <figcaption>Fonte: Elaborado pelos autores</figcaption>
+    <figcaption>Figura 2: Tela Inicial - Trello</figcaption>
 </figure> 
 
 ### Ferramentas
