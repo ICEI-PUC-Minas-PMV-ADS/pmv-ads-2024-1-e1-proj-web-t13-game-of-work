@@ -26,8 +26,6 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
 </figure> 
 <hr>
 
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.]
-
 <h3><b>Tela - Login</b></h3>
 <p>A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de se cadastrar.</p>
 
@@ -35,6 +33,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
   <img src="img/login.png">
     <figcaption>Tela - Lista de projetos
 </figure>
+<hr> 
 
 <h3><b>Tela - Home page</b></h3>
 <p>A tela de home page apresenta opções para o usuário acessar as outras tela da aplicação. </p>
@@ -43,6 +42,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
   <img src="img/homePage.png">
     <figcaption>Tela - Home page
 </figure>
+<hr> 
 
 <h3><b>Tela - Cadastro</b></h3>
 <p>Tela acessível somente a gestores de projetos ou funcionários do RH. Essa página permite ao usuário adicionar ou deletar um funcionário ou um projeto.</p>
@@ -65,6 +65,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
   <img src="img/cadastroProjeto.png">
     <figcaption>Modal - Cadastro de projeto
 </figure>
+<hr> 
 
 <h3><b>Tela - Perfil</b></h3>
 <p>Tela que permite o usuário visualizar seu perfil</p>
@@ -73,6 +74,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
   <img src="img/perfil.png">
     <figcaption>Tela - Perfil
 </figure>
+<hr> 
 
 <h3><b>Tela - Lista de projetos</b></h3>
 <p>Permite a visualização de uma lista que contém todos os projetos cadastrados no sistema, juntamente com os requisitos para participar daquele projeto.</p>
@@ -81,6 +83,7 @@ As telas do sistema apresentam uma estrutura  que é apresentada na imagem abaix
   <img src="img/listaProjetos.png">
     <figcaption>Tela - Lista de projetos
 </figure>
+<hr> 
 
 <h3><b>Tela - Lista de funcionários</b></h3>
 <p>Permite a visualização de uma lista que contém todos os funcionários cadastrados no sistema.Permite também cadastrar funcionários em um projeto</p>
