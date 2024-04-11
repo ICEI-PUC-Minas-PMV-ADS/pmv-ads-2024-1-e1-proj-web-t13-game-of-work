@@ -43,7 +43,7 @@ Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe est�
   <img src="img/ETIQUETAS.png"
     <figcaption>Figura 1: Legenda Etiquetas - Trello</figcaption>
 </figure> 
-<hr>
+
 
 O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/QLNL5JT6/gameofwork e é apresentado, no estado atual, na figura abaixo:
 
@@ -72,6 +72,7 @@ Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub, Trel
 | Documentos do projeto               | GitHub                             | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/teams/game-of-work                  |
 | Projeto de Interface                | Figma                              | https://www.figma.com/files/project/221108630/Team-project?fuid=1360379528622743875|
 | Gerenciamento do Projeto            | GitHub Projects e Trello           | https://trello.com/c/hm4FWjKb/7-prot%C3%B3tipo                                     |
+<hr>
 
 ### Estratégia de Organização de Codificação 
 
