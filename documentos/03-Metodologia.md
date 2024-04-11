@@ -40,17 +40,17 @@ Figura 1: Legenda Etiquetas - Trello
 
 <figure> 
   <img src="img/ETIQUETAS.png"
-    <figcaption>Figura 1: Legenda Etiquetas - Trello</figcaption>
+    <figcaption>Fonte: Elaborado pelos autores</figcaption>
 </figure> 
-Fonte: Elaborado pelos autores
 
 O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/QLNL5JT6/gameofwork e é apresentado, no estado atual, na figura abaixo:
 
+Figura 2: Tela Inicial - Trello
+
 <figure> 
-  <img src="https://drive.google.com/file/d/1qgT3WtRz3zvvgpYCSTHqaSO1YsjNsqdh/view?usp=drive_link"
-    <figcaption>Figura 2: Tela Inicial - Trello</figcaption>
+  <img src="img/TRELLO.png"
+    <figcaption>Fonte: Elaborado pelos autores</figcaption>
 </figure> 
-Fonte: Elaborado pelos autores
 
 ### Ferramentas
 
