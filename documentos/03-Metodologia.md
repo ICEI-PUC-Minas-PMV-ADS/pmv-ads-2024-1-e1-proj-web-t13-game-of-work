@@ -12,10 +12,10 @@ Neste sentido, estamos aproveitando sua vantagem de fornecer uma visualização 
 
 No que diz respeito ao desenvolvimento do projeto via Scrum, a equipe está organizada da seguinte maneira:
 
-- Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
+- Scrum Master: Nikolas Victor Mota.
+- Product Owner: Diego da Silva Leal.
+- Equipe de Desenvolvimento: Brenda Estefany Drumond, Catiane de Souza Pereira, Diego da Silva Leal, Kayque Gabriel Fonseca, Matheus Guimaraes de Carvalho e Nikolas Victor Mota.
+- Equipe de Design: Brenda Estefany Drumond, Catiane de Souza Pereira, Diego da Silva Leal, Kayque Gabriel Fonseca, Matheus Guimaraes de Carvalho e Nikolas Victor Mota.
 <hr>
 
 ### Processo
