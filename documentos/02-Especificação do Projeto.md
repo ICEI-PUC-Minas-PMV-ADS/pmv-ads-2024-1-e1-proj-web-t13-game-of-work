@@ -41,7 +41,7 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Perfil 03: RH</td>
+<td width="600px">Responsável pela análise e validação das competências dos funcionários, para inclusão na ficha.</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
