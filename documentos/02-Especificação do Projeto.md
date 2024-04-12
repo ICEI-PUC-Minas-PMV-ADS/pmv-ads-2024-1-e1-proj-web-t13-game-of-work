@@ -36,19 +36,18 @@
 </tbody>
 </table>
 
-
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil 01: Gestor de Projetos</th>
+<th colspan="2">Perfil 02: Funcionário </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">É o responsável pela montagem da equipe, tem a necessidade de saber todas as habilidades que o projeto precisa, e quais funcionários as têm, para melhor distribui-los.</td>
+<td width="600px">Funcionário que irá fazer parte da equipe de projetos, no qual estará explorando todas as suas melhores habilidades na sua determinada área de especialização ou área que pretende ter mais experiência.</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>1 - Ficha de cada funcionário de claro entendimento. 2 - Acesso único de gestor com todas as informações necessárias.3 - Possibilidade de alterar as fichas dos funcionários, possibilitando inserir observações. 4 - Acesso a todos os projetos na sua gestão. 5 - Possibilidade de análise das fichas dos funcionários e de alocação nos projetos.<td>  
+<td>1 - Local de acesso para analisar os projetos que está escalado. 2 - Local para cadastrar currículo técnico. 3 - Área para solicitar informações sobre o projeto para o seu gestor de maneira rápida. 4 - Noção do que precisa ser feito para aumentar seu nível dentro da empresa. 5 - Área para se candidatar a um projeto.</td>
 </tr>
 </tbody>
 </table>
