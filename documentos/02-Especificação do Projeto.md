@@ -2,24 +2,6 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
-<table>
-<tbody>
-<tr align=center>
-<th colspan="2">Perfil Nome </th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-
 <table>
 <tbody>
 <tr align=center>
@@ -48,6 +30,22 @@
 <tr>
 <td><b>Necessidades</b></td>
 <td>1 - Local de acesso para analisar os projetos que está escalado. 2 - Local para cadastrar currículo técnico. 3 - Área para solicitar informações sobre o projeto para o seu gestor de maneira rápida. 4 - Noção do que precisa ser feito para aumentar seu nível dentro da empresa. 5 - Área para se candidatar a um projeto.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 03: RH </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Perfil 03: RH</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>1 - Área de cadastro para registro dos perfis de funcionários. 2 - Área para análise e validação das solicitações dos funcionários.</td>
 </tr>
 </tbody>
 </table>
