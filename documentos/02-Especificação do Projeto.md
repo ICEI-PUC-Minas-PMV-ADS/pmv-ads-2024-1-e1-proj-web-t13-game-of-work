@@ -20,6 +20,22 @@
 </tbody>
 </table>
 
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 01: Gestor de Projetos </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">É o responsável pela montagem da equipe, tem a necessidade de saber todas as habilidades que o projeto precisa, e quais funcionários as têm, para melhor distribui-los</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>1 - Ficha de cada funcionário de claro entendimento. 2 - Acesso único de gestor com todas as informações necessárias.3 - Possibilidade de alterar as fichas dos funcionários, possibilitando inserir observações. 4 - Acesso a todos os projetos na sua gestão. 5 - Possibilidade de análise das fichas dos funcionários e de alocação nos projetos</td>
+</tr>
+</tbody>
+</table>
+
 
 <table>
 <tbody>
