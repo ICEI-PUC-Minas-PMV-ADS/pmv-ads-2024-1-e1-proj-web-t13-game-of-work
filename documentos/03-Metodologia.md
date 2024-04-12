@@ -12,10 +12,10 @@ Neste sentido, estamos aproveitando sua vantagem de fornecer uma visualização 
 
 No que diz respeito ao desenvolvimento do projeto via Scrum, a equipe está organizada da seguinte maneira:
 
-- Scrum Master: Nikolas Victor Mota.
-- Product Owner: Diego da Silva Leal.
-- Equipe de Desenvolvimento: Brenda Estefany Drumond, Catiane de Souza Pereira, Diego da Silva Leal, Kayque Gabriel Fonseca, Matheus Guimaraes de Carvalho e Nikolas Victor Mota.
-- Equipe de Design: Brenda Estefany Drumond, Catiane de Souza Pereira, Diego da Silva Leal, Kayque Gabriel Fonseca, Matheus Guimaraes de Carvalho e Nikolas Victor Mota.
+- Scrum Master: Nikolas Mota.
+- Product Owner: Diego Leal.
+- Equipe de Desenvolvimento: Brenda Drumond, Catiane de Souza, Diego Leal, Kayque Fonseca, Matheus Guimaraes e Nikolas Mota.
+- Equipe de Design: Brenda Drumond, Catiane de Souza, Diego Leal, Kayque Fonseca, Matheus Guimaraes e Nikolas Mota.
 <hr>
 
 ### Processo
