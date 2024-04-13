@@ -3,7 +3,7 @@
 
 ## User Flow
 
-O fluxograma apresentado na abaixo mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
+O fluxograma apresentado na imagem abaixo mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
 <figure> 
     <img src="img/UserFlow.png">
