@@ -22,9 +22,9 @@ Como objetivos específicos, podemos destacar:
  
 ## Justificativa
 
-Segundo a Dias, da plataforma Gupy, que administra processos seletivos de grandes empresas do Brasil:
+Segundo Dias, da plataforma Gupy, que administra processos seletivos de grandes empresas do Brasil:
 
-“quando uma empresa busca por talentos para completar seu time, ela analisa a competência profissional de cada indivíduo. Porém, há diversas habilidades e comportamentos que formam um bom colaborador. Por isso, é importante que o gestor de RH avalie essas competências para selecionar os candidatos ideais para a organização. Afinal, é preciso garantir que o profissional irá se adequar ao seu cargo”. (DIAS, 2023)
+“Quando uma empresa busca por talentos para completar seu time, ela analisa a competência profissional de cada indivíduo. Porém, há diversas habilidades e comportamentos que formam um bom colaborador. Por isso, é importante que o gestor de RH avalie essas competências para selecionar os candidatos ideais para a organização. Afinal, é preciso garantir que o profissional irá se adequar ao seu cargo”. (DIAS, 2023)
 
 Pensando nisso, criamos uma plataforma que possibilita a alocação de trabalhadores com base em suas competências e habilidades que podem melhorar significativamente a produtividade e a satisfação no trabalho. Além disso, a utilização de elementos de gamificação pode aumentar o engajamento dos envolvidos, simplificando o processo de formação de equipes.
 
