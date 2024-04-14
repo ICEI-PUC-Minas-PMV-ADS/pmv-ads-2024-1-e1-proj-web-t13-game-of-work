@@ -48,7 +48,7 @@ Para organizar, distribuir e colaborar nas tarefas do projeto, nossa equipe est�
 O quadro kanban do grupo no Trello está disponível no link https://trello.com/b/QLNL5JT6/gameofwork e é apresentado, no estado atual, na figura abaixo:
 
 <figure> 
-  <img src="img/TRELLO.png"
+  <img src="img/Trello_Quadros.png"
     <figcaption>Figura 2: Tela Inicial - Trello</figcaption>
 </figure> 
 <hr>
