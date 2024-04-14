@@ -3,7 +3,7 @@
 
 ## Gerenciamento de Projeto
 A metodologia ágil escolhida para o desenvolvimento deste projeto é o Scrum, que se concentra no trabalho em equipe, melhoria contínua e outros princípios originados do Manifesto Ágil.
-Além disso, estamos utilizando o Kanban como complemento, segundo Anderson (2010), criador do método,  “o Kanban proporciona uma visão clara e transparente do fluxo de trabalho, permitindo que as equipes identifiquem e resolvam gargalos de forma proativa".
+Além disso, estamos utilizando o Kanban como complemento, segundo Anderson (2011), criador do modelo Kanban para desenvolvimento de software, o Kanban proporciona uma visão clara e transparente do fluxo de trabalho, permitindo que as equipes identifiquem e resolvam problemas de forma proativa.
 
 Neste sentido, estamos aproveitando sua vantagem de fornecer uma visualização clara e em tempo real do fluxo de trabalho. Permitindo que toda a equipe e que as partes interessadas acompanhem o status e o progresso das tarefas de forma eficiente.
 <hr>
