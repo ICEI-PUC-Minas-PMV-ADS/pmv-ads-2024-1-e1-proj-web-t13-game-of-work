@@ -1,5 +1,7 @@
 # Referências Bibliográficas
 
+ANDERSON, David J. **Kanban: Mudança Evolucionária de Sucesso para o seu Negócio de Tecnologia**. Blue Hole Press, 2011.
+
 DIAS, Guilherme. **4 competências profissionais mais requisitadas pelas empresas**. Disponível em: <https://www.gupy.io/blog/competencias-profissionais>. Acesso em 18 de março de 2024.
 
 MICROPOWERMKT. **Gamificação nas empresas: tudo o que você precisa saber**. Disponível em: <https://micropowerglobal.com/gamificacao/>. Acesso em 15 de março de 2024.
