@@ -9,7 +9,7 @@ Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organiz
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/telaInicial/index.html">aqui</a> para acessá-lo. 
+O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/telaInicial/index.html">aqui</a> para acessá-lo. TESTE.
 
 ## Histórico de versões
 
