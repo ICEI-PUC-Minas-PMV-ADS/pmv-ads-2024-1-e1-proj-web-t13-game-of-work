@@ -94,3 +94,86 @@ botaoEntrar.addEventListener("click", function(){
   }
   
 });
+
+
+// TESTE LISTA DE OBJETOS ----------------------------------------------
+
+// criar objeto java script com todos os cargos
+var cargos = {
+  cargos:[
+    {
+      cargo: 'Desenvolvedor',
+      tecnologia: 'JavaScript',
+      funcao: 'Programar'
+    },
+    {
+      cargo: 'Professor',
+      tecnologia: 'Matemática',
+      funcao: 'Lecionar'
+    },
+    {
+      cargo: 'Piloto',
+      tecnologia: 'Avião',
+      funcao: 'Voar'
+    }
+  ]
+}
+
+//--------------------------------------------------------------------------
+
+// listaTeste testa se a lista de cargos já está salva no localStorage
+
+let listaTeste = JSON.parse(localStorage.getItem("listaCargos"));
+if(listaTeste == null){
+    localStorage.setItem('listaCargos', JSON.stringify(cargos));
+}
+
+let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
+console.log(listaCargos.cargos.length);
+
+  for (let i = 0; i < listaCargos.cargos.length; i++) {
+    console.log("ALO");
+    const divCargos = document.querySelector(".divCargos");
+  
+    const cardCargo = document.createElement("div");
+    cardCargo.classList.add("cardCargo");
+  
+    const pCargo = document.createElement("p");
+    pCargo.id = "p_cargo";
+    pCargo.innerHTML = "Cargo: ";
+  
+    const cargo = document.createElement("p");
+    cargo.innerHTML = listaCargos.cargos[i].cargo;
+  
+    const pTecnologia = document.createElement("p");
+    pTecnologia.id = "p_tecnologia";
+    pTecnologia.innerHTML = "Tecnologia: ";
+  
+    const tecnologia =  document.createElement("p");
+    tecnologia.innerHTML = listaCargos.cargos[i].tecnologia;
+  
+    const pFuncao = document.createElement("p");
+    pTecnologia.id = "p_funcao";
+    pTecnologia.innerHTML = "Função: ";
+    
+    const funcao = document.createElement("p");
+    funcao.innerHTML = listaCargos.cargos[i].funcao;
+  
+    divCargos.appendChild(cardCargo);
+  
+    cardCargo.appendChild(pCargo);
+    cardCargo.appendChild(cargo);
+  
+    cardCargo.appendChild(document.createElement("br"));
+  
+    cardCargo.appendChild(pTecnologia);
+    cardCargo.appendChild(tecnologia);
+  
+    cardCargo.appendChild(document.createElement("br"));
+  
+    cardCargo.appendChild(pFuncao);
+    cardCargo.appendChild(funcao);
+  }
+
+
+
