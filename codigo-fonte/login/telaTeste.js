@@ -33,8 +33,47 @@ function descriptografa(texto){
   return textoDescriptografado
 }
 
+/* ----- VALIDAÇÃO DE EMAIL -----*/
+function validaEmail(texto) {
+  // Variável que define se o email é valido ou não
+  var isValid = false;
+  // usuario é todo texto que vem antes do @ (O @ não faz parte)
+  let usuario = texto.substring(0, texto.indexOf("@"));
+  // dominio é todo texto que vem depois do @ (O @ não faz parte)
+  let dominio = texto.substring(texto.indexOf("@")+ 1, texto.length);
+  
+  // Essa condicional abaixo faz os seguintes testes:
+  //
+  // Se o tamanho de usuario é maior ou igual a 3 caracteres.
+  // Se o tamanho de dominio é maior ou igual a 3 caracteres.
+  // Se usuario não contém @.
+  // Se dominio não contém @.
+  // Se usuario não pode contem o “ ” (espaço em branco).
+  // Se dominio não pode contem o “ ” (espaço em branco).
+  // Se o dominio possui “.” (ponto).
+  // Se a existe algum caracter entre o @ e o ponto (não pode ter um ponto logo depois do @).
+  // Se a existe algum caracter após o ponto (o ponto não pode ser o último carcter). 
 
 
+  if ((usuario.length >=3) &&
+      (dominio.length >=3) &&
+      (usuario.search("@")==-1) &&
+      (dominio.search("@")==-1) &&
+      (usuario.search(" ")==-1) &&
+      (dominio.search(" ")==-1) &&
+      (dominio.search(".")!=-1) &&
+      (dominio.indexOf(".") >=1)&&
+      (dominio.lastIndexOf(".") < dominio.length - 1)) {
+        // Se o email for válido isValid = true;
+        isValid = true;
+        return isValid;
+  }
+  else{
+    // Se o email for inválido isValid = false;
+    isValid = false;
+    return isValid;
+  }
+}
 
 /*----- CADASTRO -----*/
 
@@ -47,44 +86,48 @@ const botaoEntrarCadastro = document.querySelector("#botaoEntrarCadastro");
 
 
 botaoEntrarCadastro.addEventListener("click", function(){
-    if(inputEmailCadastro.value == "" ||
-       inputNomeCadastro.value == "" ||
-       inputCargoCadastro.value == "" ||
-       inputSenhaCadastro.value == "" ||
-       inputEmailCadastro.value.length < 4 ||
-       inputNomeCadastro.value.length < 4 ||
-       inputCargoCadastro.value.length < 4 ||
-       inputSenhaCadastro.value < 4){
-        alert("Campo inválido");
-    }
-    else{
 
-        let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
-        let emailCadastrado = false;
+    if (validaEmail(inputEmailCadastro.value)) {
+    
+      if((inputNomeCadastro.value == "")  ||
+         (inputCargoCadastro.value == "") ||
+         (inputSenhaCadastro.value == "") ||
+         (inputNomeCadastro.value.length < 4)  ||
+         (inputCargoCadastro.value.length < 4) ||
+         (inputSenhaCadastro.value < 4)){
+          alert("Campos invalidos!!!");
+      }
+      else{
 
-        listaUsuarios.forEach(usuario => {
-          if(usuario.email == inputEmailCadastro.value){
-            emailCadastrado = true;
+          let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
+          let emailCadastrado = false;
+
+          listaUsuarios.forEach(usuario => {
+            if(usuario.email == inputEmailCadastro.value){
+              emailCadastrado = true;
+            }
+          });
+
+          if(!emailCadastrado){
+
+            listaUsuarios.push(
+              {
+                nome: inputNomeCadastro.value,
+                email: inputEmailCadastro.value,
+                cargo: inputCargoCadastro.value,
+                senha: criptografa(inputSenhaCadastro.value)
+              });
+          
+            localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios))
+          
+            alert("Usuário cadastrado com sucesso!");
+          } else {
+            alert("Este email já está cadastrado!!!");
           }
-        });
-
-        if(!emailCadastrado){
-
-          listaUsuarios.push(
-            {
-              nome: inputNomeCadastro.value,
-              email: inputEmailCadastro.value,
-              cargo: inputCargoCadastro.value,
-              senha: criptografa(inputSenhaCadastro.value)
-            });
-        
-          localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios))
-        
-          alert("Usuário cadastrado com sucesso!");
-        } else {
-          alert("Este email já está cadastrado!!!");
-        }
-    }
+      }
+  } else {
+    alert('Email inválido!!!!');
+  }
 });
 
 /* -------------------------------------*/
@@ -281,5 +324,4 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
 */
-
 
