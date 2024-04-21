@@ -1,99 +1,168 @@
-const botaoEntrarCadastro = document.querySelector("#botaoEntrarCadastro");
-const inputLoginCadastro = document.querySelector("#inputLoginCadastro");
+/* ----- CRIPTOGRAFIA -----*/
+// Chave de criptografia de 128 bits(16 bytes * 8 bits/byte = 128 bits)
+const key = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
+
+function criptografa(texto){
+  
+  // Converte o texto para bytes
+  var textoBytes = aesjs.utils.utf8.toBytes(texto);
+  
+  // The counter is optional, and if omitted will begin at 1
+  var aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
+  // Criptografa os bytes
+  var textoBytesCriptografado = aesCtr.encrypt(textoBytes);
+  
+  // Converte os bytes criptografados para hexadecimal
+  var textoCriptografado = aesjs.utils.hex.fromBytes(textoBytesCriptografado);
+  return textoCriptografado;
+}
+
+function descriptografa(texto){
+
+  // Converte o hexadecimal em bytes
+  var bytesCriptografados = aesjs.utils.hex.toBytes(texto);
+  
+  // The counter mode of operation maintains internal state, so to
+  // decrypt a new instance must be instantiated.
+  var aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
+  // Descriptografa os bytes
+  var bytesDescriptografados = aesCtr.decrypt(bytesCriptografados);
+  
+  // Converte os bytes descriptografados para texto
+  var textoDescriptografado = aesjs.utils.utf8.fromBytes(bytesDescriptografados);
+  return textoDescriptografado
+}
+
+
+
+
+/*----- CADASTRO -----*/
+
+const inputEmailCadastro = document.querySelector("#inputEmailCadastro");
+const inputNomeCadastro = document.querySelector("#inputNomeCadastro");
+const inputCargoCadastro = document.querySelector("#inputCargoCadastro");
 const inputSenhaCadastro = document.querySelector("#inputSenhaCadastro");
+
+const botaoEntrarCadastro = document.querySelector("#botaoEntrarCadastro");
 
 
 botaoEntrarCadastro.addEventListener("click", function(){
-    if(inputLoginCadastro.value == "" || inputSenhaCadastro.value == "" || inputLoginCadastro.value.length < 4 || inputSenhaCadastro.value.length < 4 ){
+    if(inputEmailCadastro.value == "" ||
+       inputNomeCadastro.value == "" ||
+       inputCargoCadastro.value == "" ||
+       inputSenhaCadastro.value == "" ||
+       inputEmailCadastro.value.length < 4 ||
+       inputNomeCadastro.value.length < 4 ||
+       inputCargoCadastro.value.length < 4 ||
+       inputSenhaCadastro.value < 4){
         alert("Campo inválido");
     }
     else{
-        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
-  
-        listaUser.push(
-          {
-            nomeUser: inputLoginCadastro.value,
-            senhaUser: inputSenhaCadastro.value
-          });
-      
-        localStorage.setItem("listaUser", JSON.stringify(listaUser))
-      
-        alert("Usuário cadastrado com sucesso!");
+
+        let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
+        let emailCadastrado = false;
+
+        listaUsuarios.forEach(usuario => {
+          if(usuario.email == inputEmailCadastro.value){
+            emailCadastrado = true;
+          }
+        });
+
+        if(!emailCadastrado){
+
+          listaUsuarios.push(
+            {
+              nome: inputNomeCadastro.value,
+              email: inputEmailCadastro.value,
+              cargo: inputCargoCadastro.value,
+              senha: criptografa(inputSenhaCadastro.value)
+            });
+        
+          localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios))
+        
+          alert("Usuário cadastrado com sucesso!");
+        } else {
+          alert("Este email já está cadastrado!!!");
+        }
     }
 });
 
-const botaoEntrar = document.querySelector("#botaoEntrar");
-const inputLogin = document.querySelector("#inputLogin");
+/* -------------------------------------*/
+
+/* -------- AUTENTICAÇÃO LOGIN --------*/
+
+const inputEmail = document.querySelector("#inputEmail");
 const inputSenha = document.querySelector("#inputSenha");
 
-var senha;
+const botaoEntrar = document.querySelector("#botaoEntrar");
+
+var nome;
 var email;
+var cargo;
 
-let msgError = document.querySelector("#msgError") // para quando errar senha ou email
-  
-let listaUser = [] //listaUser criada no código do cadastro
-  
-let userValid = { //para validar e depois percorrer com Foreach
-      
-    email: "",
-    senha: ""
-   
-  }
+var usuarioLogado = {
+  nome: "",
+  email: "",
+  cargo: "",
+  token: ""
+};
 
+  
 botaoEntrar.addEventListener("click", function(){
-
-    let msgError = document.querySelector("#msgError") // para quando errar senha ou email
   
     let listaUser = [] //listaUser criada no código do cadastro
       
     let userValid = { //para validar e depois percorrer com Foreach
           
+        nome: "",
         email: "",
-        senha: ""
+        senha: "",
+        cargo: ""
        
       }
-    
-    
 
     //pega a listaUser do LocalStorage criada no cadastro e percorre essa lista para comparar os dados que eu insiro no login com os dados retirados ao fazer o cadastro
-    listaUser = JSON.parse(localStorage.getItem("listaUser"));
+    listaUser = JSON.parse(localStorage.getItem("listaUsuarios"));
+
     
-    listaUser.forEach((item) => {
-    
-        if(inputLogin.value == item.nomeUser && inputSenha.value == item.senhaUser){
+    listaUser.forEach((usuario) => {
+
+      if(inputEmail.value == usuario.email && inputSenha.value == descriptografa(usuario.senha)){
 
             userValid = {
-                email: item.nomeUser,
-                senha: item.senhaUser
-                
+                nome: usuario.nome,
+                email: usuario.email,
+                cargo: usuario.cargo,
+                senha: descriptografa(usuario.senha)
             }
 
-            email = item.nomeUser;
-            senha  = item.senhaUser;
+            email = usuario.email;
+            nome  = usuario.nome;
+            cargo = usuario.cargo;
       
-        }
+      }
   })
 
-  if(inputLogin.value == userValid.email && inputSenha.value == userValid.senha && inputLogin.value != "" && inputSenha.value != ""){
+  if(inputEmail.value == userValid.email && inputSenha.value == userValid.senha && inputEmail.value != "" && inputSenha.value != ""){
     
-    let mathRandom = Math.random().toString(16).substr(2) 
-    let token = mathRandom + mathRandom
+    let mathRandom = Math.random().toString(16).substr(2); 
+    let token = mathRandom + mathRandom;
     
     localStorage.setItem("token", token);
 
-    localStorage.setItem('senha', JSON.stringify(senha));
+    localStorage.setItem('nome', JSON.stringify(nome));
     localStorage.setItem('email', JSON.stringify(email));
+    localStorage.setItem('cargo', JSON.stringify(cargo))
 
-    console.log("O USUÁRIO ENTROU CORRETAMENTE!!");
+    alert("O USUÁRIO ENTROU CORRETAMENTE!!");
 
   } else {
-    console.log("DEU ERRO TROPA!!!");
-
-    console.log(userValid);
-
+    alert("Email ou Senha incorretos!!!");
   }
   
 });
+
+/* -------------------------------------*/
 
 
 // TESTE LISTA DE OBJETOS ----------------------------------------------
@@ -129,10 +198,9 @@ if(listaTeste == null){
 }
 
 let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
-console.log(listaCargos.cargos.length);
 
   for (let i = 0; i < listaCargos.cargos.length; i++) {
-    console.log("ALO");
+
     const divCargos = document.querySelector(".divCargos");
   
     const cardCargo = document.createElement("div");
@@ -153,8 +221,8 @@ console.log(listaCargos.cargos.length);
     tecnologia.innerHTML = listaCargos.cargos[i].tecnologia;
   
     const pFuncao = document.createElement("p");
-    pTecnologia.id = "p_funcao";
-    pTecnologia.innerHTML = "Função: ";
+    pFuncao.id = "p_funcao";
+    pFuncao.innerHTML = "Função: ";
     
     const funcao = document.createElement("p");
     funcao.innerHTML = listaCargos.cargos[i].funcao;
@@ -175,5 +243,43 @@ console.log(listaCargos.cargos.length);
     cardCargo.appendChild(funcao);
   }
 
+  /*
+
+  --------- TEMPLATE CARGOS E FUNCIONÁRIO --------- 
+
+  cargos: [
+    {
+      cargo: "Desenvolvedor",
+      hardSkills: ["JavaScript", "SQL", "Java", "C#", "Python", "TypeScript", "Bash", "PHP"]
+    },
+    {
+      cargo: "Design",
+      hardSkills: ["Photoshop", "Illustrator", "Afinity", "Procreate", "CorelDRAW", "Figma", "Sketch", "AdobeXD"]
+    },
+    {
+      cargo: "Gestor",
+      hardSkills: ["Organizaçao", "Res. conflitos", "Liderança", "Planejamento", "Scrum", "RUP", "Trab. Equipe", "Negociação"]
+    },
+    {
+      cargo: "RH",
+      hardSkills: ["Organizaçao","Res. conflitos","Gestão","Decisões","Multitarefa","Negociação","Data-driven","Inovação"]
+    }
+  ]
+
+
+  funcionarios: [
+    {
+      nome:
+      cargo:
+      especialidade:
+
+      softSkills: [1,2,3,4,5,6]
+      hardSkills: [1,2,3,4,5,6,7,8]
+      projetos: [1,2,3,4]
+    }
+  ]
+
+
+*/
 
 
