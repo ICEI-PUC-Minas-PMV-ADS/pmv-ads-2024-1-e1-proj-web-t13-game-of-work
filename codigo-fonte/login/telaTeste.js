@@ -153,7 +153,7 @@ var usuarioLogado = {
   
 botaoEntrar.addEventListener("click", function(){
   
-    let listaUser = [] //listaUser criada no código do cadastro
+    let listaUser = []; //listaUser criada no código do cadastro
       
     let userValid = { //para validar e depois percorrer com Foreach
           
@@ -286,7 +286,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   /*
 
-  --------- TEMPLATE CARGOS E FUNCIONÁRIO --------- 
+  --------- TEMPLATE PROJETOS, CARGOS E FUNCIONÁRIO --------- 
 
   cargos: [
     {
@@ -619,5 +619,31 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
   localStorage.setItem('nome', 'Monica Sousa');
   localStorage.setItem('email', 'monicaSansao@gmail.com');
   localStorage.setItem('cargo', 'Design');
+
+  ----------------- CARGOS ----------------- 
+
+  let titleList = [
+    {
+      cargo: 'Desenvolvedor',
+      hardSkills: ['JavaScript','SQL','Python','Java','TypeScript','Bash','C#','PHP']
+    },
+    {
+      cargo: 'Design',
+      hardSkills: ['Photoshop', 'Illustrator', 'Affinity', 'Procreate', 'CorelDRAWN', 'Figma', 'Sketch', 'AdobeXD']
+    },
+    {
+      cargo: 'Gestor',
+      hardSkills: ['-', '-', '-', '-', '-', '-', '-', '-']
+    },
+    {
+      cargo: 'RH',
+      hardSkills: ['-', '-', '-', '-', '-', '-', '-', '-']
+    }
+  ];
+
+  localStorage.setItem("titleList", JSON.stringify(titleList));
+  titleList = JSON.parse(localStorage.getItem("titleList"));
+
+
 */
 
