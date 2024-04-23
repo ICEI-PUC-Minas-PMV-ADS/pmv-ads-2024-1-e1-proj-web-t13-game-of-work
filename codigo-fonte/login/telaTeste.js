@@ -118,7 +118,7 @@ botaoEntrarCadastro.addEventListener("click", function(){
                 senha: criptografa(inputSenhaCadastro.value)
               });
           
-            localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios))
+            localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
           
             alert("Usuário cadastrado com sucesso!");
           } else {
@@ -211,8 +211,7 @@ botaoEntrar.addEventListener("click", function(){
 // TESTE LISTA DE OBJETOS ----------------------------------------------
 
 // criar objeto java script com todos os cargos
-var cargos = {
-  cargos:[
+var cargos = [
     {
       cargo: 'Desenvolvedor',
       tecnologia: 'JavaScript',
@@ -228,8 +227,8 @@ var cargos = {
       tecnologia: 'Avião',
       funcao: 'Voar'
     }
-  ]
-}
+];
+
 
 //--------------------------------------------------------------------------
 
@@ -241,8 +240,7 @@ if(listaTeste == null){
 }
 
 let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
-
-  for (let i = 0; i < listaCargos.cargos.length; i++) {
+  for (let i = 0; i < listaCargos.length; i++) {
 
     const divCargos = document.querySelector(".divCargos");
   
@@ -254,21 +252,21 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     pCargo.innerHTML = "Cargo: ";
   
     const cargo = document.createElement("p");
-    cargo.innerHTML = listaCargos.cargos[i].cargo;
+    cargo.innerHTML = listaCargos[i].cargo;
   
     const pTecnologia = document.createElement("p");
     pTecnologia.id = "p_tecnologia";
     pTecnologia.innerHTML = "Tecnologia: ";
   
     const tecnologia =  document.createElement("p");
-    tecnologia.innerHTML = listaCargos.cargos[i].tecnologia;
+    tecnologia.innerHTML = listaCargos[i].tecnologia;
   
     const pFuncao = document.createElement("p");
     pFuncao.id = "p_funcao";
     pFuncao.innerHTML = "Função: ";
     
     const funcao = document.createElement("p");
-    funcao.innerHTML = listaCargos.cargos[i].funcao;
+    funcao.innerHTML = listaCargos[i].funcao;
   
     divCargos.appendChild(cardCargo);
   
@@ -322,6 +320,146 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     }
   ]
 
+  projetos: [
+    {
+      nome:
+      skills: [0,1,2,3,4,5,6,7,8,9,0]
+      gestor:
+      participantes: [0,1,2,3,4,5,6,7,8,9,0]
+      vagas:
+    }
+  ]
 
+
+  ---------- FUNCIONALIDADES DISPONÍVEIS APENAS PARA GESTOR E RH ----------
+
+  ----- TESTE 1 ----- => Possui acesso aos recursos limitados por cargo
+
+  let mathRandom = Math.random().toString(16).substr(2); 
+  let token = mathRandom + mathRandom;
+    
+  localStorage.setItem("token", token);
+
+  localStorage.setItem('nome', 'Cássio Marques de Araújo');
+  localStorage.setItem('email', 'cascaoLimoeiro@gmail.com');
+  localStorage.setItem('cargo', 'Gestor');
+
+  ----- TESTE 2 -----
+
+  let mathRandom = Math.random().toString(16).substr(2); 
+  let token = mathRandom + mathRandom;
+    
+  localStorage.setItem("token", token);
+
+  localStorage.setItem('nome', 'Magali Fernandes de Lima');
+  localStorage.setItem('email', 'magaliMelancia@gmail.com');
+  localStorage.setItem('cargo', 'Desenvolvedor');
+
+  ----- TESTE 3 ----- => Possui acesso aos recursos limitados por cargo
+
+  let mathRandom = Math.random().toString(16).substr(2); 
+  let token = mathRandom + mathRandom;
+    
+  localStorage.setItem("token", token);
+
+  localStorage.setItem('nome', 'Cebolácio Menezes da Silva Júnior');
+  localStorage.setItem('email', 'cebolinha@gmail.com');
+  localStorage.setItem('cargo', 'RH');
+
+  ----- TESTE 4 -----
+
+  let mathRandom = Math.random().toString(16).substr(2); 
+  let token = mathRandom + mathRandom;
+    
+  localStorage.setItem("token", token);
+
+  localStorage.setItem('nome', 'Monica Sousa');
+  localStorage.setItem('email', 'monicaSansao@gmail.com');
+  localStorage.setItem('cargo', 'Design');
+
+
+
+  ----------------- LISTA DE FUNCIONÁRIOS ----------------- 
+
+  let userList = [
+    {
+      nome: 'Cássio Marques de Araújo',
+      cargo: 'Gestor',
+      especialidade: 'Não tomar banho',
+
+      softSkills: [6,1,4,2,9,6],
+      hardSkills: [7,2,1,0,9,2,3,4],
+      projetos: ['Roubar Coelho','','','']
+    },
+    {
+      nome: 'Magali Fernandes de Lima',
+      cargo: 'Desenvolvedor',
+      especialidade: 'Comer',
+
+      softSkills: [7,1,6,3,0,1],
+      hardSkills: [7,1,4,2,8,4,2,6],
+      projetos: ['Almoço','Janta','','']
+    },
+    {
+      nome: 'Cebolácio Menezes da Silva Júnior',
+      cargo: 'RH',
+      especialidade: 'Planos infalíveis',
+
+      softSkills: [7,1,6,3,2,6],
+      hardSkills: [1,5,7,1,8,6,3,8],
+      projetos: ['Roubar coelho','Não apanhar','Se esconder','']
+    },
+    {
+      nome: 'Monica Sousa',
+      cargo: 'Design',
+      especialidade: 'Bater com coelho',
+
+      softSkills: [6,2,7,1,8,6],
+      hardSkills: [6,3,8,8,9,2,9,0],
+      projetos: ['Proteger o coelho','Bater no Cebolinha','Voltar pra casa','Ver a magali']
+    }
+  ];
+
+  localStorage.setItem("userList", JSON.stringify(userList));
+  userlist = JSON.parse(localStorage.getItem("userList"));
+
+  ----------------- LISTA DE PROJETOS ----------------- 
+
+  let projectList = [
+    {
+      nome: 'Roubar coelho',
+      skills: ['PHP','JavaScript','','','','','','','',''],
+      gestor: 'Cebolácio Menezes da Silva Júnior',
+      participantes: ['Cebolinha','Cascão','','','','','','','',''],
+      vagas: '2'
+    },
+    {
+      nome: 'Almoço',
+      skills: ['Figma','Photoshop','JavaScript','','','','','','',''],
+      gestor: 'Mãe da Magali',
+      participantes: ['Magali','','','','','','','','',''],
+      vagas: '0'
+    },
+    {
+      nome: 'Jantar',
+      skills: ['Photoshop','Gestão','Proatividade','PHP','','','','','',''],
+      gestor: 'Mãe da Magali',
+      participantes: ['Magali','Monica','','','','','','','',''],
+      vagas: '4'
+    },
+    {
+      nome: 'Se esconder',
+      skills: ['PHP','','','','','','','','','',''],
+      gestor: 'Professor Hayala',
+      participantes: ['Cebolinha','Cascao','Bidu','','','','','','',''],
+      vagas: '1'
+    }
+  ];
+
+  localStorage.setItem("projectList", JSON.stringify(projectList));
+  userlist = JSON.parse(localStorage.getItem("projectList"));
+
+  ----------------- LOGIN ----------------- 
+  
 */
 
