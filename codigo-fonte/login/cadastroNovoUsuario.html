@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="telaLogin.css">
 </head>
 <body>
-    <div id="Login">
+    <div class="container">
         <form action="#">
             <h2>GameOfWork</h2>
-
             <div class="caixa-de-Entrada"><!--Para nome de usuário-->
+                <label for="Nome de usuário"></label>
                 <input type="text" id="Nome de usuário" name="Nome de usuário" placeholder="Usuário" required>
             </div>
-
             <div class="caixa-de-Entrada"><!--Para a Senha-->
+                <label for="Senha"></label>
                 <input type="password" id="Senha" name="Senha" placeholder="Senha" required>    
             </div>
-
             <button type="submit">Login</button><!--Botão de envio das informações-->
-            <p>Ainda não tem uma conta?<a href="cadastroNovoUsuario.html"> Cadastre-se </a></p>
+            <div class="novoCadastro">
+            </div>
         </form>
     </div>
 </body>

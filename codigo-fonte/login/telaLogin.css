@@ -1,6 +1,33 @@
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
+
 body {
     font-family: cursive;
-    background-color: #c0bfbf;
+    background-color: cor var(--cor-background);
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -8,13 +35,18 @@ body {
     align-items: center;
     min-height: 100vh;    
 }
-#container {
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 5px;
-    align-items: center;
+#Login {
+    background-color: var(--cor-terciaria);
+    max-width: 400%;
+    padding: 50px;
+    border-radius: 15px;
 }
 
+
+a{
+    text-decoration: none;
+    color: var(--hardS-color6);
+}
 
 
 h2 {
@@ -23,17 +55,14 @@ h2 {
 
 .caixa-de-Entrada {
     margin-bottom: 10px;
-    
 }
-label {
-    display: flex;
-    margin-bottom: 5px;
-}
+
+
 
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin: 0%;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -43,7 +72,7 @@ input[type="password"] {
 button[type="submit"] {
     width: 70%;
     padding: 3%;
-    background-color: #0095ff;
+    background-color: var(--hardS-color6);
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -54,5 +83,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #147119;
+    background-color: var(--cor-primaria);
 }
