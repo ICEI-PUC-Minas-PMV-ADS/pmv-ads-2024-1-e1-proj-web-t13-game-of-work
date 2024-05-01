@@ -25,38 +25,47 @@
     --hardS-color8: #ee4f85;
 }
 
+
 body {
     font-family: cursive;
-    background-color: cor var(--cor-background);
+    background: url(backgroundImage.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     margin: 0%;
-    padding: 0%;
     display: flex;
+    padding: 0%;
     justify-content: center;
     align-items: center;
     min-height: 100vh;    
 }
+
+
 #Login {
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
     max-width: 400%;
-    padding: 50px;
+    padding: 30px;
     border-radius: 15px;
 }
 
 
-a{
+a {
     text-decoration: none;
     color: var(--hardS-color6);
 }
 
 
 h2 {
-    text-align: center;
+    color: var(--cor-primaria-fonte);
+    font-size: 50px;
+    line-height: 30px;
 }
+
 
 .caixa-de-Entrada {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
-
 
 
 input[type="text"],
@@ -68,6 +77,7 @@ input[type="password"] {
     border-radius: 10px;
     box-sizing: border-box;    
 }
+
 
 button[type="submit"] {
     width: 70%;
@@ -82,6 +92,20 @@ button[type="submit"] {
     transform: translate(20%, -0%);
 }
 
+
 button[type="submit"]:hover {
     background-color: var(--cor-primaria);
+}
+
+
+p {
+    display: flex
+}
+
+
+.background {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--cor-background);
+    position: relative;
 }
