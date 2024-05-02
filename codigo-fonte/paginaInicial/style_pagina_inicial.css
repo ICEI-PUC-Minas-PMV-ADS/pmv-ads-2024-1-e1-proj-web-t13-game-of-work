@@ -1,0 +1,160 @@
+#cabeçalho {
+    background-color: #292929;
+    color: rgb(240, 212, 87);
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    font-size: 1.5rem; /* Adaptado para ser responsivo */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    }
+
+
+#menulateral {
+    width: 15%;
+    height: 100%;
+    background-color:#494949;
+    display: block;
+    align-items: center;
+    justify-content: center;    
+    float: left;
+    box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
+
+
+}
+
+
+@media (max-width: 768px) {
+    #menulateral {
+        width: 100%; /* Menu lateral toma toda largura em telas pequenas */
+        height: auto;
+        position: relative;
+    }
+
+
+    #cabeçalho {
+        flex-direction: column;
+    }
+
+
+    #container_menu {
+        flex-direction: column; /* Cards empilhados verticalmente */
+    }
+}
+
+
+
+
+#texto_menulateral {
+    display:inline-block;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+
+
+
+#card  {
+    background-color: #494949;
+    color: white;
+    height: 5%;
+    margin: 15px;
+    box-shadow: 0 4px 8px white; /* Sombra para efeito 3D */
+}
+
+
+
+
+#imgicone {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#class {
+    height: 4%;
+}
+
+
+.col-md-4 {
+    height: 4%;
+    width: 15%
+}
+
+
+.col-md-8 {
+    height: 4%;
+    width: 85%
+}
+
+
+.card-body {
+    height: 4%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+     height: 100%;
+}
+
+
+
+
+#container_menu {
+    width: 85%;
+    height: 100%;
+    background-color:#D5D5D5;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se envolvam conforme necessário */
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+    margin-left: auto; /* Alinha à direita */
+    box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
+
+
+}
+
+
+#card_menu {
+    flex: 1 1 20%; /* Cresce e encolhe mas não menor que 20% */
+    max-width: calc(25% - 20px); /* Ajusta a largura máxima para 4 cards por linha menos o espaço do gap */
+    min-width: 150px; /* Garante que não fique menor que 150px */
+    height: auto; /* Altura automática para manter o aspecto */
+    background-color: #454545;
+    color: #F0D457;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+
+
+.card-title {
+    margin-bottom: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.card-img {
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+
+
+
+html, body
+{
+    height: 95%;
+}
