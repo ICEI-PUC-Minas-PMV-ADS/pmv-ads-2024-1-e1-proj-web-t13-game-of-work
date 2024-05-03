@@ -44,11 +44,10 @@ Brenda Drumond
 
 #### Requisito atendido
 
-RF-04	Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
-RF-05	Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.
-RF-07	Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).
-RF-09	Opção de demonstrar os projetos que o funcionário participou anteriormente.
-
+- RF-04	Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
+- RF-05	Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.
+- RF-07	Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).
+- RF-09	Opção de demonstrar os projetos que o funcionário participou anteriormente.
 
 #### Artefatos da funcionalidade
 
