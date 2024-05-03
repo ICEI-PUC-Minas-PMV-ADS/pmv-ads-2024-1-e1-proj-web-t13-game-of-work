@@ -2,10 +2,8 @@
 
 ## Estratégia de Organização de Codificação 
 
-Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organização das pastas e artefatos de implementação no sistema de arquivos, sugerimos que o projeto seja estruturado de modo que cada aluno trabalhe com seus arquivos nas suas respectivas pastas, identificadas por nomes das suas respectivas telas. Por exemplo:
-- Pasta src (root do projeto): index.html, index.css, index.js - Desenvolvedora responsável: Aluna X.
-- Pasta src\clientes: clientes.html, clientes.css, clientes.js - Desenvolvedor responsável: Aluno Y.
-- Pasta src\funcionarios: funcionarios.html, funcionarios.css, funcionarios.js  - Desenvolvedora responsável: Aluna Z.
+Para simplificar o uso e organização do Git, as pastas e artefatos foram organizados em sistemas de arquivos separados. Dessa forma, cada integrante pode trabalhar de maneira independente com seus próprios arquivos e pastas. A organização foi feita da seguinte maneira:
+- Pasta src\paginaInicial: paginaInicial.html, paginaInicial.css, paginaInicial.js - Desenvolvedora responsável: Brenda Drumond.
 
 ## Instalação do Site
 
@@ -17,6 +15,6 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 #### Adicionado
 - Página Inicial: arquivos HTML, CSS e imagens.
 
-### [0.1.1] - 03/05/2024
+### [0.1.2] - 03/05/2024
 #### Atualizado
 - Página Inicial: arquivos HTML e CSS.
