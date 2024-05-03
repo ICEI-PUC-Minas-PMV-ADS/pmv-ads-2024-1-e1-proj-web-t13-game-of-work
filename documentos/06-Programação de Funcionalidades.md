@@ -2,43 +2,38 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+### Tela Página Inicial
 
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
+<figure> 
+  <img src="img/paginaInicial.png"
+    <figcaption>Figura 1: Tela Página Inicial</figcaption>
+</figure>
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
-
+RF- 02: Local de navegação intuitivo sem dificuldade de entendimento
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
-
+- index_pagina_inicial.html
+- style_pagina_inicial.css
+- mobile-navbar.js
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
-
+- index_pagina_inicial.html
+  
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Abra um navegador de Internet e informe a seguinte URL: link
 
+Ao clicar em “Inicio” no canto superior direito da tela, terá acesso a página de inicio, onde pode localizar o caminho para cadastro e visualização de funcionários, projetos e perfil
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Brenda Drumond
+<hr>
 
 
-
-
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
