@@ -13,6 +13,10 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado/Atualizado/Removido
-- Relação de artefatos ...
+### [0.1.0] - 02/05/2024
+#### Adicionado
+- Página Inicial: arquivos HTML, CSS e imagens.
+
+### [0.1.2] - 03/05/2024
+#### Atualizado
+- Página Inicial: arquivos HTML e CSS....
