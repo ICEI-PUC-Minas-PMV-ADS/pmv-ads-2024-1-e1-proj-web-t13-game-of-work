@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 :root{
     --cor-background: #D5D5D5;
 
@@ -25,41 +27,73 @@
     --hardS-color8: #ee4f85;
 }
 
+* {
+    font-family: "Press Start 2P", system-ui;
+}
+
 
 body {
-    font-family: cursive;
-    background: url(backgroundImage.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    margin: 0%;
+    font-family: "Press Start 2P", system-ui;
+    background: #D5D5D5;
     display: flex;
-    padding: 0%;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;    
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0%;
 }
 
-
-#Login {
+#login {
+    width: 350px;
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--cor-secundaria);
-    max-width: 400%;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 15px; 
+}
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    padding: 30px;
+}
+
+.conteudo {
+    flex: 1 0 auto;
+}
+
+.rodape {
+    flex-shrink: 0;
+    background-color: var(--cor-primaria);
+    padding: 30px;
 }
 
 
-a {
+ a {
     text-decoration: none;
     color: var(--hardS-color6);
+    text-align: center;
 }
 
 
-h2 {
+p {
+    text-align: center;
     color: var(--cor-primaria-fonte);
-    font-size: 50px;
+    font-size: 15px;
+    
+}
+
+p2 {
+    color: var(--softS-color1);
+    font-size: 10px;
+    
+}
+
+h1 {
+    color: var(--cor-primaria-fonte);
+    font-size: 25px;
     line-height: 30px;
+    text-align: center;
 }
 
 
@@ -71,7 +105,7 @@ h2 {
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 11px;
     margin: 0%;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -81,7 +115,7 @@ input[type="password"] {
 
 button[type="submit"] {
     width: 70%;
-    padding: 3%;
+    padding: 7.7px;
     background-color: var(--hardS-color6);
     color: #ffffff;
     border: none;
@@ -95,17 +129,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--cor-primaria);
-}
-
-
-p {
-    display: flex
-}
-
-
-.background {
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--cor-background);
-    position: relative;
 }

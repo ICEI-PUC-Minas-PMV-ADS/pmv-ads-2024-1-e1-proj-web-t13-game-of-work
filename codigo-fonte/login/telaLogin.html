@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="telaLogin.css">
 </head>
 <body>
-    <div id="Login">
+ <header class="cabecalho">
+ </header>
+
+ <section class="conteudo">
+    <div id="login">
         <form action="#">
-                <h2>GameOfWork</h2>
+                <h1>Game Of Work</h1>
             <div class="caixa-de-Entrada"><!--Para nome de usuário-->
                 <input type="text" id="Nome de usuário" name="Nome de usuário" placeholder="Usuário" required>
             </div>
@@ -19,8 +23,16 @@
             </div>
 
             <button type="submit">Login</button><!--Botão de envio das informações-->
-            <p>Ainda não tem uma conta?<a href="cadastroNovoUsuario.html"> Cadastre-se </a></p>
+            <br>
+            <br>
+            <p2>Erro: O campo de senha está vazio.</p>
+            <p><a href="cadastroNovoUsuario.html"> 
+            <br>Cadastre-se </a></p>
         </form>
+    </section>
+
+    <footer class="rodape">
+    </footer>
 
     </div>
 
