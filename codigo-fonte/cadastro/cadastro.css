@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+}
+body{
+    background-color: var(--cor-background);
+}
+.botoes{
+    width: 30%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.botoes button{
+    background-color: var(--cor-secundaria);
+    height: 70px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.botoes button:hover{
+    background-color: var(--cor-terciaria);
+}
+.botao__editFunc, .botao__novoProj{
+    color: #56c361;
+}
+.botao__excluirFunc, .botao__excluirProj{
+    color: #fa4f4f;
+}
+
+#overlay{
+    background-color:var(--cor-terciaria);
+    opacity: 50%;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 998;
+
+    display: none;
+}
+.modal__novoProj{
+    width: 700px;
+    z-index: 999;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+.modal__novoProj .cabecalho{
+    width: 710px;
+    background-color: var(--cor-primaria);
+    border-radius:  10px 10px 0 0;
+    padding: 15px;
+
+    color: var(--cor-primaria-fonte);
+}
+.botaoFechar{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: 39.5%;
+    user-select:none;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.botaoFechar:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.cabecalho h2{
+    font-weight: normal;
+    font-size: 130%;
+    display: inline-block;
+}
+.modal__novoProj .container{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    padding: 20px;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.nomeGestor{
+    margin: 0 0 20px 3px;
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+
+}
+
+.div__nomeVagas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.span__nome{
+    display: inline-block;
+    width: 86%;
+}
+.span__nome h4{
+    margin-bottom: 3px;
+    margin-left: 3px;
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+}
+.span__nome input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+.span__vagas input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.inputVagas::-webkit-outer-spin-button,
+.inputVagas::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.span__vagas h4{
+    margin-bottom: 3px;
+    margin-left: 3px;
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+}
+.span__vagas{
+    display: inline-block;
+    width: 11%;
+}
+
+#inputDescricao{
+    width: 98.5%;
+    height: 50px;
+    margin-top: 3px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+#titulo__descricao{
+    margin-left: 3px;
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+}
+.cargos h4, .cargos select{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.cargos h4{
+    color: var(--cor-secundaria-fonte);
+    font-weight: normal;
+}
+#opcaoCargos{
+    display: none;
+}
+.cargosProj{
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cargosProj span{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.cargosProj span input{
+    position: relative;
+    width: 20px;
+    top: -8px;
+}
+.opcoesCargo{
+    cursor: pointer;
+}
+.skills h4, .skills select{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.skills h4{
+    color: var(--cor-secundaria-fonte);
+    font-weight: normal;
+}
+.skills select{
+    width: 200px;
+    height: 30px;
+    margin-left: -15px;
+    border-radius: 5px;
+}
+.skillsProj h4{
+    cursor: pointer;
+}
+.skillsDoProjeto{
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    color: var(--cor-secundaria-fonte);
+    font-weight: normal;
+    
+}
+.botao__ADD{
+    height: 30px;
+    padding: 5px;
+    border-radius: 7px;
+
+    background-color: #77C252;
+    color: var(--cor-primaria-fonte);
+    border: none;
+    cursor: pointer;
+}
+.botao__ADD:hover{
+    background-color: #89d166;
+}
+.botao__ADD:active{
+    background-color: #569238;
+}
+#opcaoSkills{
+    display: none;
+}
+.skillsProj{
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+.botao__criarProj{
+    background-color: #77C252;
+    color: var(--cor-primaria-fonte);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.botao__criarProj:hover{
+    background-color: #89d166;
+}
+.botao__criarProj:active{
+    background-color: #569238;
+}
+.skillsDoProjeto{
+    padding: 3px;
+}
+.skillSelecionada{
+    border: 1px solid white;
+    color: #f03434;
+}
