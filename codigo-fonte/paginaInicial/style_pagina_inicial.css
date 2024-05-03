@@ -1,3 +1,10 @@
+
+
+html, body
+{
+    height: 95%;
+}
+
 #cabeçalho {
     background-color: #292929;
     color: rgb(240, 212, 87);
@@ -42,67 +49,30 @@
     }
 }
 
+.opcaoMenu {
+    border-bottom: 2px solid white;
+    margin: 0; 
+    padding: 3%; 
+    width: 90%;
 
-
-
-#texto_menulateral {
-    display:inline-block;
+    margin-left: 50%; 
+    transform: translate(-50%);
+    font-family: "Press Start 2P", system-ui; 
+    font-size: 0.9rem; 
     color: white;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 13px;
-    text-decoration: none;
-  }
+    cursor: pointer;
+    display: block;  /* faz cada link aparecer em sua própria linha */
+    text-decoration: none;  /* remove o sublinhado dos links */
+}
 
-
-
-
-#card  {
-    background-color: #494949;
-    color: white;
-    height: 5%;
-    margin: 15px;
-    box-shadow: 0 4px 8px white; /* Sombra para efeito 3D */
+.opcaoMenu:hover {
+    background-color:#777777;
 }
 
 
-
-
-#imgicone {
-    width: 30px;
-    height: 30px;
-    margin: 2px;
-    display: flex;
-    align-items: flex-start;
+#divOpcoes {
+    margin-top: 5%;
 }
-
-
-#class {
-    height: 4%;
-}
-
-
-.col-md-4 {
-    height: 4%;
-    width: 15%
-}
-
-
-.col-md-8 {
-    height: 4%;
-    width: 85%
-}
-
-
-.card-body {
-    height: 4%;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-     height: 100%;
-}
-
-
-
 
 #container_menu {
     width: 85%;
@@ -152,9 +122,3 @@
 }
 
 
-
-
-html, body
-{
-    height: 95%;
-}
