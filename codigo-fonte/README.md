@@ -18,3 +18,7 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 ### [0.1.2] - 03/05/2024
 #### Atualizado
 - Página Inicial: arquivos HTML e CSS.
+
+#### Adicionado
+- Tela de Perfil: arquivos HTML, CSS e imagens.
+
