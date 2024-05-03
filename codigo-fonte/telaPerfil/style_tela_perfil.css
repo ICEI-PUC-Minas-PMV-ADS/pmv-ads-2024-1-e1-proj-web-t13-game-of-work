@@ -18,7 +18,7 @@ html, body
 
 
 #menulateral {
-    width: 15%;
+    width: 13%;
     height: 100%;
     background-color:#494949;
     display: block;
@@ -75,7 +75,7 @@ html, body
 }
 
 #containerPerfil {
-    width: 85%;
+    width: 87%;
     height: 100%;
     background-color:#5F5F5F;
     color: white;
@@ -99,8 +99,8 @@ color: darkgoldenrod;
 }
 
 .col-md-4{
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
 }
 #avatar{
     width: 100%;
