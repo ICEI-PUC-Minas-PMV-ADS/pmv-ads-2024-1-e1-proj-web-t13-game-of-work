@@ -4,6 +4,8 @@
 
 Para simplificar o uso e organização do Git, as pastas e artefatos foram organizados em sistemas de arquivos separados. Dessa forma, cada integrante pode trabalhar de maneira independente com seus próprios arquivos e pastas. A organização foi feita da seguinte maneira:
 - Pasta src\paginaInicial: paginaInicial.html, paginaInicial.css, paginaInicial.js - Desenvolvedora responsável: Brenda Drumond.
+- Pasta src\telaPerfil: telaPerfil.html, telaPerfil.css, telaPerfil.js - Desenvolvedora responsável: Catiane de Souza.
+
 
 ## Instalação do Site
 
