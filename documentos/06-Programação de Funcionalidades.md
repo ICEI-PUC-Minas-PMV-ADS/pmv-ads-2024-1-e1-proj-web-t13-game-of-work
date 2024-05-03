@@ -47,6 +47,8 @@ Brenda Drumond
 - RF-04	Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
 - RF-05	Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.
 - RF-07	Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).
+- RF-06	Na ficha do funcionário, deve ter seu objetivo profissional.
+- RF-08	Deve conter um breve resumo sobre o funcionário.
 - RF-09	Opção de demonstrar os projetos que o funcionário participou anteriormente.
 
 #### Artefatos da funcionalidade
