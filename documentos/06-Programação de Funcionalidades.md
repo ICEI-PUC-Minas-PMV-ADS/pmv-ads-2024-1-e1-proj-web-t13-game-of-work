@@ -11,7 +11,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-RF- 02: Local de navegação intuitivo sem dificuldade de entendimento
+- RF- 02: Local de navegação intuitivo sem dificuldade de entendimento
 
 #### Artefatos da funcionalidade
 
