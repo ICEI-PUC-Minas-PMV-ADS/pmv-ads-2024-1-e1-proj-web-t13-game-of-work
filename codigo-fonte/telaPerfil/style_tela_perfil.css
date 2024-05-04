@@ -2,6 +2,8 @@
 html, body
 {
     height: 95%;
+    background-color: #292929;
+
 }
 
 
@@ -18,7 +20,7 @@ html, body
 
 
 #menulateral {
-    width: 15%;
+    width: 100%;
     height: 100%;
     background-color:#494949;
     display: block;
@@ -31,24 +33,6 @@ html, body
 }
 
 
-@media (max-width: 768px) {
-    #menulateral {
-        width: 100%; /* Menu lateral toma toda largura em telas pequenas */
-        height: auto;
-        position: relative;
-    }
-
-
-    #cabeçalho {
-        flex-direction: column;
-    }
-
-
-    #container_menu {
-        flex-direction: column; /* Cards empilhados verticalmente */
-    }
-}
-
 .opcaoMenu {
     border-bottom: 2px solid white;
     margin: 0; 
@@ -58,7 +42,6 @@ html, body
     margin-left: 50%; 
     transform: translate(-50%);
     font-family: "Press Start 2P", system-ui; 
-    font-size: 0.9rem; 
     color: white;
     cursor: pointer;
     display: block;  /* faz cada link aparecer em sua própria linha */
@@ -75,12 +58,12 @@ html, body
 }
 
 #containerPerfil {
-    width: 85%;
+    width: 100%;
     height: 100%;
     background-color:#5F5F5F;
     color: white;
-    margin: 0 auto; /* Centraliza o container */
-    padding-top: 20px; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
+    margin: auto; /* Centraliza o container */
+    padding-top: 0.5%; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
     font-family: "Press Start 2P", system-ui; 
 
 }
