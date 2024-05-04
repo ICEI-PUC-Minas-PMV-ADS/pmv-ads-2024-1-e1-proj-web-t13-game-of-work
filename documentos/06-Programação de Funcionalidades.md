@@ -5,7 +5,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ### Tela Página Inicial
 
 <figure> 
-  <img src="img/paginaInicial.png"
+  <img src="img/tela_paginaInicial.png"
     <figcaption>Figura 1: Tela Página Inicial</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Brenda Drumond
 ### Tela Perfil
 
 <figure> 
-  <img src="img/telaPerfil.png"
+  <img src="img/tela_perfil.png"
     <figcaption>Figura 2: Tela de Perfil</figcaption>
 </figure> 
 
