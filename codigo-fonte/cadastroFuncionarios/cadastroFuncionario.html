@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cadastro Funcionário</title>
+    <title>Cadastro de Funcionário</title>
     <link rel="stylesheet" href="cadastroFuncionario.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
@@ -39,9 +39,10 @@
                 <input type="password" name="senha" id="senhaUsuarioInput"></div>
         </div>
 
+        <div class="tabelas-container">
         <!--Tabela Soft Skills-->
         <div class="soft-skills">
-            <table border="0">
+            <table border="0" class="tabela1">
                 <colgroup>
                     <col style="width: 50%;">
                     <col style="width: 50%;">
@@ -58,11 +59,11 @@
                     </tr>
                     <tr>
                         <td td style="color:#F6AD78;">Criatividade:<input type="number" id="criatividade" name="numero_2" min="0" max="10"></td>
-                        <td style="color:#ADE491;">Pens. análitico:<input type="number" id="pens-analitico" name="Pens. análitico" min="0" max="10"></td> 
+                        <td style="color:#ADE491;">Pens.análitico:<input type="number" id="pens-analitico" name="Pens. análitico" min="0" max="10"></td> 
                     </tr>
                     <tr>
                         <td style="color:#FEE479;">Liderança:<input type="number" id="lideranca" name="Liderança" min="0" max="10"></td>
-                        <td style="color:#FA92B2;">Trab. em equipe:<input type="number" id="trab-Em-Equipe" name="Trab. em equipe" min="0" max="10"></td>
+                        <td style="color:#FA92B2;">Trab.em equipe:<input type="number" id="trab-Em-Equipe" name="Trab. em equipe" min="0" max="10"></td>
                     </tr>
                 </tbody>
             </table>
@@ -100,7 +101,7 @@
                 </tbody>
             </table>
         </div>
-
+    </div>
 
         
     </section>
@@ -108,7 +109,7 @@
     <p>NI: 00000</p>
 
     <div class="rodape-interno">
-        <button type="button" class="btn btn-success">Cadastrar</button>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
     </div>
 </section>
 </main>

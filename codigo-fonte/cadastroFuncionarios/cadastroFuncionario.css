@@ -41,16 +41,19 @@ html, body {
     padding: 0%;
 }
 
+
 body {
     font-size: 100%;
     display: flex;
     flex-direction: column;
 }
 
+
 .cabecalho {
     background-color: var(--cor-terciaria);
     padding: 25px;
 }
+
 
 .conteudo {
     flex: 1 0 auto;
@@ -58,6 +61,17 @@ body {
     width: 50%;
     border-radius: 15px;
     align-items: center;
+}
+
+
+.caixa-de-dialogo {
+    width: auto;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    min-height: calc(100vh - 100px);
 }
 
 
@@ -74,87 +88,100 @@ body {
     padding: 10px;
 }
 
-.caixa-de-dialogo {
-    width: auto;
-    background-color: var(--cor-secundaria);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 15px;
-    min-height: calc(100vh - 100px);
-}
 
 .conteudo-interno-informacoes-pessoais1 {
     display: flex;
     flex-direction: row;
     padding: 20px 10px 0px 10px;
+    color: var(--cor-primaria-fonte);
 }
+
 
 #nomeUsuarioInput {
     width: 90%;
     border-radius: 10px;
 }
 
+
 #cargoUsuarioInput {
     width: 70%;
     border-radius: 10px;
 }
 
+
 .conteudo-interno-informacoes-pessoais2 {
     display: flex;
     flex-direction: row;
     padding: 0px 10px 20px 10px;
+    color: var(--cor-primaria-fonte);
 }
+
 
 #emailUsuarioInput {
     width: 90%; 
     border-radius: 10px;
 }
 
+
 #senhaUsuarioInput {
     width: 70%; 
     border-radius: 10px;
 }
 
+
 .soft-skills {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    border-bottom: 1px solid var(--cor-primaria-fonte);
 }
+
 
 th, td {
     padding: 10px;
-    text-align: left;
 }
 
-td:first-child {
-    text-align: left;
-}
 
 .titulo-tabela1 {
     color: var(--cor-primaria-fonte);
     width: 100%;
+    border-top: 1px solid var(--cor-primaria-fonte);
 }
+
 
 .tabela1 {
     width: 100%;
 }
 
+
 input[type="number"] {
     width: calc(70px - 20px);
+    border-radius: 5px;
+    margin-block-start:0%;
+    align-items: end;
+    position: absolute;
+    margin-right: 0;
+}
+
+
+.hard-skills {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+    border-bottom: 1px solid var(--cor-primaria-fonte);
+}
+
+
+.titulo-tabela2 {
+    width: 100%;
+    color: var(--cor-primaria-fonte);
 }
 
 
 .tabela2 {
     width: 100%;
-    border-bottom: 1px solid white ;
 }
 
-.titulo-tabela2 {
-    border-top: 1px solid rgb(255, 255, 255);
-    width: 100%;
-    color: var(--cor-primaria-fonte);
-}
 
 .rodape-interno {
     display: flex;
@@ -164,9 +191,13 @@ input[type="number"] {
 }
 
 
+p {
+    color: var(--cor-primaria-fonte);
+    padding: 10px;
+}
+
+
 .rodape {
      background-color: var(--cor-terciaria);
      padding: 25px;
 }
-
-
