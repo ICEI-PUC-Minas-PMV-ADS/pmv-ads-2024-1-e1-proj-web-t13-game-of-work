@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
+
+* {
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: var(--cor-terciaria);
+    padding: 25px;
+}
+
+.conteudo {
+    flex: 1 0 auto;
+    background-color: var(--cor-primaria-fonte);
+    width: 50%;
+    border-radius: 15px;
+    align-items: center;
+}
+
+
+.cabecalho-interno {
+    font-size: 22px;
+    color: var(--cor-primaria-fonte);
+    background-color: var(--cor-primaria);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.caixa-de-dialogo {
+    width: auto;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    min-height: calc(100vh - 100px);
+}
+
+.conteudo-interno-informacoes-pessoais1 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px 0px 10px;
+}
+
+#nomeUsuarioInput {
+    width: 90%;
+    border-radius: 10px;
+}
+
+#cargoUsuarioInput {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.conteudo-interno-informacoes-pessoais2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 20px 10px;
+}
+
+#emailUsuarioInput {
+    width: 90%; 
+    border-radius: 10px;
+}
+
+#senhaUsuarioInput {
+    width: 70%; 
+    border-radius: 10px;
+}
+
+.soft-skills {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+.titulo-tabela1 {
+    color: var(--cor-primaria-fonte);
+    width: 100%;
+}
+
+.tabela1 {
+    width: 100%;
+}
+
+input[type="number"] {
+    width: calc(70px - 20px);
+}
+
+
+.tabela2 {
+    width: 100%;
+    border-bottom: 1px solid white ;
+}
+
+.titulo-tabela2 {
+    border-top: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    color: var(--cor-primaria-fonte);
+}
+
+.rodape-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rodape {
+     background-color: var(--cor-terciaria);
+     padding: 25px;
+}
+
+

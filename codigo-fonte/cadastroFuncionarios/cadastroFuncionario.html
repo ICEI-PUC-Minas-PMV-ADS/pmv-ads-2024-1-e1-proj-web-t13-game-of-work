@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cadastro Funcionário</title>
+    <link rel="stylesheet" href="cadastroFuncionario.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    
+<header class="cabecalho">
+</header>
+
+<main class="conteudo">
+
+    <section class="caixa-de-dialogo">
+    <div class="cabecalho-interno">
+        <p>Cadastrar Funcionário</p>
+        <div class="button"><button type="button" class="btn btn-danger">Sair</button></div>
+    </div>
+
+    <section class="conteudo-interno">
+
+        <div class="conteudo-interno-informacoes-pessoais1">
+            <div><label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nomeUsuarioInput"></div>
+
+            <div><label for="cargo">Cargo</label><br>
+            <input type="text" name="cargo" id="cargoUsuarioInput"></div>
+
+        </div>
+
+        <div class="conteudo-interno-informacoes-pessoais2">
+            <div><label for="nome">Email</label><br>
+                <input type="email" name="email" id="emailUsuarioInput"></div>
+    
+                <div><label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="senhaUsuarioInput"></div>
+        </div>
+
+        <!--Tabela Soft Skills-->
+        <div class="soft-skills">
+            <table border="0">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 50%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                            <th colspan="2" class="titulo-tabela1">Soft Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td style="color: #FF5959;">Comunicação:<input type="number" id="comunicacao" name="Comunicação" min="0" max="10"></td>
+                    <td style="color:#9CB5F2;">Organização:<input type="number" id="organizacao" name="Organização" min="0" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td td style="color:#F6AD78;">Criatividade:<input type="number" id="criatividade" name="numero_2" min="0" max="10"></td>
+                        <td style="color:#ADE491;">Pens. análitico:<input type="number" id="pens-analitico" name="Pens. análitico" min="0" max="10"></td> 
+                    </tr>
+                    <tr>
+                        <td style="color:#FEE479;">Liderança:<input type="number" id="lideranca" name="Liderança" min="0" max="10"></td>
+                        <td style="color:#FA92B2;">Trab. em equipe:<input type="number" id="trab-Em-Equipe" name="Trab. em equipe" min="0" max="10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Tabela Hard Skills-->
+        <div class="hard-skills">
+            <table border="0" class="tabela2">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 50%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="titulo-tabela2">Hard Skills</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color:#6FF3FF;">HTML:<input type="number" id="HTML" name="HTML" min="0" max="10"></td>
+                        <td style="color:#DC9152;">SQL:<input type="number" id="SQL" name="SQL" min="0" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td style="color:#7B85F6;">CSS:<input type="number" id="CSS" name="CSS" min="0" max="10"></td>
+                        <td style="color:#FEE479;">Python:<input type="number" id="python" name="Python" min="0" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td style="color:#C576D8;">JavaScript:<input type="number" id="javaScript" name="JavaScript" min="0" max="10"></td>
+                        <td>C++:<input type="number" id="cMaisMais" name="C++" min="0" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td style="color:#3EDD71;">C#:<input type="number" id="cSharp" name="C#" min="0" max="10"></td>
+                        <td style="color:#A2C05D;">Java:<input type="number" id="java" name="Java" min="0" max="10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        
+    </section>
+
+    <p>NI: 00000</p>
+
+    <div class="rodape-interno">
+        <button type="button" class="btn btn-success">Cadastrar</button>
+    </div>
+</section>
+</main>
+
+<footer class="rodape">
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
