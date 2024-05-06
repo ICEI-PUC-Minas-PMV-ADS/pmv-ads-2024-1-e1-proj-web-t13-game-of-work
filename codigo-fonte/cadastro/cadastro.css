@@ -157,8 +157,8 @@ body{
     text-align: center;
 
 }
-.inputVagas::-webkit-outer-spin-button,
-.inputVagas::-webkit-inner-spin-button {
+.inputVagasProjeto::-webkit-outer-spin-button,
+.inputVagasProjeto::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -174,7 +174,7 @@ body{
     width: 11%;
 }
 
-#inputDescricao{
+#inputDescricaoProjeto{
     width: 98.5%;
     height: 50px;
     margin-top: 3px;
@@ -288,4 +288,8 @@ body{
 .skillSelecionada{
     border: 1px solid white;
     color: #f03434;
+}
+#mensagemErro{
+    color: red;
+    display: inline-block;
 }

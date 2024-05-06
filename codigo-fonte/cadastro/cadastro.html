@@ -21,22 +21,22 @@
             <img class="botaoFechar" src="close.png" alt="">
         </div>
         <div class="container">
-            <h3 class="nomeGestor">Gestor:</h3>
+            <h3 class="nomeGestor">Gestor: </h3>
 
             <div class="div__nomeVagas">
                 <span class="span__nome">
                     <h4>Nome</h4>
-                    <input class="inputNome" type="text">
+                    <input class="inputNomeProjeto" type="text">
                 </span>
                 
                 <span class="span__vagas">
                     <h4>Vagas</h4>
-                    <input class="inputVagas" type="number" maxlength="1" min="0s" max="6">
+                    <input class="inputVagasProjeto" type="number" maxlength="1" min="0s" max="6">
                 </span>
             </div>
           
             <h4 id="titulo__descricao">Descrição:</h4>
-            <Textarea maxlength="80" id="inputDescricao"></Textarea>
+            <Textarea maxlength="80" id="inputDescricaoProjeto"></Textarea>
 
             <div class="cargos">
                 <h4>Cargos:</h4>
@@ -45,14 +45,16 @@
             
             <div class="skills">
                 <h4>Skills:</h4>
-                <select class="selectSkills" id="">
+                <select class="selectSkillsProjeto" id="">
                     <option id="opcaoSkills" value="" selected disabled>Skills</option>
                 </select>
                 <div class="skillsProj"></div>
             </div>
             <button class="botao__criarProj">Criar Projeto</button>
+            <h4 id="mensagemErro"></h4>
         </div>
     </div>
-    <script src="cadastro.js"></script>
+    <script src="cadastroProjeto.js"></script>
+    <script src="cadastro-bd.js"></script>
 </body>
 </html>
