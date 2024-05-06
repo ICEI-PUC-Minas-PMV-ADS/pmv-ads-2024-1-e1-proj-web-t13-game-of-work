@@ -34,14 +34,83 @@
 }
 body{
     background-color: var(--cor-background);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------ MENU DE NAVEGAÇÃO ------ */
+#cabeçalho {
+    background-color: #292929;
+    color: var(--cor-secundaria-fonte);
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    font-size: 1.5rem; /* Adaptado para ser responsivo */
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+#logo{
+    font-size: 25px;
+    color: var(--cor-primaria-fonte);
+}
+.divMenuLateral{
+    height: 100%;
+    display: inline-block;
+}
+#menulateral{
+    height: 100%;
+    background-color:#494949;
+    align-items: center;
+    justify-content: center;    
+    box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
+
+    min-width: 250px;
+    padding: 0 10px 0 10px;
+}
+
+#divOpcoes{
+    position: relative;
+    top: 2%;
+}
+#opcao_1{
+    border-top: 2px solid white;
+}
+.opcaoMenu {
+    border-bottom: 2px solid white;
+    margin: 0; 
+    padding: 5%; 
+    width: 90%;
+
+    margin-left: 50%; 
+    transform: translate(-50%);
+    font-family: "Press Start 2P", system-ui; 
+    color: white;
+    cursor: pointer;
+    display: block;  /* faz cada link aparecer em sua própria linha */
+    text-decoration: none;  /* remove o sublinhado dos links */
+}
+.opcaoMenu:hover{
+    background-color: var(--cor-terciaria);
+}
+/* ---------------------------- */
+
+#funcionariosContainer{
+    height: 100%;
+    display: flex;
 }
 .botoes{
     width: 30%;
     display: flex;
 
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
+
+
+
 }
 .botoes button{
     background-color: var(--cor-secundaria);
@@ -50,8 +119,8 @@ body{
     padding: 10px;
     border-radius: 10px;
     font-size: 16px;
-    margin-top: 10px;
     cursor: pointer;
+    margin: 1%;
 }
 .botoes button:hover{
     background-color: var(--cor-terciaria);
@@ -62,6 +131,8 @@ body{
 .botao__excluirFunc, .botao__excluirProj{
     color: #fa4f4f;
 }
+
+
 
 #overlay{
     background-color:var(--cor-terciaria);
