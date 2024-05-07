@@ -8,45 +8,69 @@
     <title>Funcionários</title>
 </head>
 <body>
-    <div id="divFuncionarios">
-        <div id="cards"></div>
-        <div id="divDadosFuncionarios">
-            <div id="cabecalho"><img id="botaoFechar" src="../icones/close.png" alt=""></div>
-            <div id="containerDadosFuncionarios">
-                <div id="dadosPessoais">
-                    <h3 id="nome">Nome</h3>
-                    <h4 id="cargo">Cargo</h4>
-                    <h4 id="especialidade">Especialidade</h4>
-                    <h4 id="email">Email</h4>
+    <!------ MENU DE NAVEGAÇÃO ------>
+    <header id="cabeçalho">
+        <h1 id="logo">GameOfWork</h1>
+        <h1 style="font-size: 20px;">Lista de Funcionários</h1>
+        <button type="button" id="botaoSair">Sair</button>
+    </header>
+
+    <div id="funcionariosContainer">
+        <div class="divMenuLateral">
+            <nav id="menulateral">
+                <br>
+                <div id="divOpcoes">
+                    <a class="opcaoMenu" id="opcao_1" href="index_pagina_inicial.html">Início</a>
+                    <a class="opcaoMenu" id="opcao_2" href="...">Cadastro</a>
+                    <a class="opcaoMenu" id="opcao_3" href="...">Funcionários</a>
+                    <a class="opcaoMenu" id="opcao_4" href="...">Projetos</a>
+                    <a class="opcaoMenu" id="opcao_5" href="index_tela_perfil.html">Perfil</a>
                 </div>
-                <hr>
-                <div id="softSkills">
-                    <span><h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><h4 class="softSkill1 valorSoftSkill1">0</h4></span>
-                    <span><h4 class="softSkill2 nomeSoftskill2">Organização:</h4><h4 class="softSkill2 valorSoftSkill2">0</h4></span>
-                    <span><h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><h4 class="softSkill3 valorSoftSkill3">0</h4></span>
-                    <span><h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><h4 class="softSkill4 valorSoftSkill4">0</h4></span>
-                    <span><h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><h4 class="softSkill5 valorSoftSkill5">0</h4></span>
-                    <span><h4 class="softSkill6 nomeSoftskill6">Trab. Equipe:</h4><h4 class="softSkill6 valorSoftSkill6">0</h4></span>
+            </nav>
+        </div>
+    
+        <!--------------------------------->  
+        <div id="divFuncionarios">
+            <div id="cards"></div>
+            <div id="divDadosFuncionarios">
+                <div id="cabecalho"><img id="botaoFechar" src="../icones/close.png" alt=""></div>
+                <div id="containerDadosFuncionarios">
+                    <div id="dadosPessoais">
+                        <h3 id="nome">Nome</h3>
+                        <h4 id="cargo">Cargo</h4>
+                        <h4 id="especialidade">Especialidade</h4>
+                        <h4 id="email">Email</h4>
+                    </div>
+                    <hr>
+                    <div id="softSkills">
+                        <span><h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><h4 class="softSkill1 valorSoftSkill1">0</h4></span>
+                        <span><h4 class="softSkill2 nomeSoftskill2">Organização:</h4><h4 class="softSkill2 valorSoftSkill2">0</h4></span>
+                        <span><h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><h4 class="softSkill3 valorSoftSkill3">0</h4></span>
+                        <span><h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><h4 class="softSkill4 valorSoftSkill4">0</h4></span>
+                        <span><h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><h4 class="softSkill5 valorSoftSkill5">0</h4></span>
+                        <span><h4 class="softSkill6 nomeSoftskill6">Trab. Equipe:</h4><h4 class="softSkill6 valorSoftSkill6">0</h4></span>
+                    </div>
+                    <hr>
+                    <div id="hardSkills">
+                        <span><h4 class="hardSkill1 nomeHardSkill1">nomeHardSkill1:</h4><h4 class="hardSkill1 valorHardSkill1">0</h4></span>
+                        <span><h4 class="hardSkill2 nomeHardSkill2">nomeHardSkill2:</h4><h4 class="hardSkill2 valorHardSkill2">0</h4></span>
+                        <span><h4 class="hardSkill3 nomeHardSkill3">nomeHardSkill3:</h4><h4 class="hardSkill3 valorHardSkill3">0</h4></span>
+                        <span><h4 class="hardSkill4 nomeHardSkill4">nomeHardSkill4:</h4><h4 class="hardSkill4 valorHardSkill4">0</h4></span>
+                        <span><h4 class="hardSkill5 nomeHardSkill5">nomeHardSkill5:</h4><h4 class="hardSkill5 valorHardSkill5">0</h4></span>
+                        <span><h4 class="hardSkill6 nomeHardSkill6">nomeHardSkill6:</h4><h4 class="hardSkill6 valorHardSkill6">0</h4></span>
+                        <span><h4 class="hardSkill7 nomeHardSkill7">nomeHardSkill7:</h4><h4 class="hardSkill7 valorHardSkill7">0</h4></span>
+                        <span><h4 class="hardSkill8 nomeHardSkill8">nomeHardSkill8:</h4><h4 class="hardSkill8 valorHardSkill8">0</h4></span>
+                        
+                    </div>
+                    <hr>
+                    <div id="projetos">
+                        <h4 id="projeto1">Projeto 1</h4>
+                        <h4 id="projeto2">Projeto 2</h4>
+                        <h4 id="projeto3">Projeto 3</h4>
+                        <h4 id="projeto4">Projeto 4</h4>
+                    </div>
+                    <button id="botaoAddProjeto">Add. novo Projeto</button>
                 </div>
-                <hr>
-                <div id="hardSkills">
-                    <span><h4 class="hardSkill1 nomeHardSkill1">nomeHardSkill1:</h4><h4 class="hardSkill1 valorHardSkill1">0</h4></span>
-                    <span><h4 class="hardSkill2 nomeHardSkill2">nomeHardSkill2:</h4><h4 class="hardSkill2 valorHardSkill2">0</h4></span>
-                    <span><h4 class="hardSkill3 nomeHardSkill3">nomeHardSkill3:</h4><h4 class="hardSkill3 valorHardSkill3">0</h4></span>
-                    <span><h4 class="hardSkill4 nomeHardSkill4">nomeHardSkill4:</h4><h4 class="hardSkill4 valorHardSkill4">0</h4></span>
-                    <span><h4 class="hardSkill5 nomeHardSkill5">nomeHardSkill5:</h4><h4 class="hardSkill5 valorHardSkill5">0</h4></span>
-                    <span><h4 class="hardSkill6 nomeHardSkill6">nomeHardSkill6:</h4><h4 class="hardSkill6 valorHardSkill6">0</h4></span>
-                    <span><h4 class="hardSkill7 nomeHardSkill7">nomeHardSkill7:</h4><h4 class="hardSkill7 valorHardSkill7">0</h4></span>
-                    <span><h4 class="hardSkill8 nomeHardSkill8">nomeHardSkill8:</h4><h4 class="hardSkill8 valorHardSkill8">0</h4></span>
-                </div>
-                <hr>
-                <div id="projetos">
-                    <h4 id="projeto1">Projeto 1</h4>
-                    <h4 id="projeto2">Projeto 2</h4>
-                    <h4 id="projeto3">Projeto 3</h4>
-                    <h4 id="projeto4">Projeto 4</h4>
-                </div>
-                <button id="botaoAddProjeto">Add. novo Projeto</button>
             </div>
         </div>
     </div>
