@@ -34,38 +34,53 @@
 
 body {
     font-family: "Press Start 2P", system-ui;
-    background: #D5D5D5;
-    display: flex;
-    flex-direction: column;
+    background: var(--cor-background);
     min-height: 100vh;
     margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
+
+
+#cabecalho-login{
+    background-color: var(--cor-primaria);
+    width: 410px;
+    height: 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+
 
 #login {
     width: 350px;
-    height: 370px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--cor-secundaria);
     padding: 30px;
-    border-radius: 15px; 
+    border-radius: 0 0 15px 15px; 
 }
 
 .cabecalho {
     background-color: var(--cor-primaria);
-    padding: 30px;
+    height: 60px;
+    display: block;
 }
 
 .conteudo {
-    flex: 1 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .rodape {
-    flex-shrink: 0;
     background-color: var(--cor-primaria);
-    padding: 30px;
+    height: 60px;
+    display: block;
+}
+
+#cadastre-se:hover {
+    color: rgb(139, 172, 235);
 }
 
 
@@ -83,10 +98,10 @@ p {
     
 }
 
-p2 {
+#mensagem-erro {
     color: var(--softS-color1);
     font-size: 10px;
-    
+    visibility: hidden;
 }
 
 h1 {

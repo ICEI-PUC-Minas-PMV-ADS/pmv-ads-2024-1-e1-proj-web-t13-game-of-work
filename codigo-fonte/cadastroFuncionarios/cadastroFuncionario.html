@@ -17,7 +17,6 @@
     <section class="caixa-de-dialogo">
     <div class="cabecalho-interno">
         <p>Cadastrar Funcionário</p>
-        <div class="button"><button type="button" class="btn btn-danger">Sair</button></div>
     </div>
 
     <section class="conteudo-interno">
@@ -26,8 +25,15 @@
             <div><label for="nome">Nome</label><br>
             <input type="text" name="nome" id="nomeUsuarioInput"></div>
 
-            <div><label for="cargo">Cargo</label><br>
-            <input type="text" name="cargo" id="cargoUsuarioInput"></div>
+            <div>
+                <label for="cargo">Cargo</label><br>
+                <select name="cargo" id="cargo">
+                    <option value="">Desenvolvedor</option>
+                    <option value="">Design</option>
+                    <option value="">Gestor</option>
+                    <option value="">RH</option>
+                </select>
+            </div>
 
         </div>
 
@@ -37,8 +43,11 @@
     
                 <div><label for="senha">Senha</label><br>
                 <input type="password" name="senha" id="senhaUsuarioInput"></div>
-        </div>
 
+                <textarea name="sobre-mim" id="sobre-mim"></textarea>
+                <textarea name="objetivos" id="objetivos"></textarea>
+        </div>
+        <hr>
         <div class="tabelas-container">
         <!--Tabela Soft Skills-->
         <div class="soft-skills">
@@ -52,10 +61,10 @@
                             <th colspan="2" class="titulo-tabela1">Soft Skills</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="skills">
                     <tr>
-                    <td style="color: #FF5959;">Comunicação:<input type="number" id="comunicacao" name="Comunicação" min="0" max="10"></td>
-                    <td style="color:#9CB5F2;">Organização:<input type="number" id="organizacao" name="Organização" min="0" max="10"></td>
+                        <td style="color: #FF5959;">Comunicação:<input type="number" id="comunicacao" name="Comunicação" min="0" max="10"></td>
+                        <td style="color:#9CB5F2;">Organização:<input type="number" id="organizacao" name="Organização" min="0" max="10"></td>
                     </tr>
                     <tr>
                         <td td style="color:#F6AD78;">Criatividade:<input type="number" id="criatividade" name="numero_2" min="0" max="10"></td>
@@ -68,7 +77,7 @@
                 </tbody>
             </table>
         </div>
-
+        <hr>
         <!--Tabela Hard Skills-->
         <div class="hard-skills">
             <table border="0" class="tabela2">
@@ -81,7 +90,7 @@
                         <th colspan="2" class="titulo-tabela2">Hard Skills</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody class="skills">
                     <tr>
                         <td style="color:#6FF3FF;">HTML:<input type="number" id="HTML" name="HTML" min="0" max="10"></td>
                         <td style="color:#DC9152;">SQL:<input type="number" id="SQL" name="SQL" min="0" max="10"></td>
@@ -105,8 +114,6 @@
 
         
     </section>
-
-    <p>NI: 00000</p>
 
     <div class="rodape-interno">
         <button type="submit" class="btn btn-success">Cadastrar</button>
