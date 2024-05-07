@@ -210,5 +210,5 @@ body{
     flex-direction: column;
 }
 #dadosPessoais, #softSkills, #hardSkills, #projetos, #botaoAddProjeto, #containerDadosFuncionarios hr{
-    visibility: hidden;
+    visibility: visible;
 }
