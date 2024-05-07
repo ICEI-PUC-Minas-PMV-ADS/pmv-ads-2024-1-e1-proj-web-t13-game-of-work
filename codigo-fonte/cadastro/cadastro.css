@@ -60,7 +60,6 @@ body{
     display: inline-block;
 }
 #menulateral{
-    height: 100%;
     background-color:#494949;
     align-items: center;
     justify-content: center;    
@@ -68,6 +67,8 @@ body{
 
     min-width: 250px;
     padding: 0 10px 0 10px;
+
+    height: 100%
 }
 
 #divOpcoes{
@@ -97,19 +98,17 @@ body{
 /* ---------------------------- */
 
 #funcionariosContainer{
-    height: 100%;
     display: flex;
+    height: calc(100% - 86px);
 }
 .botoes{
-    width: 30%;
+    width: 100%;
     display: flex;
 
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-
-
 
 }
 .botoes button{
@@ -120,7 +119,7 @@ body{
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    margin: 1%;
+    margin: 10px;
 }
 .botoes button:hover{
     background-color: var(--cor-terciaria);
@@ -130,6 +129,33 @@ body{
 }
 .botao__excluirFunc, .botao__excluirProj{
     color: #fa4f4f;
+}
+.div__exibicao{
+    background-color: var(--cor-secundaria);
+    width: 40%;
+    max-width: 500px;
+    padding: 20px;
+    height: calc(100% - 39px);
+}
+.projetoExibido{
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    padding: 5px;
+    margin-right: 10px;
+
+}
+.projetoSelecionado{
+    border: 2px solid red;
+    color: red;
+
+    user-select: none;
+}
+
+#caixa__exibicao{
+    overflow:auto;
+    height: 100%;
+ 
 }
 
 
@@ -147,7 +173,7 @@ body{
     width: 700px;
     z-index: 999;
 
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -162,7 +188,7 @@ body{
 
     color: var(--cor-primaria-fonte);
 }
-.botaoFechar{
+.modal__novoProj .cabecalho .botaoFechar{
     position: relative;
     width: 20px;
     height: 20px;
@@ -176,11 +202,11 @@ body{
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.botaoFechar:hover{
+.modal__novoProj .cabecalho .botaoFechar:hover{
     cursor: pointer;
     opacity: 50%;
 }
-.cabecalho h2{
+.modal__novoProj .cabecalho h2{
     font-weight: normal;
     font-size: 130%;
     display: inline-block;
@@ -363,4 +389,81 @@ body{
 #mensagemErro{
     color: red;
     display: inline-block;
+}
+
+
+
+.modal__excluirProj{
+    width: 400px;
+    display: none;
+    z-index: 999;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal__excluirProj .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    background-color: var(--cor-primaria);
+    border-radius:  10px 10px 0 0;
+    padding: 15px;
+    width: 410px;
+
+}
+.modal__excluirProj .cabecalho .botaoFechar{
+    width: 20px;
+}
+.modal__excluirProj .cabecalho .botaoFechar:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.modal__excluirProj .container{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    padding: 20px;
+
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botoes__deletaProjeto{
+    display: flex;
+    gap: 100px;
+}
+.modal__excluirProj .container .botao__nao{
+    background-color: #2fac2f;
+
+}
+.modal__excluirProj .container .botao__nao:hover{
+    background-color: #6cc76c;
+
+}
+.modal__excluirProj .container .botao__nao:active{
+    background-color: #127a12;
+
+}
+.modal__excluirProj .container .botao__sim{
+    background-color: #ec4242;
+
+}
+.modal__excluirProj .container .botao__sim:hover{
+    background-color: #fa7373;
+
+}
+.modal__excluirProj .container .botao__sim:active{
+    background-color: #a51414;
+
+}
+.modal__excluirProj .container .botao__sim, .modal__excluirProj .container .botao__nao{
+    color: var(--cor-primaria-fonte);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

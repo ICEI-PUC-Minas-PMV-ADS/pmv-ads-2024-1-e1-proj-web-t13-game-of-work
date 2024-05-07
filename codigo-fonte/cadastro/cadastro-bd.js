@@ -1,7 +1,6 @@
 // Se a lista de projetos existe ele guarda ela na variável listaProjetos
 // Se não a lista é criada e armazenada na variável listaProjetos
 var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos') || '[]');
-// Cadastra o projeto no local storage em listaProjetos
 
 function cadastrarProjeto(){
     
@@ -39,22 +38,20 @@ function cadastrarProjeto(){
             erro = 'projetoJaExiste';
         }
     }
-    if (skillsSelecionadas.length == 0) {
+    if (skillsProjeto.length == 0) {
         erro = 'skillVazia';
     }
-    if(cargosSelecionados.length == 0){
+    if(cargosProjeto.length == 0){
         erro = 'cargoVazio';
     }
     if (inputDescricao.value == "") {
-        erro = 'descricaoVazia';
-        
+        erro = 'descricaoVazia';   
     }
     if(inputVagas.value == "") {
         erro = 'vagasVazio';
     }
     if (inputNome.value == "") {
         erro = 'nomeVazio';
-
     }
     
     // Tratando erros
@@ -111,12 +108,32 @@ function cadastrarProjeto(){
     }
 }
 
+function deletarProjeto(nomeDoProjeto){
+
+    console.log(nomeDoProjeto);
+    
+}
+
+
 if (listaProjetos.length == 0) {
     localStorage.setItem('listaProjetos', '[]');
 }
  
 
 botao__criarProjeto.addEventListener('click', cadastrarProjeto);
+botao__simExcluirProjeto.addEventListener('click', function(){
+    let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
+    let nomeDoProjeto = nome__excluirProjeto.innerHTML;
+    
+    for (let i = 0; i < projetos.length; i++) {
+        if (projetos[i].nome == nomeDoProjeto) {
+            
+            projetos.splice(i, 1);
+            localStorage.setItem('listaProjetos', JSON.stringify(projetos));
 
-    
-    
+            alert(nomeDoProjeto + ' FOI EXCLUIDO!');
+        }
+        caixa__exibicao.innerText = '';
+        
+    }
+});

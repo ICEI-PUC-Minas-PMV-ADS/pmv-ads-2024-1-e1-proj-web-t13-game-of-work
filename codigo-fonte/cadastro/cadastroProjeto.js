@@ -25,7 +25,18 @@ var skillsSelecionadas;
 var gestor = document.querySelector('.nomeGestor');
 var nomeGestor = localStorage.nome;
 
-var erro = false;
+
+const botao__excluirProj = document.querySelector('.botao__excluirProj');
+const caixa__exibicao = document.querySelector('#caixa__exibicao');
+const modal__excluirProj = document.querySelector('.modal__excluirProj');
+const botao__fecharExcluirProjeto = modal__excluirProj.querySelector('.botaoFechar');
+
+const botao__simExcluirProjeto = document.querySelector('.botao__sim');
+const botao__naoExcluirProjeto = document.querySelector('.botao__nao');
+
+const nome__excluirProjeto = document.querySelector('.nome__excluirProjeto');
+
+
 
 
 
@@ -65,7 +76,7 @@ function deletarSkill(e){
     }
         
 }
-// Fecha o modal caso clique no botão fechar (todos os valores dos inputs são zerados)
+// Fecha o modal novoProjeto caso clique no botão fechar (todos os valores dos inputs são zerados)
 function fechaModal(){
     overlay.setAttribute('style', 'display: none');
     modalNovoProjeto.setAttribute('style', 'display: none');
@@ -113,11 +124,13 @@ function fechaModal(){
 botaoNovoProjeto.addEventListener('click', function(){
     overlay.setAttribute('style', 'display: block');
     modalNovoProjeto.setAttribute('style', 'display: block');
+    caixa__exibicao.innerText = '';
 });
 // Fecha o modal caso clique fora dele (os valores dos inputs são mantidos)
 overlay.addEventListener('click', function(){
     overlay.setAttribute('style', 'display: none');
     modalNovoProjeto.setAttribute('style', 'display: none');
+    modal_excluirProj.setAttribute('style', 'display: none');
 
 });
 // Fecha o modal caso clique no botão fechar (todos os valores dos inputs são zerados)
@@ -276,56 +289,72 @@ inputVagas.addEventListener('keypress', function(e){
     if (e.key === ','){
       e.preventDefault();
     }
-  });
-
-// Verifica se todos os inputs e opções não estão vazios
-botao__criarProjeto.addEventListener('click', function(){
-
-    erro = 'semErro';
-
-    for (let i = 0; i < cargosPossiveis.length; i++) {
-        if (cargosPossiveis[i].checked) {
-            cargosSelecionados[cargosSelecionados.length] = cargosPossiveis[i].innerHTML;
-        }
-    }
-
-    skillsSelecionadas = document.getElementsByClassName('skillsDoProjeto');
-
-    if (skillsSelecionadas.length == 0) {
-        erro = 'skillVazia';
-        mensagemErro.setAttribute('style', 'color:red');
-        mensagemErro.innerHTML = 'Selecione alguma Skill!'
-    }
-    if(cargosSelecionados.length == 0){
-        erro = true;
-        mensagemErro.setAttribute('style', 'color:red');
-        mensagemErro.innerHTML = 'Selecione algum Cargo!'
-    }
-    if (inputDescricao.value == "") {
-        erro = true;
-        mensagemErro.setAttribute('style', 'color:red');
-        mensagemErro.innerHTML = 'Campo Descrição vazio!'
-    }
-    if(inputVagas.value == "") {
-        erro = true;
-        mensagemErro.setAttribute('style', 'color:red');
-        mensagemErro.innerHTML = 'Campo Vagas vazio!'
-    }
-    if (inputNome.value == "") {
-        erro = true;
-        mensagemErro.setAttribute('style', 'color:red');
-        mensagemErro.innerHTML = 'Campo Nome vazio!'
-    }
-    
-    
-   
-    
-    
-    if(!erro){
-        mensagemErro.setAttribute('style', 'color:green');
-        mensagemErro.innerHTML = 'Projeto cadastrado!'    
-    }
 });
 
+botao__excluirProj.addEventListener('click', function(){
 
+    caixa__exibicao.innerText = '';
+
+    let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
+    console.log(projetos);
+
+    projetos.forEach(projeto => {
+        
+        const nomeProjeto = document.createElement('h3');
+        nomeProjeto.innerHTML = projeto.nome;
+        nomeProjeto.classList.add('projetoExibido');
+
+        caixa__exibicao.appendChild(nomeProjeto);
+    });
+
+    let projetosListados = document.getElementsByClassName('projetoExibido');
+
+    for (let i = 0; i < projetosListados.length; i++) {
+        
+        projetosListados[i].addEventListener('click', function(e){
+
+            const projetoClicado = e.target;
+            var temClasse = false;
+
+            for (let i = 0; i < projetoClicado.classList.length; i++) {
+                if(projetoClicado.classList[i] == 'projetoSelecionado') {
+                    temClasse = true;   
+                }
+            }
+
+            
+             if (temClasse) {
+                modal__excluirProj.setAttribute('style', 'display:block');
+                overlay.setAttribute('style', 'display: block');
+
+                nome__excluirProjeto.innerHTML = projetoClicado.innerHTML;
+        
+            } else{
+        
+                let projetoComClasse = document.querySelector('.projetoSelecionado');
+
+                if (projetoComClasse) {
+                    projetoComClasse.classList.remove('projetoSelecionado');
+                    projetoClicado.classList.toggle('projetoSelecionado');
+            
+                } else
+                    projetoClicado.classList.toggle('projetoSelecionado');
+        
+            }
+        });
+    }
+});    
     
+botao__fecharExcluirProjeto.addEventListener('click', function(){
+    modal__excluirProj.setAttribute('style', 'display:none');
+    overlay.setAttribute('style', 'display:none');
+});
+
+botao__naoExcluirProjeto.addEventListener('click', function(){
+    modal__excluirProj.setAttribute('style', 'display:none');
+    overlay.setAttribute('style', 'display:none');
+});
+botao__simExcluirProjeto.addEventListener('click', function(){
+    modal__excluirProj.setAttribute('style', 'display:none');
+    overlay.setAttribute('style', 'display:none');
+});
