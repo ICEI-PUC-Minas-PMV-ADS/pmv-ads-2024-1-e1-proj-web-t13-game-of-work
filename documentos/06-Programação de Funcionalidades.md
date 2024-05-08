@@ -5,8 +5,8 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ### Tela Página Inicial
 
 <figure> 
-  <img src="img/tela_paginaInicial.png"
-    <figcaption>Figura 1: Tela Página Inicial</figcaption>
+  <img src="img/tela_paginaInicial.png">
+  <figcaption>Figura 1: Tela Página Inicial</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -38,8 +38,8 @@ Brenda Drumond
 ### Tela Perfil
 
 <figure> 
-  <img src="img/tela_perfil.png"
-    <figcaption>Figura 2: Tela de Perfil</figcaption>
+  <img src="img/tela_perfil.png">
+  <figcaption>Figura 2: Tela de Perfil</figcaption>
 </figure> 
 
 #### Requisito atendido
@@ -71,4 +71,70 @@ Ao clicar em “Perfil” no canto superior direito da tela, terá acesso a pág
 #### Responsável
 
 Catiane de Souza
+<hr>
 
+### Tela Login
+
+<figure> 
+  <img src="img/login-concluido.jpg">
+  <figcaption>Figura 3: Tela de Login</figcaption>
+</figure> 
+
+#### Requisito atendido
+
+- RF-01 Tela de login, com acesso diferente para cada perfil de usuário.
+
+#### Artefatos da funcionalidade
+
+- telaLogin.html
+- telaLogin.css
+
+
+#### Estrutura de Dados
+
+- telaLogin.html
+  
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: link
+
+Digite um email e senha cadastrado para fazer o login. Caso não possua uma conta clique em cadastre-se.
+
+#### Responsável
+
+Kayque Fonseca
+
+### Tela Lista de Funcionários
+
+<figure> 
+  <img src="img/listaFuncionarios-concluido.png">
+  <figcaption>Figura 4: Tela Lista de Funcionários</figcaption>
+</figure> 
+
+#### Requisito atendido
+
+- RF-15 Deve exibir uma lista com os funcionários cadastrados.
+- RF-16 Exibir ficha do funcionário.
+
+#### Artefatos da funcionalidade
+
+- listaFuncionarios.html
+- listaFuncionarios.css
+- listaFuncionarios.js
+
+
+#### Estrutura de Dados
+
+- listaFuncionarios.html
+  
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: link
+
+Clique na opção "Funcionários" no menu lateral à esquerda. Para ver os dados de um funcionário basta clicar em seu card na lista.
+
+#### Responsável
+
+Nikolas Victor Mota
