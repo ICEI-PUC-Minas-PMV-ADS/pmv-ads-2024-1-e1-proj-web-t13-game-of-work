@@ -84,7 +84,12 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 | RF-14 | Deve permitir que faça o cadastro de um projeto. | ALTA | 
 | RF-15 | Deve exibir uma lista com os funcionários cadastrados. | ALTA | 
 | RF-16 | Exibir ficha do funcionário. | ALTA | 
-| RF-17 | O sistema deve permitir a associação de um funcionário a uma matrícula. | MÉDIA | 
+| RF-17 | O sistema deve permitir a associação de um funcionário a uma matrícula. | MÉDIA |
+| RF-18 | O usuário deve poder acessar o seu perfil para visualizar suas competências. | ALTA | 
+| RF-19 | O usuário deve conseguir sair de sua conta. | ALTA |
+| RF-20 | Deve exibir uma lista com os projetos cadastrados. | ALTA |
+| RF-21 | Deve exibir quais funcionários estão participando de um projeto. | ALTA |    
+
 
 **Prioridade: Alta / Média / Baixa. 
 
