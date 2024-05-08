@@ -91,7 +91,7 @@ function cadastrarProjeto(){
                 descricao: descricaoProjeto.value,
                 cargos: cargosProjeto,
                 skills: skillsProjeto,
-                participantes: []
+                participantes: [nomeGestor]
                 
                 
             });
