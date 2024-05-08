@@ -6,9 +6,9 @@ inserção de elementos dinamicamente e o LocalStorage foi usado para persistêc
 As páginas terão como elementos padrões o menu de navegação, que engloba o cabeçalho da paágina e o menu lateral, além dos elementos de identidade visual citados abaixo:
 
 <ul>
-<li>Cores parões:
+<li>Cores parões:\
     <figure> 
-    <img src="img/cores.png">
+    <img src="img/cores.png">\
     <figcaption> Cores padrões usadas no sistema.
     </figure> 
 </li>
