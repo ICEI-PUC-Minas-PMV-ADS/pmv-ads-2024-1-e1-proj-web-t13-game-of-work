@@ -157,9 +157,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-
-
 
 
 .rodape-interno {
@@ -183,17 +180,10 @@ p {
      font-size: 50%;
 }
 
-
-
-.softSkills {
-    background-color: white;
-    width: 30px;
-    border-radius: 5px;
+#softSkills, #hardSkills{
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
