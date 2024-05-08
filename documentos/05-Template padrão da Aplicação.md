@@ -6,11 +6,29 @@ inserção de elementos dinamicamente e o LocalStorage foi usado para persistêc
 As páginas terão como elementos padrões o menu de navegação, que engloba o cabeçalho da paágina e o menu lateral, além dos elementos de identidade visual citados abaixo:
 
 <ul>
-<li>Cores parões:\
-    <figure> 
-    <img src="img/cores.png">\
-    <figcaption> Cores padrões usadas no sistema.
-    </figure> 
+<li>Cores parões:
+    <ul>
+        <li>--cor-background: #D5D5D5</li>
+        <li>--cor-primaria: #292929</li>
+        <li>--cor-secundaria: #454545</li>
+        <li>--cor-terciaria: #6B6B6B</li>
+        <li>--cor-primaria-fonte: #F8F8F8</li>
+        <li>--cor-secundaria-fonte: #F7F3A1</li>
+        <li>--softS-color1: #ff5959</li>
+        <li>--softS-color2: #9db7f5</li>
+        <li>--softS-color3: #f5ac78</li>
+        <li>--softS-color4: #a7db8d</li>
+        <li>--softS-color5: #fae078</li>
+        <li>--softS-color6: #fa92b2</li>
+        <li>--hardS-color1: #f6975c</li>
+        <li>--hardS-color2: #faca5b</li>
+        <li>--hardS-color3: #f7ef5c</li>
+        <li>--hardS-color4: #87c455</li>
+        <li>--hardS-color5: #41c1d8</li>
+        <li>--hardS-color6: #5b8acc</li>
+        <li>--hardS-color7: #a169b9</li>
+        <li>--hardS-color8: #ee4f85</li>
+    </ul>
 </li>
 
 <li>Fonte padrão: "Press Start 2P".</li>
