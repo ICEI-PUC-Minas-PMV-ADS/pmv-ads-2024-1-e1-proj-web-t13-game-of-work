@@ -1,114 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cadastro de Funcionário</title>
     <link rel="stylesheet" href="cadastroFuncionario.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
+
 <body>
-    
-<header class="cabecalho">
-</header>
 
-<main class="conteudo">
+    <header class="cabecalho">
+    </header>
 
-    <div class="cabecalho-interno">
-        <p>Cadastrar Funcionário</p>
-    </div>
+    <div id="centro">
 
-    <section class="caixa-de-dialogo">
+        <main class="conteudo">
 
-        <section class="conteudo-interno">
-
-        <div class="conteudo-interno-informacoes-pessoais1">
-
-            <div>
-                <label for="nome">Nome</label><br>
-                <input type="text" name="nome" id="nomeUsuarioInput">
+            <div class="cabecalho-interno">
+                <p>Cadastrar Funcionário</p>
             </div>
 
-            <div>
-                <label for="nome">Especialidade</label><br>
-                <input type="text" name="especialidade" id="especialidadeUsuarioInput">
-            </div>
+            <section class="caixa-de-dialogo">
 
-            
+                <section class="conteudo-interno">
 
-        </div>
+                    <div class="conteudo-interno-informacoes-pessoais1">
 
-        <div class="conteudo-interno-informacoes-pessoais2">
+                        <div>
+                            <label for="nome">Nome</label><br>
+                            <input type="text" name="nome" id="nomeUsuarioInput">
+                        </div>
 
-            <div>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="emailUsuarioInput">
-            </div>
+                        <div>
+                            <label for="nome">Especialidade</label><br>
+                            <input type="text" name="especialidade" id="especialidadeUsuarioInput">
+                        </div>
 
-            <div>
-                <label for="senha" id="senha">Senha</label><br>
-                <input type="password" name="senha" id="senhaUsuarioInput">
-            </div> 
 
-            <div>
-                <label for="cargo">Cargo</label><br>
-                <select name="cargo" id="cargo">
-                    <option value="">Desenvolvedor</option>
-                    <option value="">Design</option>
-                    <option value="">Gestor</option>
-                    <option value="">RH</option>
-                </select>
-            </div>  
 
-        </div>
+                    </div>
 
-    
-    
-    <div id="descricao">
-        <label for="sobre-mim">Sobre mim</label>
-        <textarea name="sobre-mim"></textarea>
-    
-        <label for="objetivos">Objetivos</label>
-        <textarea name="objetivos"></textarea>
+                    <div class="conteudo-interno-informacoes-pessoais2">
+
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="emailUsuarioInput">
+                        </div>
+
+                        <div>
+                            <label for="senha" id="senha">Senha</label><br>
+                            <input type="password" name="senha" id="senhaUsuarioInput">
+                        </div>
+
+                        <div>
+                            <label for="cargo">Cargo</label><br>
+                            <select name="cargo" id="cargo">
+                                <option value="">Desenvolvedor</option>
+                                <option value="">Design</option>
+                                <option value="">Gestor</option>
+                                <option value="">RH</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="descricao">
+                        <label for="sobre-mim">Sobre mim</label>
+                        <textarea name="sobre-mim"></textarea>
+
+                        <label for="objetivos">Objetivos</label>
+                        <textarea name="objetivos"></textarea>
+                    </div>
+
+
+
+                    <div id="softSkills">
+                        <span>
+                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number"
+                                name="inputsoftSkill1">
+                        </span>
+                        <span>
+                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number"
+                                name="inputsoftSkill2">
+                        </span>
+                        <span>
+                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number"
+                                name="inputsoftSkill3">
+                        </span>
+                        <span>
+                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number"
+                                name="inputsoftSkill4">
+                        </span>
+                        <span>
+                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number"
+                                name="inputsoftSkill5">
+                        </span>
+                        <span>
+                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"
+                                name="inputsoftSkill6">
+                        </span>
+                    </div>
+
+                    <hr>
+
+                    <div id="hardSkills">
+                        <span>
+                            <h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" name="inputHardSkill1">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill2 nomeHardSkill2">CSS:</h4><input type="number" name="inputHardSkill2">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill3 nomeHardSkill3">JavaScript:</h4><input type="number"
+                                name="inputHardSkill3">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill4 nomeHardSkill4">C#:</h4><input type="number" name="inputHardSkill4">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill5 nomeHardSkill5">TypeScript:</h4><input type="number"
+                                name="inputHardSkill5">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill6 nomeHardSkill6">Python:</h4><input type="number"
+                                name="inputHardSkill6">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill7 nomeHardSkill7">Java:</h4><input type="number" name="inputHardSkill7">
+                        </span>
+                        <span>
+                            <h4 class="hardSkill8 nomeHardSkill8">C++:</h4><input type="number" name="inputHardSkill8">
+                        </span>
+                    </div>
+
+
+
+                </section>
+
+                <div class="rodape-interno">
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                </div>
+            </section>
+        </main>
+
     </div>
 
 
-                   
-        <div id="softSkills">
-            <span><h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number" name="inputsoftSkill1"></span>
-            <span><h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number" name="inputsoftSkill2"></span>
-            <span><h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number" name="inputsoftSkill3"></span>
-            <span><h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number" name="inputsoftSkill4"></span>
-            <span><h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number" name="inputsoftSkill5"></span>
-            <span><h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number" name="inputsoftSkill6"></span>
-        </div>
-
-    <hr>
-
-    <div id="hardSkills">
-        <span><h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" name="inputHardSkill1"></span>
-        <span><h4 class="hardSkill2 nomeHardSkill2">CSS:</h4><input type="number" name="inputHardSkill2"></span>
-        <span><h4 class="hardSkill3 nomeHardSkill3">JavaScript:</h4><input type="number" name="inputHardSkill3"></span>
-        <span><h4 class="hardSkill4 nomeHardSkill4">C#:</h4><input type="number" name="inputHardSkill4"></span>
-        <span><h4 class="hardSkill5 nomeHardSkill5">TypeScript:</h4><input type="number" name="inputHardSkill5"></span>
-        <span><h4 class="hardSkill6 nomeHardSkill6">Python:</h4><input type="number" name="inputHardSkill6"></span>
-        <span><h4 class="hardSkill7 nomeHardSkill7">Java:</h4><input type="number" name="inputHardSkill7"></span>
-        <span><h4 class="hardSkill8 nomeHardSkill8">C++:</h4><input type="number" name="inputHardSkill8"></span>
-    </div>
-    
-
-        
-    </section>
-
-    <div class="rodape-interno">
-        <button type="submit" class="btn btn-success">Cadastrar</button>
-    </div>
-</section>
-</main>
-
-<footer class="rodape">
-    &copy; 2024 Game Of Work. Todos os direitos reservados.
-</footer>
+    <footer class="rodape">
+        &copy; 2024 Game Of Work. Todos os direitos reservados.
+    </footer>
 
 
 
@@ -117,8 +162,15 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

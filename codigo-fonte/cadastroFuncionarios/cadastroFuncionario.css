@@ -52,19 +52,22 @@ body {
 
 .cabecalho {
     background-color: var(--cor-terciaria);
-    padding: 25px;
+    height: 10%;
 }
 
+#centro {
+    height: 80%;
+}
 
 .conteudo {
     flex: 1 0 auto;
     width: 50%;
     border-radius: 15px;
     align-items: center;
-    padding: 10px;
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -189,7 +192,7 @@ p {
 
 .rodape {
      background-color: var(--cor-terciaria);
-     padding: 25px;
+     height: 10%;
      text-align: center;
      font-size: 50%;
 }
