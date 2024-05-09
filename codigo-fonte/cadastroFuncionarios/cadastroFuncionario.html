@@ -15,15 +15,40 @@
 <main class="conteudo">
 
     <section class="caixa-de-dialogo">
-    <div class="cabecalho-interno">
-        <p>Cadastrar Funcionário</p>
-    </div>
 
-    <section class="conteudo-interno">
+        <div class="cabecalho-interno">
+        <p>Cadastrar Funcionário</p>
+        </div>
+
+        <section class="conteudo-interno">
 
         <div class="conteudo-interno-informacoes-pessoais1">
-            <div><label for="nome">Nome</label><br>
-            <input type="text" name="nome" id="nomeUsuarioInput"></div>
+
+            <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nomeUsuarioInput">
+            </div>
+
+            <div>
+                <label for="nome">Especialidade</label><br>
+                <input type="text" name="especialidade" id="especialidadeUsuarioInput">
+            </div>
+
+            
+
+        </div>
+
+        <div class="conteudo-interno-informacoes-pessoais2">
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="emailUsuarioInput">
+            </div>
+
+            <div>
+                <label for="senha" id="senha">Senha</label><br>
+                <input type="password" name="senha" id="senhaUsuarioInput">
+            </div> 
 
             <div>
                 <label for="cargo">Cargo</label><br>
@@ -33,51 +58,33 @@
                     <option value="">Gestor</option>
                     <option value="">RH</option>
                 </select>
-            </div>
+            </div>  
 
         </div>
 
-    <div class="conteudo-interno-informacoes-pessoais2">
-
-        <div>
-            <label for="nome">Email</label><br>
-            <input type="email" name="email" id="emailUsuarioInput">
-        </div>
-
-        
-
-        <div>
-            <label for="senha">Senha</label><br>
-            <input type="password" name="senha" id="senhaUsuarioInput">
-        </div> 
-
-    </div>
-
-    <div>
-        <label for="nome">Especialidade</label><br>
-        <input type="text" name="especialidade" id="especialidadeUsuarioInput">
-    </div>
+    
     
     <div id="descricao">
         <label for="sobre-mim">Sobre mim</label>
         <textarea name="sobre-mim"></textarea>
     
-        <label for="objetivos" id="objetivos">Objetivos</label>
+        <label for="objetivos">Objetivos</label>
         <textarea name="objetivos"></textarea>
     </div>
 
 
+                   
+        <div id="softSkills">
+            <span><h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><h4 class="softSkill1 valorSoftSkill1"></h4></span><input type="number" name="inputsoftSkill1" >
+            <span><h4 class="softSkill2 nomeSoftskill2">Organização:</h4><h4 class="softSkill2 valorSoftSkill2"></h4></span><input type="number" name="inputsoftSkill2" >
+            <span><h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><h4 class="softSkill3 valorSoftSkill3"></h4></span><input type="number" name="inputsoftSkill3">
+            <span><h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><h4 class="softSkill4 valorSoftSkill4"></h4></span><input type="number" name="inputsoftSkill4">
+            <span><h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><h4 class="softSkill5 valorSoftSkill5"></h4></span><input type="number" name="inputsoftSkill5">
+            <span><h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><h4 class="softSkill6 valorSoftSkill6"></h4></span><input type="number" name="inputsoftSkill6">
+        </div>
 
-            
-    <div id="softSkills">
-        <span><h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><h4 class="softSkill1 valorSoftSkill1"></h4> </span><input type="number" name="inputsoftSkill1">
-        <span><h4 class="softSkill2 nomeSoftskill2">Organização:</h4><h4 class="softSkill2 valorSoftSkill2"></h4></span><input type="number" name="inputsoftSkill2">
-        <span><h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><h4 class="softSkill3 valorSoftSkill3"></h4></span><input type="number" name="inputsoftSkill3">
-        <span><h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><h4 class="softSkill4 valorSoftSkill4"></h4></span><input type="number" name="inputsoftSkill4">
-        <span><h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><h4 class="softSkill5 valorSoftSkill5"></h4></span><input type="number" name="inputsoftSkill5">
-        <span><h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><h4 class="softSkill6 valorSoftSkill6"></h4></span><input type="number" name="inputsoftSkill6">
-    </div>
     <hr>
+
     <div id="hardSkills">
         <span><h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><h4 class="hardSkill1 valorHardSkill1"></h4></span><input type="number" name="inputHardSkill1">
         <span><h4 class="hardSkill2 nomeHardSkill2">CSS:</h4><h4 class="hardSkill2 valorHardSkill2"></h4></span><input type="number" name="inputHardSkill2">
