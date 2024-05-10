@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    background-color: #242424;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #4e4e4e;
+}
+.card h3{
+    color: goldenrod;
+}
