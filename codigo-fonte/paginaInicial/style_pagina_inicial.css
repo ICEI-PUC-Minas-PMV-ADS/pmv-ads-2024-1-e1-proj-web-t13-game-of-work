@@ -104,7 +104,11 @@ html, body
     font-family: "Press Start 2P", system-ui; 
 }
 
-#card{
-    justify-content:end;
+ #card_cadastro{
+    display:none;
 
 }
+
+#opcao_2{
+    display:none;
+ }
