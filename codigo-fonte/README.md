@@ -8,7 +8,6 @@ Para simplificar o uso e organização do Git, as pastas e artefatos foram organ
 - Pasta src\login: telaLogin.html, telaLogin.css, telaLogin.js - Desenvolvedor responsável: Kayque Fonseca.
 - Pasta src\listaFuncionarios: listaFuncionarios.html, listaFuncionarios.css, listaFuncionarios.js - Desenvolvedor responsável: Nikolas Victor Mota
 
-
 ## Instalação do Site
 
 O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">aqui</a> para acessá-lo. TESTE.
@@ -44,10 +43,4 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 #### Adicionado
 - Página Inicial: arquivo JavaScript.
 - Tela de Perfil: arquivo JavaScript.
-
-### [0.1.5] - 12/05/2024
-
-#### Adicionado
-- Página Lista de Projetos: arquivo HTML.
-- Página Lista de Projetos: arquivo JavaScript.
-- Página Lista de Projetos: arquivo CSS.
+- Página Lista de Projetos: arquivo HTML, CSS e JavaScript.
