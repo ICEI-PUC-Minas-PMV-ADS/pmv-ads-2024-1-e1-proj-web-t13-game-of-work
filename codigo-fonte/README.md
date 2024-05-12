@@ -11,7 +11,7 @@ Para simplificar o uso e organização do Git, as pastas e artefatos foram organ
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático. Clique <a href="/codigo-fonte/paginaInicial/index_pagina_inicial.html">aqui</a> para acessá-lo. TESTE.
+O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">aqui</a> para acessá-lo. TESTE.
 
 ## Histórico de versões
 

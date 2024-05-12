@@ -12,6 +12,9 @@ const hr = document.getElementsByTagName('hr');
 
 const listaCards = document.getElementsByClassName('card');
 
+
+const testandoErro = null;
+
 // Pega os usuários cadastrados e cria uma lista com todos os usuários.
 listaUsuarios = JSON.parse(localStorage.getItem('userList'));
 function criaLista(listaUsuarios){
