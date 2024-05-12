@@ -1,3 +1,39 @@
+// Insere dados no localStorage
+listaProjetos = [
+    {
+      nome: 'Roubar coelho',
+      skills: ['PHP','JavaScript','','','','','','','',''],
+      gestor: 'Cebolácio Menezes da Silva Júnior',
+      participantes: ['Cebolinha','Cascão','','','','','','','',''],
+      vagas: '2'
+    },
+    {
+      nome: 'Almoço',
+      skills: ['Figma','Photoshop','JavaScript','','','','','','',''],
+      gestor: 'Mãe da Magali',
+      participantes: ['Magali','','','','','','','','',''],
+      vagas: '0'
+    },
+    {
+      nome: 'Jantar',
+      skills: ['Photoshop','Gestão','Proatividade','PHP','','','','','',''],
+      gestor: 'Mãe da Magali',
+      participantes: ['Magali','Monica','','','','','','','',''],
+      vagas: '4'
+    },
+    {
+      nome: 'Se esconder',
+      skills: ['PHP','','','','','','','','','',''],
+      gestor: 'Professor Hayala',
+      participantes: ['Cebolinha','Cascao','Bidu','','','','','','',''],
+      vagas: '1'
+    }
+];
+
+localStorage.setItem("listaProjetos", JSON.stringify(listaProjetos));
+userlist = JSON.parse(localStorage.getItem("listaProjetos"));
+
+
 // Pega a div que ficam os cards
 const divProjetos = document.querySelector('#divProjetos');
 // Pega a lista de Projetos do localStorage
