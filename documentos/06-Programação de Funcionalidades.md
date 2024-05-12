@@ -64,7 +64,7 @@ Brenda Drumond
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: link
+Abra um navegador de Internet e informe a seguinte URL: [link](http://127.0.0.1:5500/index_tela_perfil.html)
 
 Ao clicar em “Perfil” no canto superior direito da tela, terá acesso a página de perfil, onde pode visualizar seu perfil, avatar, habilidades e projetos escalados ou gerenciados etc.
 
