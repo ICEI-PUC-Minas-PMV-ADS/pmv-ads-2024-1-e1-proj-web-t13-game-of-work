@@ -17,7 +17,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 - index_pagina_inicial.html
 - style_pagina_inicial.css
-- mobile-navbar.js
+- script_pagina_inicial.js
 
 #### Estrutura de Dados
 
