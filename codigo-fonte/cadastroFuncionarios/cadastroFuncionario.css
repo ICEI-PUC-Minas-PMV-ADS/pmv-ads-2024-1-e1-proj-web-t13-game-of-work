@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
+
+* {
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body {
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.cabecalho {
+    background-color: var(--cor-terciaria);
+    height: 10%;
+}
+
+#centro {
+    height: 80%;
+}
+
+.conteudo {
+    flex: 1 0 auto;
+    width: 50%;
+    border-radius: 15px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.caixa-de-dialogo {
+    width: auto;
+    background-color: var(--cor-secundaria);
+    border-radius: 0px 0px 15px 15px;
+    min-height: calc(100vh - 100px);
+    padding: 0 10px 0 10px;
+}
+
+
+.cabecalho-interno {
+    font-size: 22px;
+    color: var(--cor-primaria-fonte);
+    background-color: var(--cor-primaria);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.conteudo-interno-informacoes-pessoais1 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px 0px 10px;
+    color: var(--cor-primaria-fonte);
+}
+
+
+#nomeUsuarioInput {
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+#cargoUsuarioInput {
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+.conteudo-interno-informacoes-pessoais2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 20px 10px;
+    color: var(--cor-primaria-fonte);
+}
+
+
+#emailUsuarioInput {
+    width: 90%; 
+    border-radius: 10px;
+}
+
+#cargo {
+    width: 100%;
+    height: 50%; 
+    border-radius: 10px;
+}
+
+#especialidadeUsuarioInput {
+    width: 90%; 
+    border-radius: 10px;
+}
+
+
+#senhaUsuarioInput {
+    width: 90%; 
+    border-radius: 10px;
+}
+
+
+#descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 20px 10px;
+    width: 100%;
+    border: none;
+    color: var(--cor-primaria-fonte);
+}
+
+
+
+input[type="number"] {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 0;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.rodape-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+
+
+p {
+    color: var(--cor-primaria-fonte);
+    padding: 10px;
+}
+
+
+.rodape {
+     background-color: var(--cor-terciaria);
+     height: 10%;
+     text-align: center;
+     font-size: 50%;
+}
+
+#softSkills h4, #hardSkills h4{
+    font-weight: normal;
+    margin: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+#softSkills, #hardSkills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+#softSkills span, #hardSkills span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-top: 10px;
+}
+
+
+
+
+.softSkill1{color:var(--softS-color1);}
+.softSkill2{color:var(--softS-color2);}
+.softSkill3{color:var(--softS-color3);}
+.softSkill4{color:var(--softS-color4);}
+.softSkill5{color:var(--softS-color5);}
+.softSkill6{color:var(--softS-color6);}
+
+.hardSkill1{color:var(--hardS-color1);}
+.hardSkill2{color:var(--hardS-color2);}
+.hardSkill3{color:var(--hardS-color3);}
+.hardSkill4{color:var(--hardS-color4);}
+.hardSkill5{color:var(--hardS-color5);}
+.hardSkill6{color:var(--hardS-color6);}
+.hardSkill7{color:var(--hardS-color7);}
+.hardSkill8{color:var(--hardS-color8);}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!------ MENU DE NAVEGAÇÃO ------>
+    <header id="cabeçalho">
+        <h1 id="logo">GameOfWork</h1>
+        <h1 style="font-size: 20px;">Página Inicial</h1>
+        <button type="button" class="btn btn-danger">Sair</button>
+    </header>
+
+    <div id="funcionariosContainer">
+        <div class="divMenuLateral">
+            <nav id="menulateral">
+                <div id="divOpcoes">
+                    <a class="opcaoMenu" id="opcao_1" href="index_pagina_inicial.html">Início</a>
+                    <a class="opcaoMenu" id="opcao_2" href="...">Cadastro</a>
+                    <a class="opcaoMenu" id="opcao_3" href="...">Funcionários</a>
+                    <a class="opcaoMenu" id="opcao_4" href="...">Projetos</a>
+                    <a class="opcaoMenu" id="opcao_5" href="index_tela_perfil.html">Perfil</a>
+                </div>
+            </nav>
+        </div>
+    <!--------------------------------->  
+        
+        <div class="botoes">
+            <button class="botao__editFunc">Editar Funcionário</button>
+            <button class="botao__excluirFunc">Excluir Funcionário</button>
+            <button class="botao__novoProj">Novo Projeto</button>
+            <button class="botao__excluirProj">Excluir Projeto</button>
+         </div>
+
+        <div class="div__exibicao">
+            <div id="caixa__exibicao"> </div>
+         </div>
+    </div>
+   
+
+    
+    <div id="overlay"></div>
+    <div class="modal__novoProj">
+        
+        <div class="cabecalho">
+            <h2>Cadastro de projeto</h2>
+            <img class="botaoFechar" src="close.png" alt="">
+        </div>
+        <div class="container">
+            <h3 class="nomeGestor">Gestor: </h3>
+
+            <div class="div__nomeVagas">
+                <span class="span__nome">
+                    <h4>Nome</h4>
+                    <input class="inputNomeProjeto" type="text">
+                </span>
+                
+                <span class="span__vagas">
+                    <h4>Vagas</h4>
+                    <input class="inputVagasProjeto" type="number" maxlength="1" min="0s" max="6">
+                </span>
+            </div>
+          
+            <h4 id="titulo__descricao">Descrição:</h4>
+            <Textarea maxlength="80" id="inputDescricaoProjeto"></Textarea>
+
+            <div class="cargos">
+                <h4>Cargos:</h4>
+                <div class="cargosProj"></div>
+            </div>
+            
+            <div class="skills">
+                <h4>Skills:</h4>
+                <select class="selectSkillsProjeto" id="">
+                    <option id="opcaoSkills" value="" selected disabled>Skills</option>
+                </select>
+                <div class="skillsProj"></div>
+            </div>
+            <button class="botao__criarProj">Criar Projeto</button>
+            <h4 id="mensagemErro"></h4>
+        </div>
+    </div>
+
+    <div class="modal__excluirProj">
+        <div class="cabecalho">
+            <img class="botaoFechar" src="close.png" alt="">
+        </div>
+        <div class="container">
+            <h3>DELETAR O PROJETO:</h3>
+            <br>
+            <h3 class="nome__excluirProjeto">Projeto1</h3>
+            <br>
+            <br>
+            <div class="botoes__deletaProjeto">
+                <button class="botao__nao">Não</button>
+                <button class="botao__sim">Sim</button>
+            </div>
+        </div>
+    </div>
+    <script src="cadastroProjeto.js"></script>
+    <script src="cadastro-bd.js"></script>
+</body>
+</html>
