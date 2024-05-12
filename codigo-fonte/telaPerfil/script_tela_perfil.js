@@ -1,3 +1,6 @@
+localStorage.setItem('nome', 'Catyane');
+localStorage.setItem('cargo', 'Desenvolvedor');
+
 const nome_usuario = document.querySelector('#nome_usuario');
 const cargo_usuario = document.querySelector('#cargo_usuario');
 const avatar = document.querySelector('#avatar');
