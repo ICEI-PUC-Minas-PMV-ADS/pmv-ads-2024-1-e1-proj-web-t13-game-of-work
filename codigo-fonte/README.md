@@ -44,3 +44,10 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 #### Adicionado
 - Página Inicial: arquivo JavaScript.
 - Tela de Perfil: arquivo JavaScript.
+
+### [0.1.5] - 12/05/2024
+
+#### Adicionado
+- Página Lista de Projetos: arquivo HTML.
+- Página Lista de Projetos: arquivo JavaScript.
+- Página Lista de Projetos: arquivo CSS.

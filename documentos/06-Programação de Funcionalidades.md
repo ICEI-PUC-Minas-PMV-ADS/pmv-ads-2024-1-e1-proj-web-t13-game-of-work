@@ -26,7 +26,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: [link](http://127.0.0.1:5500/index_pagina_inicial.html)
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
 
 Ao clicar em “Inicio” no canto superior direito da tela, terá acesso a página de inicio, onde pode localizar o caminho para cadastro e visualização de funcionários, projetos e perfil.
 
@@ -64,7 +64,7 @@ Brenda Drumond
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: [link](http://127.0.0.1:5500/index_tela_perfil.html)
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
 
 Ao clicar em “Perfil” no canto superior direito da tela, terá acesso a página de perfil, onde pode visualizar seu perfil, avatar, habilidades e projetos escalados ou gerenciados etc.
 
@@ -97,7 +97,7 @@ Catiane de Souza
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: link
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
 
 Digite um email e senha cadastrado para fazer o login. Caso não possua uma conta clique em cadastre-se.
 
@@ -131,9 +131,42 @@ Kayque Fonseca
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: link
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
 
 Clique na opção "Funcionários" no menu lateral à esquerda. Para ver os dados de um funcionário basta clicar em seu card na lista.
+
+#### Responsável
+
+Nikolas Victor Mota
+
+### Tela Lista de Funcionários
+
+<figure> 
+  <img src="img/listaProjetos-concluido.png">
+  <figcaption>Figura 5: Tela Lista de Projetos</figcaption>
+</figure> 
+
+#### Requisito atendido
+
+- RF-15 Deve exibir uma lista com os projetos cadastrados.
+
+#### Artefatos da funcionalidade
+
+- listaProjetos.html
+- listaProjetos.css
+- listaProjetos.js
+
+
+#### Estrutura de Dados
+
+- listaProjetos.html
+  
+
+#### Instruções de acesso
+
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
+
+Clique na opção "Projetos" no menu lateral à esquerda.
 
 #### Responsável
 
