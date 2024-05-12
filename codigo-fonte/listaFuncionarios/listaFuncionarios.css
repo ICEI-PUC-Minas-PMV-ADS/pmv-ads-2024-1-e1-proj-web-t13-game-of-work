@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+}
+body{
+    background-color: var(--cor-background);
+    height: 100vh;
+}
+/* ------ MENU DE NAVEGAÇÃO ------ */
+#cabeçalho {
+    background-color: #292929;
+    color: var(--cor-secundaria-fonte);
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    font-size: 1.5rem; /* Adaptado para ser responsivo */
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+#logo{
+    font-size: 25px;
+    color: var(--cor-primaria-fonte);
+    margin-left: 20px;
+    
+}
+#botaoSair{
+    color: var(--cor-primaria-fonte);
+    background-color: #ff3d3d;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#botaoSair:hover{
+    background-color: #fd6e6e;
+}
+#botaoSair:active{
+    background-color: #b92c2c;
+}
+#funcionariosContainer{
+    display: flex;
+    min-height: 90%;
+}
+.divMenuLateral{
+    display: inline-block;
+    
+
+}
+#menulateral{
+    background-color:#494949;
+    align-items: center;
+    justify-content: center;    
+    box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
+
+    min-width: 250px;
+    padding: 0 10px 0 10px;
+
+    height: 100%;
+    
+}
+
+#divOpcoes{
+
+    position: sticky;
+    top: 10px;
+}
+#opcao_1{
+    border-top: 2px solid white;
+}
+.opcaoMenu {
+    border-bottom: 2px solid white;
+    margin: 0; 
+    padding: 5%; 
+    width: 90%;
+
+    margin-left: 50%; 
+    transform: translate(-50%);
+    font-family: "Press Start 2P", system-ui; 
+    color: white;
+    cursor: pointer;
+    display: block;  /* faz cada link aparecer em sua própria linha */
+    text-decoration: none;  /* remove o sublinhado dos links */
+}
+.opcaoMenu:hover{
+    background-color: var(--cor-terciaria);
+}
+/* ---------------------------- */
+#divFuncionarios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#cards{
+    width: 100%;
+}
+.card{
+    background-color: var(--cor-primaria);
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+.card:hover{
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+    border: 3px solid lightskyblue;
+}
+.cardSelecionado{
+    background-color: var(--cor-terciaria);
+    border: 3px solid lightskyblue;
+}
+.card h3{
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+    margin: 5px 0 10px 5px;
+    font-size: 17px;
+}
+.card h4{
+    color: var(--cor-secundaria-fonte);
+    font-weight: normal;
+    margin: 10px 0 10px 5px;
+    font-size: 13px;
+}
+.containerSoftSkills{
+    display: flex;
+    flex-direction: row;
+}
+.softSkills{
+    background-color: white;
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.cardSkill1{background-color: var(--softS-color1);}
+.cardSkill2{background-color: var(--softS-color2);}
+.cardSkill3{background-color: var(--softS-color3);}
+.cardSkill4{background-color: var(--softS-color4);}
+.cardSkill5{background-color: var(--softS-color5);}
+.cardSkill6{background-color: var(--softS-color6);}
+
+#divDadosFuncionarios #cabecalho{
+    background-color: var(--cor-primaria);
+    border-radius: 13px 13px 0 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+#botaoFechar{
+        width: 20px;
+        height: 20px;
+        margin: 10px 15px 10px 10px;
+        user-select:none;
+
+
+}
+#botaoFechar:hover{
+    cursor: pointer;
+    opacity: 50%;
+  }
+  #botaoFechar:active{
+    cursor: pointer;
+    opacity: 50%;
+  }
+#divDadosFuncionarios{
+    max-width: 550px;
+    height: max-content;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    position: sticky;
+    top: 10px;
+}
+#containerDadosFuncionarios{
+    background-color: var(--cor-secundaria);
+    height: 94%;
+    border-radius: 0 0 13px 13px;
+    padding: 10px;
+}
+#containerDadosFuncionarios hr{
+    margin: 20px 0 20px 0;
+}
+#dadosPessoais h3{
+    color: var(--cor-primaria-fonte);
+    font-weight: normal;
+    margin: 5px 0 10px 5px;
+}
+#dadosPessoais h4{
+    color: var(--cor-secundaria-fonte);
+    font-weight: normal;
+    margin: 5px 0 10px 5px;
+    font-size: 15px;
+}
+#softSkills h4, #hardSkills h4{
+    font-weight: normal;
+    margin: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+#softSkills, #hardSkills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#softSkills span, #hardSkills span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.softSkill1{color:var(--softS-color1);}
+.softSkill2{color:var(--softS-color2);}
+.softSkill3{color:var(--softS-color3);}
+.softSkill4{color:var(--softS-color4);}
+.softSkill5{color:var(--softS-color5);}
+.softSkill6{color:var(--softS-color6);}
+
+.hardSkill1{color:var(--hardS-color1);}
+.hardSkill2{color:var(--hardS-color2);}
+.hardSkill3{color:var(--hardS-color3);}
+.hardSkill4{color:var(--hardS-color4);}
+.hardSkill5{color:var(--hardS-color5);}
+.hardSkill6{color:var(--hardS-color6);}
+.hardSkill7{color:var(--hardS-color7);}
+.hardSkill8{color:var(--hardS-color8);}
+
+#projetos h4{
+    color: #9c9c9c;
+    font-weight: normal;
+    margin: 10px;
+    font-size: 15px;
+}
+#botaoAddProjeto{
+    background-color: #77C252;
+    color: var(--cor-primaria-fonte);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+}
+#botaoAddProjeto:hover{
+    background-color: #89d166;
+    cursor: pointer;
+}
+#botaoAddProjeto:active{
+    background-color: #569238;
+    cursor: pointer;
+}
+#projetos{
+    display: flex;
+    flex-direction: column;
+}
+#dadosPessoais, #softSkills, #hardSkills, #projetos, #botaoAddProjeto, #containerDadosFuncionarios hr{
+    visibility: hidden;
+}
