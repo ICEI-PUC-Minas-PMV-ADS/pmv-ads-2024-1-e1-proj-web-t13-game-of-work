@@ -28,7 +28,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 Abra um navegador de Internet e informe a seguinte URL: [link](http://127.0.0.1:5500/index_pagina_inicial.html)
 
-Ao clicar em “Inicio” no canto superior direito da tela, terá acesso a página de inicio, onde pode localizar o caminho para cadastro e visualização de funcionários, projetos e perfil
+Ao clicar em “Inicio” no canto superior direito da tela, terá acesso a página de inicio, onde pode localizar o caminho para cadastro e visualização de funcionários, projetos e perfil.
 
 #### Responsável
 
