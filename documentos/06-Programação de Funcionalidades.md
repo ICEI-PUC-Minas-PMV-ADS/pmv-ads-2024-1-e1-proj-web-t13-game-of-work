@@ -55,7 +55,7 @@ Brenda Drumond
 
 - index_tela_perfil.html
 - style_tela_perfil.css
-- mobile-navbar.js
+- script_tela_perfil.js
 
 #### Estrutura de Dados
 
