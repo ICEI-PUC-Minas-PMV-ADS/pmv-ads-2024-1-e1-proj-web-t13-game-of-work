@@ -121,6 +121,7 @@ if (listaProjetos.length == 0) {
  
 
 botao__criarProjeto.addEventListener('click', cadastrarProjeto);
+
 botao__simExcluirProjeto.addEventListener('click', function(){
     let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
     let nomeDoProjeto = nome__excluirProjeto.innerHTML;
@@ -137,3 +138,21 @@ botao__simExcluirProjeto.addEventListener('click', function(){
         
     }
 });
+
+botao__simExcluirFuncionario.addEventListener('click', function(){
+    let funcionarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let emailDoFuncionario = email__excluirFuncionario.innerHTML;
+    
+    for (let i = 0; i < funcionarios.length; i++) {
+        if (funcionarios[i].email == emailDoFuncionario) {
+            
+            funcionarios.splice(i, 1);
+            localStorage.setItem('listaUsuarios', JSON.stringify(funcionarios));
+
+            alert(emailDoFuncionario + ' FOI EXCLUIDO!');
+        }
+        caixa__exibicao.innerText = '';
+        
+    }
+});
+

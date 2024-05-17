@@ -524,7 +524,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   ----------------- PERFIL ----------------- 
 
-  let userList = [
+  let listaUsuarios = [
     {
       nome: 'Cássio Marques de Araújo',
       cargo: 'Gestor',
@@ -571,8 +571,8 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     }
   ];
 
-  localStorage.setItem("userList", JSON.stringify(userList));
-  userlist = JSON.parse(localStorage.getItem("userList"));
+  localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
+  userlist = JSON.parse(localStorage.getItem("listaUsuarios"));
 
     ----- USUÁRIOS LOGADOS -----
 
@@ -622,7 +622,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   ----------------- CARGOS ----------------- 
 
-  let titleList = [
+  listaCargos = [
     {
       cargo: 'Desenvolvedor',
       hardSkills: ['JavaScript','SQL','Python','Java','TypeScript','Bash','C#','PHP']
@@ -641,8 +641,8 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     }
   ];
 
-  localStorage.setItem("titleList", JSON.stringify(titleList));
-  titleList = JSON.parse(localStorage.getItem("titleList"));
+  localStorage.setItem("listaCargos", JSON.stringify(listaCargos));
+  listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
 */
