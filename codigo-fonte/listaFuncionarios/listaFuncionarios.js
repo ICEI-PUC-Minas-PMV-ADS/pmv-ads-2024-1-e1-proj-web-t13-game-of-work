@@ -16,7 +16,7 @@ const listaCards = document.getElementsByClassName('card');
 const testandoErro = null;
 
 // Pega os usuários cadastrados e cria uma lista com todos os usuários.
-listaUsuarios = JSON.parse(localStorage.getItem('userList'));
+listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 function criaLista(listaUsuarios){
 
     for (let i = 0; i < listaUsuarios.length; i++) {
@@ -162,28 +162,28 @@ for (let i = 0; i < listaCards.length; i++) {
 
                 let cargoSelecionado = listaUsuarios[i].cargo;
 
-                let titleList = JSON.parse(localStorage.getItem("titleList"));
+                let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
-                for (let j = 0; j < titleList.length; j++) {
+                for (let j = 0; j < listaCargos.length; j++) {
                     
-                    if (titleList[j].cargo == cargoSelecionado) {
+                    if (listaCargos[j].cargo == cargoSelecionado) {
                         
                         let nomeHS1 = document.querySelector('.nomeHardSkill1');
-                        nomeHS1.innerHTML = (titleList[j].hardSkills[0]) + ':';
+                        nomeHS1.innerHTML = (listaCargos[j].hardSkills[0]) + ':';
                         let nomeHS2 = document.querySelector('.nomeHardSkill2');
-                        nomeHS2.innerHTML = (titleList[j].hardSkills[1]) + ':';
+                        nomeHS2.innerHTML = (listaCargos[j].hardSkills[1]) + ':';
                         let nomeHS3 = document.querySelector('.nomeHardSkill3');
-                        nomeHS3.innerHTML = (titleList[j].hardSkills[2]) + ':';
+                        nomeHS3.innerHTML = (listaCargos[j].hardSkills[2]) + ':';
                         let nomeHS4 = document.querySelector('.nomeHardSkill4');
-                        nomeHS4.innerHTML = (titleList[j].hardSkills[3]) + ':';
+                        nomeHS4.innerHTML = (listaCargos[j].hardSkills[3]) + ':';
                         let nomeHS5 = document.querySelector('.nomeHardSkill5');
-                        nomeHS5.innerHTML = (titleList[j].hardSkills[4]) + ':';
+                        nomeHS5.innerHTML = (listaCargos[j].hardSkills[4]) + ':';
                         let nomeHS6 = document.querySelector('.nomeHardSkill6');
-                        nomeHS6.innerHTML = (titleList[j].hardSkills[5]) + ':';
+                        nomeHS6.innerHTML = (listaCargos[j].hardSkills[5]) + ':';
                         let nomeHS7 = document.querySelector('.nomeHardSkill7');
-                        nomeHS7.innerHTML = (titleList[j].hardSkills[6]) + ':';
+                        nomeHS7.innerHTML = (listaCargos[j].hardSkills[6]) + ':';
                         let nomeHS8 = document.querySelector('.nomeHardSkill8');
-                        nomeHS8.innerHTML = (titleList[j].hardSkills[7]) + ':';
+                        nomeHS8.innerHTML = (listaCargos[j].hardSkills[7]) + ':';
                     }
                 }
 
