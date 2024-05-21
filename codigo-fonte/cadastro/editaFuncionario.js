@@ -27,6 +27,9 @@ const input__objetivos = document.querySelector('#input__objetivos');
 const input__sobreMim = document.querySelector('#input__sobreMim');
 const listaInput__softSkills = document.getElementsByClassName('input__softSkill');
 const listaInput__hardSkills = document.getElementsByClassName('input__hardSkill');
+const hardSkills = document.getElementsByClassName('hardSkill');
+
+var esta_Preenchido = false;
 
 botao__excluirFunc.addEventListener('click', function(){
 
@@ -156,6 +159,20 @@ botao__editFunc.addEventListener('click', function(){
                         input__sobreMim.value = funcionarios.sobreMim;
                         input__objetivos.value = funcionarios.input__objetivos;
 
+                        let cargos = JSON.parse(localStorage.getItem('listaCargos'));
+
+                        for (let i = 0; i < cargos.length; i++) {
+                            
+                            if(funcionario.cargo == cargos[i].cargo){
+                                
+                                for (let j = 0; j < hardSkills.length; j++) {
+                                    
+                                    hardSkills[j].innerHTML = cargos[i].hardSkills[j];
+                                    
+                                }
+                            }
+                        }
+
                         for (let i = 0; i < listaInput__softSkills.length; i++) {
                             
                             listaInput__softSkills[i].value = funcionario.softSkills[i];
@@ -182,5 +199,42 @@ botao__editFunc.addEventListener('click', function(){
         
             }
         });
+    }
+});
+
+botao__editar.addEventListener('click', function(){
+
+    if (input__especialidade.value != '' && input__objetivos.value != '' && input__sobreMim.value != '') {
+        
+        for (let i = 0; i < listaInput__softSkills.length; i++) {
+            
+            if (listaInput__softSkills[i].value != '') {
+                
+                for (let j = 0; j < listaInput__hardSkills.length; j++) {
+                    
+                    if (listaInput__hardSkills != '') {
+                        esta_Preenchido = true;
+                    } else{
+                        esta_Preenchido = false;
+                    }
+                }
+            } else {
+                esta_Preenchido = false;
+            }
+        }
+    } else {
+        esta_Preenchido = false;
+    }
+
+
+    if (esta_Preenchido) {
+        alert('Funcionário ' + nomeFuncionario_edit.innerHTML + ' foi editado.');
+
+        caixa__exibicao.innerText = '';
+        overlay.setAttribute('style', 'display:none');
+        modal__editFunc.setAttribute('style', 'display: none');
+
+    } else {
+        alert('CAMPO VAZIO!!!');
     }
 });

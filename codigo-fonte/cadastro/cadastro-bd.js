@@ -108,13 +108,6 @@ function cadastrarProjeto(){
     }
 }
 
-function deletarProjeto(nomeDoProjeto){
-
-    console.log(nomeDoProjeto);
-    
-}
-
-
 if (listaProjetos.length == 0) {
     localStorage.setItem('listaProjetos', '[]');
 }
@@ -140,19 +133,74 @@ botao__simExcluirProjeto.addEventListener('click', function(){
 });
 
 botao__simExcluirFuncionario.addEventListener('click', function(){
-    let funcionarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let usuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
     let emailDoFuncionario = email__excluirFuncionario.innerHTML;
     
-    for (let i = 0; i < funcionarios.length; i++) {
-        if (funcionarios[i].email == emailDoFuncionario) {
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].email == emailDoFuncionario) {
             
-            funcionarios.splice(i, 1);
-            localStorage.setItem('listaUsuarios', JSON.stringify(funcionarios));
+            usuarios.splice(i, 1);
+            localStorage.setItem('listaUsuarios', JSON.stringify(usuarios));
 
             alert(emailDoFuncionario + ' FOI EXCLUIDO!');
         }
         caixa__exibicao.innerText = '';
         
+    }
+});
+
+botao__editar.addEventListener('click', function(){
+
+    if (esta_Preenchido) {
+        
+        let objeto = {
+
+            nome: '',
+            email: '',
+            cargo: '',
+            especialidade: '',
+            sobre_mim: '',
+            objetivos: '',
+            softSkills: [],
+            hardSkills: [],
+            projetos: [],
+            senha: ''
+        }
+
+        objeto.nome = nomeFuncionario_edit.innerHTML;
+        objeto.email = emailFuncionario_edit.innerHTML;
+        objeto.cargo = cargoFuncionario_edit.innerHTML;
+        objeto.especialidade = input__especialidade.value;
+        objeto.sobre_mim = input__sobreMim.value;
+        objeto.objetivos = input__objetivos.value;
+
+        for (let i = 0; i < listaInput__softSkills.length; i++) {
+            
+            objeto.softSkills[i] = listaInput__softSkills[i].value;
+            
+        }
+
+        for (let i = 0; i < listaInput__hardSkills.length; i++) {
+            
+            objeto.hardSkills[i] = listaInput__hardSkills[i].value;
+            
+        }
+
+        let usuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+
+
+        for (let i = 0; i < usuarios.length; i++) {
+            
+            if (usuarios[i].email == objeto.email) {
+                
+                objeto.projetos = usuarios[i].projetos;
+                objeto.senha = usuarios[i].senha;
+                usuarios.splice(i, 1);
+                usuarios.push(objeto);
+                localStorage.setItem('listaUsuarios', JSON.stringify(usuarios));
+            }
+            
+        }
     }
 });
 

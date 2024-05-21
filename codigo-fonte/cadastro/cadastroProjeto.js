@@ -291,7 +291,6 @@ botao__excluirProj.addEventListener('click', function(){
     caixa__exibicao.innerText = '';
 
     let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
-    console.log(projetos);
 
     projetos.forEach(projeto => {
         
