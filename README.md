@@ -14,7 +14,6 @@ competências, utilizando a gamificação como ferramenta de engajamento esimpli
 * Brenda Estefany Drumond
 * Catiane de Souza Pereira
 * Kayque Gabriel Fonseca
-* Matheus Guimaraes de Carvalho
 * Nikolas Victor Mota
   
 ## Orientador
@@ -30,9 +29,10 @@ competências, utilizando a gamificação como ferramenta de engajamento esimpli
 <li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
 <li><a href="documentos/05-Template padrão da Aplicação.md"> Template padrão da Aplicação</a></li>
 <li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
-<li><a href="documentos/07-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
-<li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
+<li><a href="documentos/07-Armazenamnto de Dados.md"> Armazenamento de Dados</a></li>
+<li><a href="documentos/08-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
+<li><a href="documentos/09-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
+<li><a href="documentos/10-Referências.md"> Referências Bibliográficas</a></li>
 </ol>
 
 # Hospedagem
