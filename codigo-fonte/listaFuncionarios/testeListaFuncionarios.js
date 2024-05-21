@@ -6,7 +6,7 @@ var listaUsuarios = [
 
       softSkills: [6,1,4,2,9,6],
       hardSkills: [7,2,1,0,9,2,3,4],
-      projetos: ['Roubar Coelho','','',''],
+      projetos: ['Roubar Coelho'],
       email: 'cascaoLimoeiro@gmail.com',
       senha: 'naotomarbanho27',
       sobre_mim: 'Eu odeio tomar banho',
@@ -19,7 +19,7 @@ var listaUsuarios = [
 
       softSkills: [7,1,6,3,0,1],
       hardSkills: [7,1,4,2,8,4,2,6],
-      projetos: ['Almoço','Janta','',''],
+      projetos: ['Almoço','Janta'],
       email: 'magaliMelancia@gmail.com',
       senha: 'mingau22',
       sobre_mim: 'Eu amo comer melancia',
@@ -32,7 +32,7 @@ var listaUsuarios = [
 
       softSkills: [7,1,6,3,2,6],
       hardSkills: [1,5,7,1,8,6,3,8],
-      projetos: ['Roubar coelho','Não apanhar','Se esconder',''],
+      projetos: ['Roubar coelho','Não apanhar','Se esconder'],
       email: 'cebolinha@gmail.com',
       senha: 'planoinfalivel83',
       sobre_mim: 'Tenho medo da calvice',
