@@ -76,6 +76,8 @@ html, body
     padding-top: 5%;
     justify-content: center;
     margin-top: 50%;
+    padding-bottom: 15%;
+
 }
 
 
@@ -112,3 +114,23 @@ html, body
 #opcao_2{
     display:none;
  }
+
+#card_cadastro, #card_funcionarios, #card_projetos, #card_perfi{
+    
+}
+ .card img{
+    width: 50%;
+    position: relative;
+    margin-top: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+ }
+
+ #logo{
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    
+}
