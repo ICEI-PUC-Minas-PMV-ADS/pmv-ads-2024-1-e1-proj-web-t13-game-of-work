@@ -30,14 +30,15 @@
                     <div class="conteudo-interno-informacoes-pessoais1">
 
                         <div>
-                            <label for="nome">Nome</label><br>
+                            <label for="nomeUsuarioInput" id="labelNome">Nome</label><br>
                             <input type="text" name="nome" id="nomeUsuarioInput">
                         </div>
 
                         <div>
-                            <label for="nome">Especialidade</label><br>
+                            <label for="especialidadeUsuarioInput" id="labelEspecialidade">Especialidade</label><br>
                             <input type="text" name="especialidade" id="especialidadeUsuarioInput">
                         </div>
+
 
 
 
@@ -46,18 +47,20 @@
                     <div class="conteudo-interno-informacoes-pessoais2">
 
                         <div>
-                            <label for="email">Email</label><br>
+                            <label for="emailUsuarioInput" id="labelEmail">Email</label><br>
                             <input type="email" name="email" id="emailUsuarioInput">
                         </div>
 
                         <div>
-                            <label for="senha" id="senha">Senha</label><br>
+                            <label for="senhaUsuarioInput" id="labelSenha">Senha</label><br>
                             <input type="password" name="senha" id="senhaUsuarioInput">
                         </div>
 
+
                         <div>
-                            <label for="cargo">Cargo</label><br>
-                            <select name="cargo" id="cargo">
+                            <label for="cargoSelect" id="labelCargo">Cargo</label><br>
+                            <select name="cargo" id="cargoSelect">
+                                <option value=""></option>
                                 <option value="">Desenvolvedor</option>
                                 <option value="">Design</option>
                                 <option value="">Gestor</option>
@@ -65,16 +68,17 @@
                             </select>
                         </div>
 
+
                     </div>
 
 
 
                     <div id="descricao">
-                        <label for="sobre-mim">Sobre mim</label>
-                        <textarea name="sobre-mim"></textarea>
+                        <label for="sobreMimTextarea" id="sobreMim">Sobre mim</label>
+                        <textarea name="sobreMim" id="sobreMimTextarea"></textarea>
 
-                        <label for="objetivos">Objetivos</label>
-                        <textarea name="objetivos"></textarea>
+                        <label for="objetivosTextarea" id="objetivos">Objetivos</label>
+                        <textarea name="objetivosTextarea"></textarea>
                     </div>
 
 
@@ -142,7 +146,7 @@
                 </section>
 
                 <div class="rodape-interno">
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="submit" class="btn btn-success" onclick="cadastrar()">Cadastrar</button>
                 </div>
             </section>
         </main>
@@ -151,7 +155,7 @@
 
 
     <footer class="rodape">
-        &copy; 2024 Game Of Work. Todos os direitos reservados.
+
     </footer>
 
 
@@ -170,6 +174,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="cadFuncionario.js"></script>
 </body>
 
 </html>
