@@ -26,3 +26,5 @@ if (cargo == 'Desenvolvedor') {
 if (cargo == 'Design') {
     avatar.src = 'img/Design.png'
 }
+
+//Teste
