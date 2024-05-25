@@ -63,7 +63,7 @@ emailUsuarioInput.addEventListener('keyup', () => {
 //Validação da Senha com RegEx
 senhaUsuarioInput.addEventListener('keyup', () => {
     const senhaValue = senhaUsuarioInput.value;
-    const senhaRegex = /^(?=.*[!@#$%^&*()_+|~-]).{6,15}(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/;  // Expressão regular para validar a senha. Deve conter no mínimo 6 caracteres, um caractere especial, uma letra maiúscula, uma letra minúscula e um número. O máximo de carateres aceitos é quinze.
+    const senhaRegex = /^(?=.*[!@#$%^&*()_+|~-])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,15}$/;  // Expressão regular para validar a senha. Deve conter no mínimo 6 caracteres, um caractere especial, uma letra maiúscula, uma letra minúscula e um número. O máximo de carateres aceitos é quinze.
 
     if (senhaRegex.test(senhaValue)) {
         labelSenha.setAttribute('style', 'color:#87c455;'); 
@@ -75,15 +75,20 @@ senhaUsuarioInput.addEventListener('keyup', () => {
     }
 });
 
-cargoSelect.addEventListener('keyup', () => {
-    if (cargoSelect.value = "" ) {
-        labelCargo.setAttribute('style', 'color:#87c455;');
-        cargoSelect.setAttribute('style', 'border-color:#87c455;')
-    } else {
+cargoSelect.addEventListener('change', () => {
+
+
+
+    if (cargoSelect.value === "" ) {
+        //Se nenhuma opção for selecionada
         labelCargo.setAttribute('style', 'color:#ff5959;');
-        cargoSelect.setAttribute('style', 'border-color:#ff5959;')
+        cargoSelect.setAttribute('style', 'border-color:#ff5959;');
+    } else {
+        labelCargo.setAttribute('style', 'color:#87c455;');
+        cargoSelect.setAttribute('style', 'border-color:#87c455;');
     }
 })
+
 
 
 function cadastrar (){
