@@ -4,26 +4,27 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet"  href="style_tela_perfil.css">
+		<link rel="stylesheet"  href="tela_perfil.css">
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
         <title>Game Of Work</title>
     </head>
     <body>
-        <header id="cabeçalho">
-            <img src="img/gameofwork.png" alt="">
-            <h1 style="font-size: 20px;">Perfil</h1>
-            <button type="button" class="btn btn-danger">Sair</button>
+        <header id="cabecalho">
+            <h1 id="logo">GameOfWork</h1> 
+            <h3>Perfil</h3>
+            <a type="button" class="btn btn-danger" href="../paginaInicial/pagina_inicial.html">Sair</a>
         </header>
+        
         <div class="row" id="containerPerfil">                
             <div class="col-lg-2 col-sm-12">
                 <nav id="menulateral">
-                    <div id="divOpvoes">
-                    	<a class="opcaoMenu" id="opcao_1" href="../paginaInicial/index_pagina_inicial.html">Início</a>
-						<a class="opcaoMenu" id="opcao_2" href="../cadastro/cadastro.html">Cadastro</a>
-						<a class="opcaoMenu" id="opcao_3" href="../listaFuncionarios/listaFuncionarios.html">Funcionários</a>
-						<a class="opcaoMenu" id="opcao_4" href="../listaProjetos/listaProjetos.html">Projetos</a>
-						<a class="opcaoMenu" id="opcao_5" href="../telaPerfil/index_tela_perfil.html">Perfil</a>
+                    <div id="divOpcoes">
+                        <a class="opcaoMenu" id="opcao_1" href="../paginaInicial/pagina_inicial.html">Início</a>
+                        <a class="opcaoMenu" id="opcao_2" href="../cadastro/cadastro.html">Cadastro</a>
+                        <a class="opcaoMenu" id="opcao_3" href="../cadastroFuncionario/cadfuncionario.html">Funcionários</a>
+                        <a class="opcaoMenu" id="opcao_4" href="../listaProjetos/listaProjetos.html">Projetos</a>
+                        <a class="opcaoMenu" id="opcao_5" href="../telaPerfil/tela_perfil.html">Perfil</a>
                     </div>
                 </nav>
             </div>
@@ -31,11 +32,11 @@
             <div id="skills_table" class="col-lg-8 col-sm-12" id="perfil">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <img id="avatar" src="img/Avatar.png" alt="Perfil Menu" class="img-fluid">
+                        <img id="avatar" src="../img/Avatar.png" alt="Perfil Menu" class="img-fluid">
                     </div>
                     <div class="col-md-8">
-                        <h3 id="nome_usuario">Nome: </h3>
-                        <h3 id="cargo_usuario">Cargo: </h3>
+                        <h3 id="nome_usuario">Nome:</h3>
+                        <h5 id="cargo_usuario">Cargo:</h5>
                     </div>
                 </div>
 
@@ -46,34 +47,34 @@
                 <div class="row">
                     <h4> Soft Skills </h4> 
                     <div class="col-lg-6 col-sm-12" >                           
-                        <table style="background-color: #5F5F5F;" id="softskills_table1" class="table">
+                        <table id="softskills_table1" class="table">
                             <tr>
-                                <td style="color: #FF5959; background-color: #5F5F5F;">Comunicação:</td>
-                                <td style="color: #FF5959; background-color: #5F5F5F;">3</td>                                   
+                                <td id="comunicacao">Comunicação:</td>
+                                <td id="comunicacao">3</td>                                   
                             </tr>
                             <tr>
-                                <td style="color:#F6AD78 ; background-color: #5F5F5F;">Criatividade:</td>
-                                <td style="color: #F6AD78; background-color: #5F5F5F;">6</td>                                    
+                                <td id="criatividade">Criatividade:</td>
+                                <td id="criatividade">6</td>                                    
                             </tr>
                             <tr>
-                                <td style="color:#FEE479 ; background-color: #5F5F5F;">Liderança: </td>
-                                <td style="color: #FEE479; background-color: #5F5F5F;">1</td>                                    
+                                <td id="lideranca">Liderança:</td>
+                                <td id="lideranca">1</td>                                    
                             </tr>
                         </table>
                     </div> 
                     <div class="col-lg-6 col-sm-12" >     
                         <table id="softskills_table2" class="table">
                             <tr>
-                                <td style="color:#9CB5F2 ; background-color: #5F5F5F;">Organização: </td>
-                                <td style="color: #9CB5F2; background-color: #5F5F5F;">6</td> 
+                                <td id="organizacao">Organização: </td>
+                                <td id="organizacao">6</td> 
                             </tr>
                             <tr>
-                                <td style="color:#ADE491 ; background-color: #5F5F5F;">Pens. Analítico: </td>
-                                <td style="color: #ADE491; background-color: #5F5F5F;">3</td> 
+                                <td id="analitico">Pens. Analítico: </td>
+                                <td id="analitico">3</td> 
                             </tr>
                             <tr>
-                                <td style="color:#FA92B2 ; background-color: #5F5F5F;">Trab. em Equipe:</td>
-                                <td style="color: #FA92B2; background-color: #5F5F5F;">8</td> 
+                                <td id="equipe">Trab. em Equipe:</td>
+                                <td id="equipe">8</td> 
                             </tr>
                         </table>
                     </div>
@@ -88,40 +89,40 @@
                     <div class="col-lg-6 col-sm-12" >                           
                         <table id="hardskills_table1" class="table">
                             <tr>
-                                <td style="color:#6FF3FF ; background-color: #5F5F5F;">HTML:</td>
-                                <td style="color:#6FF3FF ; background-color: #5F5F5F;">1</td>                                   
+                                <td  id="HTML">HTML:</td>
+                                <td  id="HTML">1</td>                                   
                             </tr>
                             <tr>
-                                <td style="color:#7B85F6 ; background-color: #5F5F5F;">CSS:</td>
-                                <td style="color:#7B85F6 ; background-color: #5F5F5F;">6</td>                                    
+                                <td  id="CSS">CSS:</td>
+                                <td  id="CSS">6</td>                                    
                             </tr>
                             <tr>
-                                <td style="color:#C576D8 ; background-color: #5F5F5F;">JavaScript: </td>
-                                <td style="color:#C576D8 ; background-color: #5F5F5F;">2</td>                                    
+                                <td id="JavaScript">JavaScript: </td>
+                                <td id="JavaScript">2</td>                                    
                             </tr>
                             <tr>
-                                <td style="color:#C33434 ; background-color: #5F5F5F;">C#: </td>
-                                <td style="color:#C33434 ; background-color: #5F5F5F;">0</td>                                    
+                                <td  id="Csharp">C#: </td>
+                                <td  id="Csharp">0</td>                                    
                             </tr>
                         </table>
                     </div> 
                     <div class="col-lg-6 col-sm-12" >     
                         <table id="hardskills_table2" class="table">
                             <tr>
-                                <td style="color:#DC9152 ; background-color: #5F5F5F;">SQL:</td>
-                                <td style="color:#DC9152 ; background-color: #5F5F5F;">9</td>
+                                <td id="SQL">SQL:</td>
+                                <td id="SQL">9</td>
                             </tr>
                             <tr>
-                                <td style="color:#FEE479 ; background-color: #5F5F5F;">Python: </td>
-                                <td style="color:#FEE479 ; background-color: #5F5F5F;">4</td>
+                                <td id="Python">Python: </td>
+                                <td id="Python">4</td>
                             </tr>
                             <tr>
-                                <td style="color:#3EDD71 ; background-color: #5F5F5F;">C++:</td>
-                                <td style="color:#3EDD71 ; background-color: #5F5F5F;">1</td>
+                                <td id="Cplusplus">C++:</td>
+                                <td id="Cplusplus">1</td>
                             </tr>
                             <tr>
-                                <td style="color:#A2C05D ; background-color: #5F5F5F;">Java:</td>
-                                <td style="color:#A2C05D ; background-color: #5F5F5F;">3</td>
+                                <td id="Java">Java:</td>
+                                <td id="Java">3</td>
                             </tr>
                         </table>
                     </div>
@@ -131,45 +132,36 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12">
-                        <h5 style="color: rgb(240, 212, 87)">Sobre mim</h5> 
-                            <p style="font-size: 0.7em;">Sou professor na Pontifícia Universidade Católica de Minas Gerais, e orientador dos alunos do 1º período do curso de Análise e Desenvolvimento de Sistemas no Projeto de Web Front End.</p>
-                            <h6 style="color: rgb(240, 212, 87)">Objetivos</h6>  
-                            <p style="font-size: 0.7em;">Meu objetivo é que meus alunos sejam aprovados com êxito.</p>
+                        <div id="Descricao" class="col-12">
+                            <h5>Sobre mim</h5> 
+                            <p>Sou professor na Pontifícia Universidade Católica de Minas Gerais, e orientador dos alunos do 1º período do curso de Análise e Desenvolvimento de Sistemas no Projeto de Web Front End.</p>
+                            <h6>Objetivos</h6>  
+                            <p>Meu objetivo é que meus alunos sejam aprovados com êxito.</p>
                         </div>
                     </div>
                 </div>                        
             </div>
 
-            <div class="col-lg-1 col-sm-0" style="padding-left: 0px; padding-right: 0px; width: 1%;">
-                <div class="vr" style=" height: 95%;">
+            <div id="projetos" class="col-lg-2 col-sm-12">
+                <div class="row" id="coluna_projetos">
+                    <div id="LinhaVertical" class="col-lg-1 col-sm-0">
+                        <div class="vr">
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-11">
+                        <h4> Projetos </h4>
+                        <br>
+                        <ul id="projetos_o" class="nav flex-column">
+                            <h6>GameOfWork</h6>
+                            <h6>Coca-Cola</h6>
+                            <h6>Jogos</h6>
+        
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div id="projetos" class="col-lg-1 col-sm-12">
-                <h4> Projetos </h4>
-                <ul id="projetos_o" class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"  href="#">GameOfWork</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="...">Projetos1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="...">Projetos2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="...">Projetos3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="..">Projetos4</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="..">Projetos5</a>
-                    </li>           
-                </ul>
             </div>  
-        </div>  
-        <script src="script_tela_perfil.js"></script>                                                                                                                 
+        </div>
+    <script src="../telaPerfil/tela_perfil.js"></script>                                                                                                                   
     </body>
 </html>
