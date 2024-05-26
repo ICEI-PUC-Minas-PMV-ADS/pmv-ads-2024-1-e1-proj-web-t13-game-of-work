@@ -104,6 +104,7 @@ Digite um email e senha cadastrado para fazer o login. Caso não possua uma cont
 #### Responsável
 
 Kayque Fonseca
+<hr>
 
 ### Tela Lista de Funcionários
 
