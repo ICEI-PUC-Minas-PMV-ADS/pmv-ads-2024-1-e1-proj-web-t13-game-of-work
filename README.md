@@ -14,7 +14,6 @@ competências, utilizando a gamificação como ferramenta de engajamento esimpli
 * Brenda Estefany Drumond
 * Catiane de Souza Pereira
 * Kayque Gabriel Fonseca
-* Matheus Guimaraes de Carvalho
 * Nikolas Victor Mota
   
 ## Orientador
