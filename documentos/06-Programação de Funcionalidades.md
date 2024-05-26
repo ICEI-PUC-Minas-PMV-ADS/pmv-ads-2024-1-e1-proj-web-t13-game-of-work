@@ -5,7 +5,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ### Tela Página Inicial
 
 <figure> 
-  <img src="img/paginaInicial.png">
+  <img src="img/telaInicio.png">
   <figcaption>Figura 1: Tela Página Inicial</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ Nikolas Victor Mota
 ### Tela Lista de Projetos
 
 <figure> 
-  <img src="img/listaProjetos.png">
+  <img src="img/ListaProjetos.png">
   <figcaption>Figura 5: Tela Lista de Projetos</figcaption>
 </figure> 
 
