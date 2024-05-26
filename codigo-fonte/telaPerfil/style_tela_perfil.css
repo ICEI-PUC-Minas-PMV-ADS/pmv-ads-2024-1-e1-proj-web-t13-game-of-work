@@ -1,35 +1,70 @@
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
+}
 
 html, body
 {
-    height: 95%;
-    background-color: #292929;
+    height: 100vh;
+    background-color: var(--cor-terciaria);
 
 }
 
 
-#cabeçalho {
-    background-color: #292929;
-    color: rgb(240, 212, 87);
+#cabecalho {
+    background-color: var(--cor-primaria);
+    color: var(--hardS-color3);
     font-family: "Press Start 2P", system-ui;
     display: flex;
     font-size: 1.5rem; /* Adaptado para ser responsivo */
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
+    position: fixed;  
+    width: 100%;
 }
 
+#logo{
+    font-size: 25px;
+    color: var(--cor-primaria-fonte);
+}
 
 #menulateral {
     width: 100%;
     height: 100%;
-    background-color:#494949;
+    background-color:var(--cor-secundaria);
     display: block;
     align-items: center;
     justify-content: center;    
     float: left;
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
-
-
+    position: fixed; 
+    width: 15%;
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px); 
+    height: calc(100% - 100px); 
 }
 
 
@@ -38,18 +73,18 @@ html, body
     margin: 0; 
     padding: 3%; 
     width: 90%;
-
     margin-left: 50%; 
     transform: translate(-50%);
     font-family: "Press Start 2P", system-ui; 
-    color: white;
+    color: var(--cor-primaria-fonte);
     cursor: pointer;
     display: block;  /* faz cada link aparecer em sua própria linha */
     text-decoration: none;  /* remove o sublinhado dos links */
 }
 
+
 .opcaoMenu:hover {
-    background-color:#777777;
+    background-color:var(--cor-secundaria);
 }
 
 
@@ -60,31 +95,32 @@ html, body
 #containerPerfil {
     width: 100%;
     height: 100%;
-    background-color:#5F5F5F;
-    color: white;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria-fonte);
     margin: auto; /* Centraliza o container */
     padding-top: 0.5%; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
     font-family: "Press Start 2P", system-ui; 
+    position: relative;
+    top: 7.9%;
+    height: -webkit-calc(100% - 81px);
+    height: -moz-calc(100% - 81px);
+    height: calc(100% - 81px); 
 
 }
-
-#perfil{
-color: darkgoldenrod;
-}
-
 
 .col-2{
-    color: white;
+    color: var(--cor-primaria-fonte);
 }
 
 .nav-link{
-    color:#A6A6A6;
+    color:var(--cor-background);
 }
 
 .col-md-4{
     width: 120px;
     height: 120px;
 }
+
 #avatar{
     width: 100%;
     height: 100%;
@@ -93,4 +129,101 @@ color: darkgoldenrod;
 td{
     width: 90%;
 
+}
+
+.table td{
+    background-color: var(--cor-terciaria);  
+}
+
+#comunicacao{
+    color: var(--softS-color1);     
+}
+
+#criatividade{
+    color: var(--softS-color2);
+
+}
+
+#lideranca{
+    color: var(--softS-color3);
+
+}
+
+#organizacao{
+    color: var(--softS-color4);
+
+}
+
+#analitico{
+    color: var(--softS-color5);
+
+}
+
+#equipe{
+    color: var(--softS-color6);
+
+}
+
+#HTML{
+    color: var(--hardS-color1);
+}
+
+#CSS{
+    color: var(--hardS-color2);
+}
+
+#JavaScript{
+    color: var(--hardS-color3);
+}
+
+#Csharp{
+    color: var(--hardS-color4);
+}
+
+#SQL{
+    color: var(--hardS-color5);
+}
+
+#Python{
+    color: var(--hardS-color6);
+}
+
+#Cplusplus{
+    color: var(--hardS-color7);
+}
+
+#Java{
+    color: var(--hardS-color8);
+}
+
+
+#Descricao{
+    color: var(--hardS-color3);
+    font-size: 0.8em;
+
+}
+
+#Descricao p{
+    color: var(--cor-primaria-fonte);
+}
+
+#LinhaVertical{
+    padding-left: 0px; 
+    padding-right: 0px; 
+    width: 5%;
+    height: 100%;
+}
+
+.vr{
+    height: 100%;
+    width: 2px;
+
+}
+
+#coluna_projetos{
+    height: 100%;
+}
+
+#projetos{
+    margin-top: 5px;
 }
