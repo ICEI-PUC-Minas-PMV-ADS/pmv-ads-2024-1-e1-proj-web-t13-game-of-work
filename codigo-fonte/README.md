@@ -6,7 +6,8 @@ Para simplificar o uso e organização do Git, as pastas e artefatos foram organ
 - Pasta src\paginaInicial: paginaInicial.html, paginaInicial.css, paginaInicial.js - Desenvolvedora responsável: Brenda Drumond.
 - Pasta src\telaPerfil: telaPerfil.html, telaPerfil.css, telaPerfil.js - Desenvolvedora responsável: Catiane de Souza.
 - Pasta src\login: telaLogin.html, telaLogin.css, telaLogin.js - Desenvolvedor responsável: Kayque Fonseca.
-- Pasta src\listaFuncionarios: listaFuncionarios.html, listaFuncionarios.css, listaFuncionarios.js - Desenvolvedor responsável: Nikolas Victor Mota
+- Pasta src\listaFuncionarios: listaFuncionarios.html, listaFuncionarios.css, listaFuncionarios.js - Desenvolvedor responsável: Nikolas Victor Mota.
+- Pasta src\listaProjetos: listaProjetos.html, listaProjetos.css, listaProjetos.js - Desenvolvedor responsável: Brenda Drumond e Catiane de Souza.
 
 ## Instalação do Site
 
@@ -44,3 +45,9 @@ O site em HTML/CSS/JS é um projeto estático. Clique <a href="https://icei-puc-
 - Página Inicial: arquivo JavaScript.
 - Tela de Perfil: arquivo JavaScript.
 - Página Lista de Projetos: arquivo HTML, CSS e JavaScript.
+
+- ### [0.1.5] - 26/05/2024
+#### Atualizado
+- Página Inicial: arquivos HTML, CSS e JavaScript.
+- Página Lista de Projetos: arquivo HTML, CSS e JavaScript.
+
