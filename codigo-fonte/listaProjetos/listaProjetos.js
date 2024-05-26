@@ -1,66 +1,84 @@
-// Insere dados no localStorage
-listaProjetos = [
-    {
-      nome: 'Roubar coelho',
-      skills: ['PHP','JavaScript','','','','','','','',''],
-      gestor: 'Cebolácio Menezes da Silva Júnior',
-      participantes: ['Cebolinha','Cascão','','','','','','','',''],
-      vagas: '2'
+const projetos = {
+    cocaCola: {
+        titulo: "Coca Cola",
+        descricao: "Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.",
+        softSkills: "Comunicação, Liderança e Organização.",
+        hardSkills: "JavaScript, CSS, HTML.",
+        gestor: "Brenda Drumond",
+        equipe: ["Catiane de Souza", "Nikolas Mota", "Kayque Fonseca"],
+        vagas: ["Desenvolvedor", "Analista", "Coordenador"]
     },
-    {
-      nome: 'Almoço',
-      skills: ['Figma','Photoshop','JavaScript','','','','','','',''],
-      gestor: 'Mãe da Magali',
-      participantes: ['Magali','','','','','','','','',''],
-      vagas: '0'
+    gameOfWork: {
+        titulo: "GameOfWork",
+        descricao: "Desenvovlimento de um sistema para facilitar a formação de equipes de projetos.",
+        softSkills: "Comunicação, Trabalho em Equipe e Criatividade",
+        hardSkills: "JavaScript, CSS, HTML.",
+        gestor: "Prof. Hayala",
+        equipe: ["Brenda Drumond", "Catiane de Souza", "Nikolas Mota", "Kayque Fonseca"],
+        vagas: ["Sem vagas abertas."]
     },
-    {
-      nome: 'Jantar',
-      skills: ['Photoshop','Gestão','Proatividade','PHP','','','','','',''],
-      gestor: 'Mãe da Magali',
-      participantes: ['Magali','Monica','','','','','','','',''],
-      vagas: '4'
+    vidaSaudavel: {
+        titulo: "Vida Saudável",
+        descricao: "Desenvolvimento de um software de gestão de saúde que auxilie na busca para uma alimentação saudável.",
+        softSkills: "Empatia, Liderança",
+        hardSkills: "Python, Django, SQL",
+        gestor: "Catiane de Souza",
+        equipe: ["Brenda Drumond", "Nikolas Mota", "Kayque Fonseca"],
+        vagas: ["Nutricionista", "Desenvolvedor"]
     },
-    {
-      nome: 'Se esconder',
-      skills: ['PHP','','','','','','','','','',''],
-      gestor: 'Professor Hayala',
-      participantes: ['Cebolinha','Cascao','Bidu','','','','','','',''],
-      vagas: '1'
+    mcDonalds: {
+        titulo: "McDonalds",
+        descricao: "Criação de um programa para controle de vendas realizadas através de plataformas de delivery.",
+        softSkills: "Organização, Proatividade",
+        hardSkills: "Java, Spring Boot, MySQL",
+        gestor: "Nikolas Mota",
+        equipe: ["Brenda Drumond", "Catiane de Souza", "Kayque Fonseca"],
+        vagas: ["Desenvolvedor", "Analista"]
+    },
+    gestaoAVista: {
+        titulo: "Gestão a Vista",
+        descricao: "Criação de um sistema de tecnologia em nuvem, que possibilite o gerenciamento de pessoas.",
+        softSkills: "Liderança, Visão Estratégica",
+        hardSkills: "C#, .NET, Azure",
+        gestor: "Vaga em aberto",
+        equipe: ["Brenda Drumond", "Catiane de Souza", "Nikolas Mota"],
+        vagas: ["Gerente de Projeto", "Desenvolvedor"]
+    },
+    jogos: {
+        titulo: "Jogos",
+        descricao: "Desenvolvimento de um jogo eletrônico voltado para o folclore brasileiro.",
+        softSkills: "Criatividade, Trabalho em Equipe",
+        hardSkills: "Unity, C#",
+        gestor: "Kayque Fonseca",
+        equipe: ["Brenda Drumond", "Catiane de Souza", "Nikolas Mota"],
+        vagas: ["Game Designer", "Programador"]
     }
-];
+};
 
-localStorage.setItem("listaProjetos", JSON.stringify(listaProjetos));
-userlist = JSON.parse(localStorage.getItem("listaProjetos"));
+// Função para atualizar o card de descrição
+function atualizarDescricao(projeto) {
+    const cardDescricao = document.getElementById("card_descricao");
+    cardDescricao.querySelector(".card-title2").textContent = `Projeto: ${projeto.titulo}`;
+    cardDescricao.querySelectorAll(".card-text2")[0].textContent = projeto.descricao;
+    cardDescricao.querySelectorAll(".card-text2")[1].textContent = projeto.softSkills;
+    cardDescricao.querySelectorAll(".card-text2")[2].textContent = projeto.hardSkills;
+    cardDescricao.querySelectorAll(".card-text2")[3].textContent = projeto.gestor;
 
-
-// Pega a div que ficam os cards
-const divProjetos = document.querySelector('#divProjetos');
-// Pega a lista de Projetos do localStorage
-var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos'));
-
-// Se a lista não existir ela é criada vazia
-if(listaProjetos == null){
-    localStorage.setItem('listaProjetos', '[]');
-}
-
-// Percorre a lista de Projetos
-for (let i = 0; i < listaProjetos.length; i++) {
     
-    // cria uma div
-    const divCard = document.createElement('div');
-    // adiciona a classe "card" a essa div
-    divCard.classList.add('card');
-    // cria um h3
-    const nomeProjeto = document.createElement('h3');
-    // adiciona a classe "nomeProjeto" a esse h3
-    nomeProjeto.classList.add('nomeProjeto');
-
-    // Adiciona o nome do projeto de indice atual ao h3
-    nomeProjeto.innerHTML = listaProjetos[i].nome;
-
-    // Adiciona o h3 na div
-    divCard.appendChild(nomeProjeto);
-    // Adiciona a div dentro da "divProjetos"
-    divProjetos.appendChild(divCard);
+    const equipeHtml = projeto.equipe.map(membro => `<p class="card-text2">${membro}</p>`).join('');
+    const vagasHtml = projeto.vagas.map(vaga => `<p class="card-text2">${vaga}</p>`).join('');
+    
+    cardDescricao.querySelectorAll(".card-body")[1].innerHTML = `<h5 class="card-title2">Equipe:</h5>${equipeHtml}`;
+    cardDescricao.querySelectorAll(".card-body")[2].innerHTML = `<h5 class="card-title2">Vagas Abertas:</h5>${vagasHtml}`;
 }
+
+// Adicionar event listeners aos cards
+document.getElementById("card_cocacola").addEventListener("click", () => atualizarDescricao(projetos.cocaCola));
+document.getElementById("card_gameofwork").addEventListener("click", function() {
+    atualizarDescricao(projetos.gameOfWork);
+    alert('Atenção: Equipe formada! SEM VAGAS ABERTAS');
+});
+document.getElementById("card_vidasaudavel").addEventListener("click", () => atualizarDescricao(projetos.vidaSaudavel));
+document.getElementById("card_mcdonalds").addEventListener("click", () => atualizarDescricao(projetos.mcDonalds));
+document.getElementById("card_gestao").addEventListener("click", () => atualizarDescricao(projetos.gestaoAVista));
+document.getElementById("card_jogos").addEventListener("click", () => atualizarDescricao(projetos.jogos));
