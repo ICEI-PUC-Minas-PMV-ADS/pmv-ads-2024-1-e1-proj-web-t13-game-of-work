@@ -5,7 +5,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ### Tela Página Inicial
 
 <figure> 
-  <img src="img/tela_paginaInicial.png">
+  <img src="img/paginaInicial.png">
   <figcaption>Figura 1: Tela Página Inicial</figcaption>
 </figure>
 
@@ -139,24 +139,29 @@ Clique na opção "Funcionários" no menu lateral à esquerda. Para ver os dados
 #### Responsável
 
 Nikolas Victor Mota
+<hr>
 
-### Tela Lista de Funcionários
+### Tela Lista de Projetos
 
 <figure> 
-  <img src="img/listaProjetos-concluido.png">
+  <img src="img/listaProjetos.png">
   <figcaption>Figura 5: Tela Lista de Projetos</figcaption>
 </figure> 
 
 #### Requisito atendido
 
+- RF-10	Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo.
 - RF-15 Deve exibir uma lista com os projetos cadastrados.
+- RF-14	Deve permitir que faça o cadastro de um projeto.
+- RF-20	Deve exibir uma lista com os projetos cadastrados.
+- RF-21	Deve exibir quais funcionários estão participando de um projeto.
 
 #### Artefatos da funcionalidade
 
 - listaProjetos.html
 - listaProjetos.css
 - listaProjetos.js
-
+  
 
 #### Estrutura de Dados
 
@@ -168,7 +173,9 @@ Nikolas Victor Mota
 Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
 
 Clique na opção "Projetos" no menu lateral à esquerda.
+Selecione na lista ao lado esquerdo da tela o Projeto que deseje mas detalhes, as informações do Projeto serão exibidas no lado direito da tela. 
 
 #### Responsável
 
-Nikolas Victor Mota
+Brenda Drumond, Catiane de Souza e Nikolas Victor Mota.
+<hr>
