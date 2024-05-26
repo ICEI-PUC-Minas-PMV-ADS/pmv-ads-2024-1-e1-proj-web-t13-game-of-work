@@ -177,5 +177,5 @@ Selecione na lista ao lado esquerdo da tela o Projeto que deseje mas detalhes, a
 
 #### Responsável
 
-Brenda Drumond, Catiane de Souza e Nikolas Victor Mota.
+Brenda Drumond e Catiane de Souza.
 <hr>
