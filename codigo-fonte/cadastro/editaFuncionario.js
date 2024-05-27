@@ -156,8 +156,8 @@ botao__editFunc.addEventListener('click', function(){
                         emailFuncionario_edit.innerHTML = funcionario.email;
 
                         input__especialidade.value = funcionario.especialidade;
-                        input__sobreMim.value = funcionarios.sobreMim;
-                        input__objetivos.value = funcionarios.input__objetivos;
+                        input__sobreMim.value = funcionario.sobre_mim;
+                        input__objetivos.value = funcionario.objetivos;
 
                         let cargos = JSON.parse(localStorage.getItem('listaCargos'));
 
