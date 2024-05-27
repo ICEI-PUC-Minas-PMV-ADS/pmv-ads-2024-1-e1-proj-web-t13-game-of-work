@@ -11,7 +11,10 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-- RF- 02: Local de navegação intuitivo sem dificuldade de entendimento
+- RF- 02: Local de navegação intuitivo sem dificuldade de entendimento.
+- RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.
+
+
 
 #### Artefatos da funcionalidade
 
@@ -50,6 +53,9 @@ Brenda Drumond
 - RF-06	Na ficha do funcionário, deve ter seu objetivo profissional.
 - RF-08	Deve conter um breve resumo sobre o funcionário.
 - RF-09	Opção de demonstrar os projetos que o funcionário participou anteriormente.
+- RF-16 Exibir ficha do funcionário.
+- RF-18 O usuário deve poder acessar o seu perfil para visualizar suas competências.
+
 
 #### Artefatos da funcionalidade
 
