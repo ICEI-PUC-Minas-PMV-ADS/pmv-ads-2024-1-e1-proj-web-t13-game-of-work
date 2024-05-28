@@ -218,6 +218,18 @@ p {
     margin-top: 10px;
 }
 
+#selecione {
+display: none;
+}
+
+#sobreMimTextarea{
+    resize: none;
+}
+
+#objetivosTextarea{
+    resize: none;
+}
+
 
 
 

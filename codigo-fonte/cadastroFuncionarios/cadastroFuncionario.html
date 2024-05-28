@@ -71,7 +71,7 @@
                         <div>
                             <label for="cargoSelect" id="labelCargo">Cargo</label><br>
                             <select name="cargo" id="cargoSelect">
-                                <option value="">Selecione...</option>
+                                <option value="" id="selecione" selected disabled>Selecione...</option>
                                 <option value="option1">Desenvolvedor</option>
                                 <option value="option2">Design</option>
                                 <option value="option3">Gestor</option>
@@ -96,28 +96,22 @@
 
                     <div id="softSkills">
                         <span>
-                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number"
-                                name="inputsoftSkill1">
+                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number" maxlength="1" name="inputsoftSkill1">
                         </span>
                         <span>
-                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number"
-                                name="inputsoftSkill2">
+                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number" maxlength="1" name="inputsoftSkill2">
                         </span>
                         <span>
-                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number"
-                                name="inputsoftSkill3">
+                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number" maxlength="1" name="inputsoftSkill3">
                         </span>
                         <span>
-                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number"
-                                name="inputsoftSkill4">
+                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number" maxlength="1" name="inputsoftSkill4">
                         </span>
                         <span>
-                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number"
-                                name="inputsoftSkill5">
+                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number" maxlength="1" name="inputsoftSkill5">
                         </span>
                         <span>
-                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"
-                                name="inputsoftSkill6">
+                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"maxlength="1" name="inputsoftSkill6">
                         </span>
                     </div>
 
@@ -125,31 +119,28 @@
 
                     <div id="hardSkills">
                         <span>
-                            <h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" name="inputHardSkill1">
+                            <h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" maxlength="1" name="inputHardSkill1">
                         </span>
                         <span>
-                            <h4 class="hardSkill2 nomeHardSkill2">SQL:</h4><input type="number" name="inputHardSkill2">
+                            <h4 class="hardSkill2 nomeHardSkill2">SQL:</h4><input type="number" maxlength="1" name="inputHardSkill2">
                         </span>
                         <span>
-                            <h4 class="hardSkill3 nomeHardSkill3">CSS:</h4><input type="number"
-                                name="inputHardSkill3">
+                            <h4 class="hardSkill3 nomeHardSkill3">CSS:</h4><input type="number" maxlength="1" name="inputHardSkill3">
                         </span>
                         <span>
-                            <h4 class="hardSkill4 nomeHardSkill4">Python:</h4><input type="number" name="inputHardSkill4">
+                            <h4 class="hardSkill4 nomeHardSkill4">Python:</h4><input type="number" maxlength="1" name="inputHardSkill4">
                         </span>
                         <span>
-                            <h4 class="hardSkill5 nomeHardSkill5">JavaScript:</h4><input type="number"
-                                name="inputHardSkill5">
+                            <h4 class="hardSkill5 nomeHardSkill5">JavaScript:</h4><input type="number" maxlength="1" name="inputHardSkill5">
                         </span>
                         <span>
-                            <h4 class="hardSkill6 nomeHardSkill6">C++:</h4><input type="number"
-                                name="inputHardSkill6">
+                            <h4 class="hardSkill6 nomeHardSkill6">C++:</h4><input type="number" maxlength="1" name="inputHardSkill6">
                         </span>
                         <span>
-                            <h4 class="hardSkill7 nomeHardSkill7">C#:</h4><input type="number" name="inputHardSkill7">
+                            <h4 class="hardSkill7 nomeHardSkill7">C#:</h4><input type="number" maxlength="1" name="inputHardSkill7">
                         </span>
                         <span>
-                            <h4 class="hardSkill8 nomeHardSkill8">Java:</h4><input type="number" name="inputHardSkill8">
+                            <h4 class="hardSkill8 nomeHardSkill8">Java:</h4><input type="number" maxlength="1" name="inputHardSkill8">
                         </span>
                     </div>
 
@@ -157,7 +148,7 @@
                 </section>
 
                 <div class="rodape-interno">
-                    <button type="submit" class="btn btn-success" onclick="cadastrar()">Cadastrar</button>
+                    <button type="submit" class="btn btn-success" id="botaoCadastrar">Cadastrar</button>
                 </div>
             </section>
         </main>

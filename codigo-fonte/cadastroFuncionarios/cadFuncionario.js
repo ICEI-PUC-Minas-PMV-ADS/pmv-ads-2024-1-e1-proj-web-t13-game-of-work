@@ -1,30 +1,38 @@
 // Declaração de variáveis "conteudo-interno-informacoes-pessoais1", "conteudo-interno-informacoes-pessoais2" && "descricao" 
-let labelNome = document.querySelector('#labelNome')
-let nomeUsuarioInput = document.querySelector('#nomeUsuarioInput')
+const labelNome = document.querySelector('#labelNome')
+const nomeUsuarioInput = document.querySelector('#nomeUsuarioInput')
 
-let labelEspecialidade = document.querySelector('#labelEspecialidade')
-let especialidadeUsuarioInput = document.querySelector('#especialidadeUsuarioInput')
+const labelEspecialidade = document.querySelector('#labelEspecialidade')
+const especialidadeUsuarioInput = document.querySelector('#especialidadeUsuarioInput')
 
-let labelEmail = document.querySelector('#labelEmail')
-let emailUsuarioInput = document.querySelector('#emailUsuarioInput')
+const labelEmail = document.querySelector('#labelEmail')
+const emailUsuarioInput = document.querySelector('#emailUsuarioInput')
 
-let labelSenha = document.querySelector('#labelSenha')
-let senhaUsuarioInput = document.querySelector('#senhaUsuarioInput')
+const labelSenha = document.querySelector('#labelSenha')
+const senhaUsuarioInput = document.querySelector('#senhaUsuarioInput')
 
-let labelCargo = document.querySelector('#labelCargo')
-let cargoSelect = document.querySelector('#cargoSelect')
+const labelCargo = document.querySelector('#labelCargo')
+const cargoSelect = document.querySelector('#cargoSelect')
 
-let labelSobre_mim = document.querySelector('#labelSobreMim')
-let sobreMimTextarea = document.querySelector('#sobreMimTextarea')
+const labelSobre_mim = document.querySelector('#labelSobreMim')
+const sobreMimTextarea = document.querySelector('#sobreMimTextarea')
 
-let labelObjetivos = document.querySelector('#labelObjetivos')
-let objetivosTextarea = document.querySelector('#objetivosTextarea')
+const labelObjetivos = document.querySelector('#labelObjetivos')
+const objetivosTextarea = document.querySelector('#objetivosTextarea')
+
+var listaCargos =  JSON.parse(localStorage.getItem("listaCargos"));
+
+
+function cadastrar (){
+
+}
 
 
 // Validação do nome do usuário. Não aceita carateres especiais e não aceita menos que 3 letras.
 nomeUsuarioInput.addEventListener('keyup', () => {
     const usuarioValue = nomeUsuarioInput.value;
-    const usuarioRegex = /^[a-zA-Z0-9]+$/;
+    const usuarioRegex = /^[a-zA-Z]+$/;
+    //somente letras
 
     if (usuarioRegex.test(usuarioValue) && nomeUsuarioInput.value.length > 3 ) {
         labelNome.setAttribute('style', 'color:#87c455;');
@@ -79,7 +87,7 @@ cargoSelect.addEventListener('change', () => {
 
 
 
-    if (cargoSelect.value === "" ) {
+    if (cargoSelect.value === "Selecione.." ) {
         //Se nenhuma opção for selecionada
         labelCargo.setAttribute('style', 'color:#ff5959;');
         cargoSelect.setAttribute('style', 'border-color:#ff5959;');
@@ -91,6 +99,5 @@ cargoSelect.addEventListener('change', () => {
 
 
 
-function cadastrar (){
 
-}
+
