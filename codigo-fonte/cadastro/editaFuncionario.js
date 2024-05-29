@@ -167,7 +167,7 @@ botao__editFunc.addEventListener('click', function(){
                                 
                                 for (let j = 0; j < hardSkills.length; j++) {
                                     
-                                    hardSkills[j].innerHTML = cargos[i].hardSkills[j];
+                                    hardSkills[j].innerHTML = cargos[i].hardSkills[j] + ":";
                                     
                                 }
                             }
