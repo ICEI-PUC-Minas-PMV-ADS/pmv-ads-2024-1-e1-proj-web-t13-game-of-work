@@ -130,7 +130,7 @@ html, body
 }
 
 #card_cocacola, #card_gameofwork, #card_vidasaudavel, #card_mcdonalds, #card_jogos, #card_gestao {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     font-family: "Press Start 2P", system-ui;
     color: var(--cor-primaria-fonte);
     font-size: 0.7rem;
