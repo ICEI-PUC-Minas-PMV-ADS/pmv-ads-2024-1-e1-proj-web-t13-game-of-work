@@ -1,7 +1,7 @@
 const projetos = {
     cocaCola: {
         titulo: "Coca Cola",
-        descricao: "Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.",
+        descricao: "Desenvolvimento de um site para divulgação de um novo sabor de Coca Cola.",
         softSkills: "Comunicação, Liderança e Organização.",
         hardSkills: "JavaScript, CSS, HTML.",
         gestor: "Brenda Drumond",
@@ -10,7 +10,7 @@ const projetos = {
     },
     gameOfWork: {
         titulo: "GameOfWork",
-        descricao: "Desenvovlimento de um sistema para facilitar a formação de equipes de projetos.",
+        descricao: "Desenvolvimento de um sistema para facilitar a formação de equipes de projetos.",
         softSkills: "Comunicação, Trabalho em Equipe e Criatividade",
         hardSkills: "JavaScript, CSS, HTML.",
         gestor: "Prof. Hayala",
@@ -54,6 +54,11 @@ const projetos = {
         vagas: ["Game Designer", "Programador"]
     }
 };
+
+// Armazenar projetos no localStorage
+var projetosJSON = JSON.stringify(projetos);
+localStorage.setItem('projetos', projetosJSON);
+
 
 // Função para atualizar o card de descrição
 function atualizarDescricao(projeto) {
