@@ -1,49 +1,63 @@
-localStorage.setItem('cargo', 'func');
+const users = [
+    { name: "Hayala", profile: "Gestor" },
+    { name: "Brenda Drumond", profile: "Gestor" },
+    { name: "Catiane de Souza", profile: "RH" },
+    { name: "Nikolas Mota", profile: "Gestor" },
+    { name: "Kayque Fonseca", profile: "Funcionário" }
+];
 
+localStorage.setItem('users', JSON.stringify(users));
+localStorage.setItem('currentUser', JSON.stringify({ name: "Brenda Drumond", profile: "Gestor" }));
 
-const card_funcionarios = document.querySelector('#card_funcionarios');
-const card_projetos = document.querySelector('#card_projetos');
-const card_perfil = document.querySelector('#card_perfil');
-const card_cadastro = document.querySelector('#card_cadastro');
-const opcao_cadastro = document.querySelector('#opcao_2');
-const opcao_funcionarios = document.querySelector('#opcao_3');
-const card_menu = document.querySelector('#card_menu');
-
-var cargo_atual;
-
-cargo_atual = localStorage.cargo;
-
-if (cargo_atual == 'Gestor') {
-    
-    card_funcionarios.classList.remove('col-lg-3');
-    card_projetos.classList.remove('col-lg-3');
-    card_perfil.classList.remove('col-lg-3');
-    card_cadastro.classList.remove('col-lg-3');
-    card_funcionarios.classList.add('col-lg-4');
-    card_projetos.classList.add('col-lg-4');
-    card_perfil.classList.add('col-lg-4');
-    card_cadastro.classList.add('col-lg-4');
-
-    card_cadastro.setAttribute('style', 'display: none;');
-    opcao_cadastro.setAttribute('style', 'display: none;');
-
+function carregarPerfil() {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (currentUser) {
+        atualizarInterface(currentUser);
+    }
 }
 
-if (cargo_atual == 'Funcionario') {
-    
-    card_funcionarios.classList.remove('col-lg-3');
-    card_projetos.classList.remove('col-lg-3');
-    card_perfil.classList.remove('col-lg-3');
-    card_cadastro.classList.remove('col-lg-3');
-    card_funcionarios.classList.add('col-lg-6');
-    card_projetos.classList.add('col-lg-6');
-    card_perfil.classList.add('col-lg-6');
-    card_cadastro.classList.add('col-lg-6');
+function atualizarInterface(usuario) {
+    // Atualizar a saudação
+    document.getElementById('bemvindo').innerText = `Seja bem-vindo: ${usuario.name}`;
 
-    card_cadastro.setAttribute('style', 'display: none;');
-    opcao_cadastro.setAttribute('style', 'display: none;');
-    card_funcionarios.setAttribute('style', 'display: none;');
-    opcao_funcionarios.setAttribute('style', 'display: none;');
-    card_menu.setAttribute('style', 'width: 75%;');   
+    // Atualizar a informação de perfil
+    document.querySelector('.card-text').innerText = `Você está acessando com o perfil: ${usuario.profile}.`;
 
+    // Mostrar ou esconder cards com base no perfil
+    const cardCadastro = document.getElementById('card_cadastro');
+    const cardFuncionarios = document.getElementById('card_funcionarios');
+    const cardProjetos = document.getElementById('card_projetos');
+    const cardPerfil = document.getElementById('card_perfil');
+
+    if (usuario.profile === 'Gestor' || usuario.profile === 'RH') {
+        cardCadastro.style.display = 'block';
+        cardFuncionarios.style.display = 'block';
+        cardProjetos.style.display = 'block';
+        cardPerfil.style.display = 'block';
+    } else if (usuario.profile === 'Funcionário') {
+        cardCadastro.style.display = 'none';
+        cardFuncionarios.style.display = 'none';
+        cardProjetos.style.display = 'block';
+        cardPerfil.style.display = 'block';
+    }
 }
+
+// Função para mudar o perfil do usuário
+function mudarPerfil(nomeUsuario) {
+    const users = JSON.parse(localStorage.getItem('users'));
+    const usuario = users.find(user => user.name === nomeUsuario);
+
+    if (usuario) {
+        localStorage.setItem('currentUser', JSON.stringify(usuario));
+        atualizarInterface(usuario);
+    } else {
+        console.error('Usuário não encontrado');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', carregarPerfil);
+
+// Exemplo de uso para testar
+// mudarPerfil('Catiane de Souza');
+// mudarPerfil('Brenda Drumond');
+// mudarPerfil('Kayque Fonseca');
