@@ -45,7 +45,7 @@ body{
     font-size: 1.5rem; /* Adaptado para ser responsivo */
     align-items: center;
     justify-content: space-between;
-    height: 10%;
+    padding: 20px;
 }
 #logo{
     font-size: 25px;
@@ -54,18 +54,23 @@ body{
     
 }
 #botaoSair{
-    color: var(--cor-primaria-fonte);
-    background-color: #ff3d3d;
+    font-size: 16px;
+    background-color: #dc3545;
     padding: 10px;
-    border-radius: 7px;
-    margin-right: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    color: white;
     cursor: pointer;
+
+    margin-right: 20px;
+
 }
 #botaoSair:hover{
-    background-color: #fd6e6e;
+    background-color: #bb2d3b;
 }
 #botaoSair:active{
-    background-color: #b92c2c;
+    background-color: #b02a37;
 }
 #funcionariosContainer{
     display: flex;
@@ -82,10 +87,15 @@ body{
     justify-content: center;    
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
 
-    min-width: 250px;
+    min-width: 253px;
+    width: 100%;
     padding: 0 10px 0 10px;
 
-    height: 100%;
+    height: calc(100% - 30px);
+
+    border-radius: 0 0 7px 7px;
+    margin-left: 13px;
+    margin-top: 10px;
     
 }
 
@@ -93,9 +103,6 @@ body{
 
     position: sticky;
     top: 10px;
-}
-#opcao_1{
-    border-top: 2px solid white;
 }
 .opcaoMenu {
     border-bottom: 2px solid white;
@@ -120,6 +127,8 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
+
+    margin-left: 30px;
 }
 #cards{
     width: 100%;
