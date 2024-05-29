@@ -122,8 +122,10 @@ html, body
 }
 
 #avatar{
-    width: 100%;
-    height: 100%;
+    max-width: 130px;
+    margin-right: 20px;
+    border-radius: 8px;
+
 }
 
 td{
@@ -132,7 +134,8 @@ td{
 }
 
 .table td{
-    background-color: var(--cor-terciaria);  
+    background-color: var(--cor-primaria);  
+    border-radius: 8px;
 }
 
 #comunicacao{
@@ -226,4 +229,27 @@ td{
 
 #projetos{
     margin-top: 5px;
+}
+
+#card_dadosperfl{
+    background-color: var(--cor-primaria);
+    height: 99%;
+
+}
+
+#card_dadosperfl2{
+    background-color: var(--cor-primaria);
+    padding: 2%;
+    border: var(--cor-primaria);
+
+}
+
+
+#nome_usuario, #cargo_usuario, #skills{
+    color: var(--cor-primaria-fonte);
+    justify-content: right;
+}
+
+#nome_usuario, #cargo_usuario {
+    padding-left: 40px;
 }
