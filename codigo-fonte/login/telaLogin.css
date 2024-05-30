@@ -145,3 +145,19 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--cor-primaria);
 }
+
+.senhaContainer {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.senhaContainer i {
+
+    color: var(--cor-terciaria);
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
