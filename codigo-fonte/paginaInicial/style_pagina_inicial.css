@@ -52,7 +52,6 @@ html, body
 
 #containerInicio{
     width: 100%;
-    height: 100%;
     background-color: var(--cor-background);
     color: var(--cor-primaria-fonte);
     margin: auto; /* Centraliza o container */
@@ -60,14 +59,14 @@ html, body
     font-family: "Press Start 2P", system-ui; 
     position: relative;
     top: 7.9%;
-    height: 100%;
+    height: 100%
     height: -webkit-calc(100% - 100px);
     height: -moz-calc(100% - 100px);
     height: calc(100% - 100px); 
 }
 
 #menulateral {
-    width: 100%;
+    width: 15%;
     height: 100%;
     background-color:var(--cor-secundaria);
     display: block;
@@ -76,7 +75,6 @@ html, body
     float: left;
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
     position: fixed; 
-    width: 15%;
     height: -webkit-calc(100% - 100px);
     height: -moz-calc(100% - 100px); 
     height: calc(100% - 100px); 
