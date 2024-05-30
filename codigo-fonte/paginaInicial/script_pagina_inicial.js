@@ -1,63 +1,57 @@
-const users = [
-    { name: "Hayala", profile: "Gestor" },
-    { name: "Brenda Drumond", profile: "Gestor" },
-    { name: "Catiane de Souza", profile: "RH" },
-    { name: "Nikolas Mota", profile: "Gestor" },
-    { name: "Kayque Fonseca", profile: "Funcionário" }
-];
+let nome = localStorage.getItem('nome');
+let cargo = localStorage.getItem('cargo');
+let email = localStorage.getItem('email');
+let token = localStorage.getItem('token');
 
-localStorage.setItem('users', JSON.stringify(users));
-localStorage.setItem('currentUser', JSON.stringify({ name: "Brenda Drumond", profile: "Gestor" }));
+var bemvindo = document.querySelector('#bemvindo');
+bemvindo.innerHTML = `Seja bem-vindo: ${nome}`;
 
-function carregarPerfil() {
-    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    if (currentUser) {
-        atualizarInterface(currentUser);
-    }
+var acesso = document.querySelector('#acesso');
+acesso.innerHTML = `Você está acessando com o perfil: ${cargo}.`;
+
+var cadastro = document.querySelector('.cadastro');
+var opcao_2 = document.querySelector('#opcao_2');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    cadastro.setAttribute('style','display:block')
+    opcao_2.setAttribute('style','display:block')
+
+} else{ 
+    cadastro.setAttribute('style','display:none')
+    opcao_2.setAttribute('style','display:none') 
 }
 
-function atualizarInterface(usuario) {
-    // Atualizar a saudação
-    document.getElementById('bemvindo').innerText = `Seja bem-vindo: ${usuario.name}`;
+var funcionarios = document.querySelector('.funcionarios');
+var opcao_3 = document.querySelector('#opcao_3');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    funcionarios.setAttribute('style','display:block')
+    opcao_3.setAttribute('style','display:block')
 
-    // Atualizar a informação de perfil
-    document.querySelector('.card-text').innerText = `Você está acessando com o perfil: ${usuario.profile}.`;
-
-    // Mostrar ou esconder cards com base no perfil
-    const cardCadastro = document.getElementById('card_cadastro');
-    const cardFuncionarios = document.getElementById('card_funcionarios');
-    const cardProjetos = document.getElementById('card_projetos');
-    const cardPerfil = document.getElementById('card_perfil');
-
-    if (usuario.profile === 'Gestor' || usuario.profile === 'RH') {
-        cardCadastro.style.display = 'block';
-        cardFuncionarios.style.display = 'block';
-        cardProjetos.style.display = 'block';
-        cardPerfil.style.display = 'block';
-    } else if (usuario.profile === 'Funcionário') {
-        cardCadastro.style.display = 'none';
-        cardFuncionarios.style.display = 'none';
-        cardProjetos.style.display = 'block';
-        cardPerfil.style.display = 'block';
-    }
+} else{ 
+    funcionarios.setAttribute('style','display:none')
+    opcao_3.setAttribute('style','display:none') 
 }
 
-// Função para mudar o perfil do usuário
-function mudarPerfil(nomeUsuario) {
-    const users = JSON.parse(localStorage.getItem('users'));
-    const usuario = users.find(user => user.name === nomeUsuario);
 
-    if (usuario) {
-        localStorage.setItem('currentUser', JSON.stringify(usuario));
-        atualizarInterface(usuario);
-    } else {
-        console.error('Usuário não encontrado');
-    }
-}
 
-document.addEventListener('DOMContentLoaded', carregarPerfil);
+//Teste 
+/*
+mathRandom = Math.random().toString(16).substr(2);
+token = mathRandom + mathRandom;
 
-// Exemplo de uso para testar
-// mudarPerfil('Catiane de Souza');
-// mudarPerfil('Brenda Drumond');
-// mudarPerfil('Kayque Fonseca');
+localStorage.setItem("token", token);
+
+localStorage.setItem('nome', 'Cássio Marques de Araújo');
+localStorage.setItem('email', 'cascaoLimoeiro@gmail.com');
+localStorage.setItem('cargo', 'Gestor');
+*/
+
+/*
+let mathRandom = Math.random().toString(16).substr(2);
+  let token = mathRandom + mathRandom;
+   
+  localStorage.setItem("token", token);
+ 
+  localStorage.setItem('nome', 'Magali Fernandes de Lima');
+  localStorage.setItem('email', 'magaliMelancia@gmail.com');
+  localStorage.setItem('cargo', 'Desenvolvedor');
+*/
