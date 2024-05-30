@@ -140,8 +140,8 @@ body {
 
 
 #senhaUsuarioInput {
-    width: 90%; 
     border-radius: 10px;
+    width: 90%;
 }
 
 
@@ -229,6 +229,26 @@ display: none;
 #objetivosTextarea{
     resize: none;
 }
+
+
+.senhaContainer {
+    position: relative;
+}
+
+.senhaContainer i {
+
+    color: var(--cor-terciaria);
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 12%;
+    top: 74%;
+    transform: translateY(-50%);
+}
+
+
+
+
 
 
 

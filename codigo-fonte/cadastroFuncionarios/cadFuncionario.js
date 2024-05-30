@@ -211,6 +211,23 @@ botaoCadastrar.addEventListener('click', function () {
 })
 
 
+function mostrarSenha() {
+    var senhaInput = document.getElementById("senhaUsuarioInput");
+    var iconeVerSenha = document.getElementById("verSenha");
+
+    if (senhaInput.type === "password") {
+        senhaInput.type = "text";
+        iconeVerSenha.classList.remove("bi-eye-fill");
+        iconeVerSenha.classList.add("bi-eye-slash-fill");
+    } else {
+        senhaInput.type = "password";
+        iconeVerSenha.classList.remove("bi-eye-slash-fill");
+        iconeVerSenha.classList.add("bi-eye-fill");
+    }
+}
+
+
+
 
 
 
