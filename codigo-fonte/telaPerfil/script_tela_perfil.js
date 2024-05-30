@@ -1,193 +1,91 @@
-// Perfis de teste
-const perfis = {
-    Hayala: {
-        nome: 'Hayala',
-        cargo: 'Professor',
-        avatar: '../img/Avatar_Hayala.png',
-        softSkills: {
-            comunicacao: 3,
-            criatividade: 6,
-            lideranca: 1,
-            organizacao: 6,
-            analitico: 3,
-            equipe: 8
-        },
-        hardSkills: {
-            HTML: 1,
-            CSS: 6,
-            JavaScript: 2,
-            Csharp: 0,
-            SQL: 9,
-            Python: 4,
-            Cplusplus: 1,
-            Java: 3
-        },
-        sobreMim: 'Sou professor na Pontifícia Universidade Católica de Minas Gerais, e orientador dos alunos do 1º período do curso de Análise e Desenvolvimento de Sistemas no Projeto de Web Front End.',
-        objetivos: 'Meu objetivo é que meus alunos sejam aprovados com êxito.',
-        projetos: ['GameOfWork']
-    },
-    Brenda: {
-        nome: 'Brenda Drumond',
-        cargo: 'Designer',
-        avatar: '../img/Avatar_Brenda.png',
-        softSkills: {
-            comunicacao: 8,
-            criatividade: 8,
-            lideranca: 8,
-            organizacao: 9,
-            analitico: 8,
-            equipe: 7
-        },
-        hardSkills: {
-            HTML: 7,
-            CSS: 6,
-            JavaScript: 3,
-            Csharp: 0,
-            SQL: 5,
-            Python: 0,
-            Cplusplus: 0,
-            Java: 0
-        },
-        sobreMim: 'Sou designer com experiência em projetos de branding e UX/UI.',
-        objetivos: 'Meu objetivo é criar experiências visuais incríveis.',
-        projetos: ['Coca-Cola', 'GameOfWork', 'Vida Saldável', 'McDonalds', 'Gestão a Vista', 'Jogos']
-    },
-    Catiane: {
-        nome: 'Catiane de Souza',
-        cargo: 'Desenvolvedor de Sistemas',
-        avatar: '../img/Avatar_Catiane.png',
-        softSkills: {
-            comunicacao: 5,
-            criatividade: 8,
-            lideranca: 4,
-            organizacao: 7,
-            analitico: 6,
-            equipe: 9
-        },
-        hardSkills: {
-            HTML: 7,
-            CSS: 9,
-            JavaScript: 6,
-            Csharp: 5,
-            SQL: 8,
-            Python: 7,
-            Cplusplus: 4,
-            Java: 6
-        },
-        sobreMim: 'Sou desenvolvedora com foco em front-end.',
-        objetivos: 'Quero criar interfaces objetivas e funcionais.',
-        projetos: ['Coca-Cola', 'GameOfWork', 'Vida Saldável', 'McDonalds', 'Gestão a Vista', 'Jogos']
-    },
-    Kayque: {
-        nome: 'Kayque Fonseca',
-        cargo: 'Analista de Sistemas',
-        avatar: '../img/Avatar_Kayque.png',
-        softSkills: {
-            comunicacao: 6,
-            criatividade: 9,
-            lideranca: 7,
-            organizacao: 5,
-            analitico: 6,
-            equipe: 9,
-        },
-        hardSkills: {
-            HTML: 9,
-            CSS: 2,
-            JavaScript: 7,
-            Csharp: 9,
-            SQL: 9,
-            Python: 6,
-            Cplusplus: 6,
-            Java: 9,
-        },
-        sobreMim: 'Sou analista de sistemas com experiência em desenvolvimento full-stack.',
-        objetivos: 'Desejo liderar projetos inovadores e eficientes.',
-        projetos: ['Coca-Cola', 'GameOfWork', 'Vida Saldável', 'McDonalds', 'Gestão a Vista', 'Jogos']
-    },
-    Nikolas: {
-        nome: 'Nikolas Mota',
-        cargo: 'Engenheiro de Software',
-        avatar: '../img/Avatar_Nikolas.png',
-        softSkills: {
-            comunicacao: 6,
-            criatividade: 9,
-            lideranca: 7,
-            organizacao: 4,
-            analitico: 6,
-            equipe: 9,
-        },
-        hardSkills: {
-            HTML: 7,
-            CSS: 2,
-            JavaScript: 7,
-            Csharp: 6,
-            SQL: 9,
-            Python: 4,
-            Cplusplus: 6,
-            Java: 5,
-        },
-        sobreMim: 'Sou engenheiro de software com foco em inteligência artificial e machine learning.',
-        objetivos: 'Quero desenvolver soluções inteligentes e automatizadas.',
-        projetos: ['Coca-Cola', 'GameOfWork', 'Vida Saldável', 'McDonalds', 'Gestão a Vista', 'Jogos']
-    }
-};
+let nome = localStorage.getItem('nome');
+let cargo = localStorage.getItem('cargo');
+let email = localStorage.getItem('email');
+let token = localStorage.getItem('token');
 
-localStorage.setItem('perfis', JSON.stringify(perfis));
+var nome_usuario = document.querySelector('#nome_usuario');
+nome_usuario.innerHTML = nome;
 
-function carregarPerfil() {
-    const perfilAtual = JSON.parse(localStorage.getItem('perfilAtual'));
-    if (perfilAtual) {
-        document.querySelector("#nome_usuario").innerHTML = `Nome: ${perfilAtual.nome}`;
-        document.querySelector("#cargo_usuario").innerHTML = `Cargo: ${perfilAtual.cargo}`;
-        document.querySelector("#avatar").src = perfilAtual.avatar;
+var cargo_usuario = document.querySelector('#cargo_usuario');
+cargo_usuario.innerHTML = cargo;
 
-        // Soft skills
-        document.querySelector("#comunicacao").nextElementSibling.innerHTML = perfilAtual.softSkills.comunicacao;
-        document.querySelector("#criatividade").nextElementSibling.innerHTML = perfilAtual.softSkills.criatividade;
-        document.querySelector("#lideranca").nextElementSibling.innerHTML = perfilAtual.softSkills.lideranca;
-        document.querySelector("#organizacao").nextElementSibling.innerHTML = perfilAtual.softSkills.organizacao;
-        document.querySelector("#analitico").nextElementSibling.innerHTML = perfilAtual.softSkills.analitico;
-        document.querySelector("#equipe").nextElementSibling.innerHTML = perfilAtual.softSkills.equipe;
+var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+var listaCargos = JSON.parse(localStorage.getItem('listaCargos'));
 
-        // Hard skills
-        document.querySelector("#HTML").nextElementSibling.innerHTML = perfilAtual.hardSkills.HTML;
-        document.querySelector("#CSS").nextElementSibling.innerHTML = perfilAtual.hardSkills.CSS;
-        document.querySelector("#JavaScript").nextElementSibling.innerHTML = perfilAtual.hardSkills.JavaScript;
-        document.querySelector("#Csharp").nextElementSibling.innerHTML = perfilAtual.hardSkills.Csharp;
-        document.querySelector("#SQL").nextElementSibling.innerHTML = perfilAtual.hardSkills.SQL;
-        document.querySelector("#Python").nextElementSibling.innerHTML = perfilAtual.hardSkills.Python;
-        document.querySelector("#Cplusplus").nextElementSibling.innerHTML = perfilAtual.hardSkills.Cplusplus;
-        document.querySelector("#Java").nextElementSibling.innerHTML = perfilAtual.hardSkills.Java;
 
-        // Descrição e objetivos
-        document.querySelector("#Descricao p:nth-of-type(1)").innerHTML = perfilAtual.sobreMim;
-        document.querySelector("#Descricao p:nth-of-type(2)").innerHTML = perfilAtual.objetivos;
-
-        // Projetos
-        const projetosList = document.querySelector("#projetos_o");
-        projetosList.innerHTML = ''; // Limpar projetos existentes
-        perfilAtual.projetos.forEach(projeto => {
-            const projetoItem = document.createElement('h6');
-            projetoItem.innerHTML = projeto;
-            projetosList.appendChild(projetoItem);
-        });
-    } else {
-        console.error('Perfil não encontrado no localStorage.');
+const valorSoftSkills = document.getElementsByClassName('valorSoftSkills')
+for (let i = 0; i < listaUsuarios.length; i++) {
+    if (listaUsuarios[i].email==email) {
+        for (let j = 0; j < valorSoftSkills.length; j++) {
+            valorSoftSkills[j].innerHTML = listaUsuarios[i].softSkills[j]
+        }
     }
 }
 
-function mudarPerfil(usuario) {
-    const perfis = JSON.parse(localStorage.getItem('perfis'));
-    const perfil = perfis[usuario];
-    if (perfil) {
-        localStorage.setItem('perfilAtual', JSON.stringify(perfil));
-        carregarPerfil();
-    } else {
-        console.error('Usuário não encontrado.');
+const nomeHardSkills = document.getElementsByClassName('nomeHardSkills')
+const valorHardSkills = document.getElementsByClassName('valorHardSkills')
+
+for (let i = 0; i < listaCargos.length; i++) {
+    if (listaCargos[i].cargo==cargo) {
+        for (let j = 0; j < nomeHardSkills.length; j++) {
+            nomeHardSkills[j].innerHTML = listaCargos[i].hardSkills[j] + ':'
+
+        }
     }
 }
 
-document.addEventListener('DOMContentLoaded', carregarPerfil);
+for (let i = 0; i < listaUsuarios.length; i++) {
+    if (listaUsuarios[i].email==email) {
+        for (let j = 0; j < valorHardSkills.length; j++) {
+            valorHardSkills[j].innerHTML = listaUsuarios[i].hardSkills[j]
 
-// Exemplo de teste: 
-mudarPerfil('Brenda');
+        }
+    }
+}
+
+const sobremim = document.querySelector('#sobremim');
+for (let i = 0; i < listaUsuarios.length; i++) {
+    if (listaUsuarios[i].email==email) {       
+        sobremim.innerHTML = listaUsuarios[i].sobre_mim
+     }
+}
+
+
+const objetivos = document.querySelector('#objetivos');
+for (let i = 0; i < listaUsuarios.length; i++) {
+    if (listaUsuarios[i].email==email) {       
+        objetivos.innerHTML = listaUsuarios[i].objetivos
+     }
+}
+
+
+const projetos_o = document.querySelector('#projetos_o');
+for (let i = 0; i < listaUsuarios.length; i++) {
+    if (listaUsuarios[i].email==email) {   
+        var projetos = listaUsuarios[i].projetos    
+     }
+}
+
+for (let i = 0; i < projetos.length; i++) {
+    const h6 = document.createElement('h6')
+    h6.innerHTML = projetos[i]
+    projetos_o.appendChild(h6)
+}
+
+const avatar = document.querySelector('#avatar');
+if (cargo=='Gestor') {
+    avatar.src = "..\imagens\avatar\Avatar_Hayala.png"
+}
+
+if (cargo=='RH') {
+    avatar.src = '..\imagens\avatar\Avatar_Catiane.png'
+}
+
+if (cargo=='Desenvolvedor') {
+    avatar.src = '..\imagens\avatar\Avatar_Nikolas.png'
+}
+
+if (cargo=='Design') {
+    avatar.src = '..\imagens\avatar\Avatar_Kayque.png'
+}
+
