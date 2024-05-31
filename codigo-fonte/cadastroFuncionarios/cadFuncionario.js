@@ -1,4 +1,3 @@
-// Declaração de variáveis "conteudo-interno-informacoes-pessoais1", "conteudo-interno-informacoes-pessoais2" && "descricao" 
 const labelNome = document.querySelector('#labelNome')
 const nomeUsuarioInput = document.querySelector('#nomeUsuarioInput')
 
@@ -20,7 +19,9 @@ const sobreMimTextarea = document.querySelector('#sobreMimTextarea')
 const labelObjetivos = document.querySelector('#labelObjetivos')
 const objetivosTextarea = document.querySelector('#objetivosTextarea')
 
+const botaoCadastrar = document.querySelector('#botaoCadastrar')
 
+const inputSkill = document.getElementsByClassName("inputSkill")
 
 
 //Expressão regular para validar usuário. Aceita apenas letras.
@@ -32,11 +33,8 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Expressão regular para validar senha.
 const senhaRegex = /^(?=.*[!@#$%^&*()_+|~-])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}$/;
 
-const botaoCadastrar = document.querySelector('#botaoCadastrar')
-
-const inputSkill = document.getElementsByClassName("inputSkill")
-
-
+// Carrega os dados do localStorage
+var listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
 function cadastrar() {
@@ -56,8 +54,8 @@ nomeUsuarioInput.addEventListener('keyup', () => {
     }
 })
 
-//
 especialidadeUsuarioInput.addEventListener('keyup', () => {
+
     if (especialidadeUsuarioInput.value.length > 2) {
         labelEspecialidade.setAttribute('style', 'color:#87c455;');
         especialidadeUsuarioInput.setAttribute('style', 'border-color:#87c455;')
@@ -83,7 +81,7 @@ emailUsuarioInput.addEventListener('keyup', () => {
 //Validação da Senha com RegEx
 senhaUsuarioInput.addEventListener('keyup', () => {
     const senhaValue = senhaUsuarioInput.value;
-    // Expressão regular para validar a senha. Deve conter no mínimo 6 caracteres, um caractere especial, uma letra maiúscula, uma letra minúscula e um número. O máximo de carateres aceitos é quinze.
+
     if (senhaRegex.test(senhaValue)) {
         labelSenha.setAttribute('style', 'color:#87c455;');
         senhaUsuarioInput.setAttribute('style', 'border-color:#87c455;');
@@ -96,8 +94,9 @@ senhaUsuarioInput.addEventListener('keyup', () => {
 
 cargoSelect.addEventListener('change', () => {
 
+    //Se nenhuma opção for selecionada
     if (cargoSelect.value === "Selecione..") {
-        //Se nenhuma opção for selecionada
+        
         labelCargo.setAttribute('style', 'color:#ff5959;');
         cargoSelect.setAttribute('style', 'border-color:#ff5959;');
     } else {
@@ -105,10 +104,6 @@ cargoSelect.addEventListener('change', () => {
         cargoSelect.setAttribute('style', 'border-color:#87c455;');
     }
 })
-
-
-// Carrega os dados do localStorage
-var listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
 // Função para adicionar as opções ao select
@@ -162,9 +157,6 @@ cargoSelect.addEventListener('change', () => {
 });
 
 
-
-
-
 botaoCadastrar.addEventListener('click', function () {
     let contador = 0
     if (nomeUsuarioInput.value == "" ||
@@ -173,10 +165,12 @@ botaoCadastrar.addEventListener('click', function () {
         emailUsuarioInput.value == "" ||
         sobreMimTextarea.value == "" ||
         objetivosTextarea.value == "" ||
-        cargoSelect.value == "") {
-        contador = contador + 1
+        cargoSelect.value == ""
+    ) {
+        contador++
+    } 
 
-    } // Se não estiver validado corretamente contador = +1
+    //Verfica se algum input de skill está vazio
     for (let i = 0; i < inputSkill.length; i++) {
 
         if (inputSkill[i].value == "") {
@@ -202,13 +196,34 @@ botaoCadastrar.addEventListener('click', function () {
     // Se estiver todas as informações forem validadas alert e chamar a função CADASTRAR.
     if (contador == 0) {
         cadastrar()
-        alert('DEU BOM PARCEIRO!!!')
+        alert('Cadastrado com sucesso!!!')
 
     } else {
-        alert('INPUT VAZIO!!!')
+        alert('Algo está errado, tente novamente.')
     }
 
 })
+
+
+for (var i = 0; i < inputSkill.length; i++) {
+    inputSkill[i].addEventListener('keypress', function(e) {
+        // Prevent specific characters from being inputted
+        if (e.key === '-' || e.key === '+' || e.key === 'e' || e.key === 'E' || e.key === '.' || e.key === ',') {
+            e.preventDefault();
+        }
+        
+        if (this.value.length >= 1) {
+            e.preventDefault();
+        }
+    });
+
+    inputSkill[i].addEventListener('input', function() {
+        if (this.value.length > 1) {
+            this.value = this.value.slice(0, 1);
+        }
+    });
+}
+    
 
 
 function mostrarSenha() {
@@ -225,6 +240,13 @@ function mostrarSenha() {
         iconeVerSenha.classList.add("bi-eye-fill");
     }
 }
+
+
+
+
+
+
+
 
 
 
