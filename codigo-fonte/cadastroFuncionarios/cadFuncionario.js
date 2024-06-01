@@ -45,7 +45,7 @@ function cadastrar() {
 nomeUsuarioInput.addEventListener('keyup', () => {
     const usuarioValue = nomeUsuarioInput.value;
 
-    if (usuarioRegex.test(usuarioValue) && nomeUsuarioInput.value.length > 3) {
+    if (usuarioRegex.test(usuarioValue) && nomeUsuarioInput.value.length > 2) {
         labelNome.setAttribute('style', 'color:#87c455;');
         nomeUsuarioInput.setAttribute('style', 'border-color:#87c455;')
     } else {
