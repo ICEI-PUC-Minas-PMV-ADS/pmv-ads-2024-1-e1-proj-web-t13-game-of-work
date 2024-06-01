@@ -54,6 +54,7 @@ nomeUsuarioInput.addEventListener('keyup', () => {
     }
 })
 
+// Validação da especialidade
 especialidadeUsuarioInput.addEventListener('keyup', () => {
 
     if (especialidadeUsuarioInput.value.length > 2) {
@@ -121,6 +122,26 @@ window.addEventListener('load', () => {
     carregarOpcoesCargos();
 });
 
+// Função para adicionar event listeners aos inputs de skills
+function adicionarValidacaoSkills() {
+    const inputSkills = document.getElementsByClassName('inputSkill');
+    for (var i = 0; i < inputSkills.length; i++) {
+        inputSkills[i].addEventListener('keypress', function(e) {
+            if (e.key === '-' || e.key === '+' || e.key === 'e' || e.key === 'E' || e.key === '.' || e.key === ',') {
+                e.preventDefault();
+            }
+            if (this.value.length >= 1) {
+                e.preventDefault();
+            }
+        });
+        inputSkills[i].addEventListener('input', function() {
+            if (this.value.length > 1) {
+                this.value = this.value.slice(0, 1);
+            }
+        });
+    }
+}
+
 // Event listener para capturar a seleção do cargo
 cargoSelect.addEventListener('change', () => {
     const cargoSelecionado = cargoSelect.value;
@@ -143,6 +164,7 @@ cargoSelect.addEventListener('change', () => {
                 input.type = 'number';
                 input.maxlength = '1';
                 input.name = `input${skill.replace(/\s+/g, '')}`; // Remove espaços e adiciona ao nome do input
+                input.classList.add('inputSkill'); // Adiciona a classe inputSkill aos inputs criados dinamicamente
 
                 // Lógica para definir a cor da hard skill dinamicamente
                 const skillClass = `hardSkill${index + 1}`;
@@ -152,78 +174,60 @@ cargoSelect.addEventListener('change', () => {
                 span.appendChild(input);
                 hardSkillsElement.appendChild(span);
             });
+
+            // Adiciona validação aos novos inputs de skills
+            adicionarValidacaoSkills();
         }
     }
 });
 
 
-botaoCadastrar.addEventListener('click', function () {
-    let contador = 0
+// Função de validação geral
+function validarFormulario() {
+    let contador = 0;
     if (nomeUsuarioInput.value == "" ||
         senhaUsuarioInput.value == "" ||
         especialidadeUsuarioInput.value == "" ||
         emailUsuarioInput.value == "" ||
         sobreMimTextarea.value == "" ||
         objetivosTextarea.value == "" ||
-        cargoSelect.value == ""
-    ) {
-        contador++
-    } 
+        cargoSelect.value == "") {
+        contador++;
+    }
 
-    //Verfica se algum input de skill está vazio
-    for (let i = 0; i < inputSkill.length; i++) {
-
-        if (inputSkill[i].value == "") {
-            contador = contador + 1
+    const inputSkills = document.getElementsByClassName('inputSkill');
+    for (let i = 0; i < inputSkills.length; i++) {
+        if (inputSkills[i].value == "") {
+            contador++;
         }
     }
+
     if (!(senhaRegex.test(senhaUsuarioInput.value))) {
-        contador = contador + 1
+        contador++;
     }
 
     if (!(emailRegex.test(emailUsuarioInput.value))) {
-        contador = contador + 1
+        contador++;
     }
 
     if (!(especialidadeUsuarioInput.value.length > 2)) {
-        contador = contador + 1
+        contador++;
     }
 
-    if (!(usuarioRegex.test(nomeUsuarioInput.value) && nomeUsuarioInput.value.length > 3)) {
-        contador = contador + 1
+    if (!(usuarioRegex.test(nomeUsuarioInput.value) && nomeUsuarioInput.value.length > 2)) {
+        contador++;
     }
 
-    // Se estiver todas as informações forem validadas alert e chamar a função CADASTRAR.
     if (contador == 0) {
-        cadastrar()
-        alert('Cadastrado com sucesso!!!')
-
+        cadastrar();
+        alert('Cadastrado com sucesso!!!');
     } else {
-        alert('Algo está errado, tente novamente.')
+        alert('Algo está errado, tente novamente.');
     }
-
-})
-
-
-for (var i = 0; i < inputSkill.length; i++) {
-    inputSkill[i].addEventListener('keypress', function(e) {
-        // Prevent specific characters from being inputted
-        if (e.key === '-' || e.key === '+' || e.key === 'e' || e.key === 'E' || e.key === '.' || e.key === ',') {
-            e.preventDefault();
-        }
-        
-        if (this.value.length >= 1) {
-            e.preventDefault();
-        }
-    });
-
-    inputSkill[i].addEventListener('input', function() {
-        if (this.value.length > 1) {
-            this.value = this.value.slice(0, 1);
-        }
-    });
 }
-    
+
+// Event listener para o botão de cadastrar
+botaoCadastrar.addEventListener('click', validarFormulario);    
 
 
 function mostrarSenha() {
