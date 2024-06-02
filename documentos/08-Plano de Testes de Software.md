@@ -17,8 +17,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | **Critérios de êxito** | Todos os cards da Página Inicial devem encaminhar o usuário para as páginas descritas.  |
 | **Responsável pela elaboração do caso de Teste** | Brenda Drumond |
 
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-02 - Login |
 |:---|:---|
 | Requisitos Associados | RF-X |
 | Objetivo do Teste | Descrição do objetivo do teste |
@@ -26,7 +25,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-03 - Cadastro Funcionários |
 |:---|:---|
 | Requisitos Associados | RF-X |
 | Objetivo do Teste | Descrição do objetivo do teste |
@@ -34,7 +33,31 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-04 - Tela Perfil |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-05 - Cadastro Proejtos |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-06 - Tela Projetos |
+|:---|:---|
+| **Requisitos Associados** | RF-10 Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo;<br>RF-15 Deve exibir uma lista com os projetos cadastrados;<br>RF-20 Deve exibir uma lista com os projetos cadastrados;<br>RF-21 Deve exibir quais funcionários estão participando de um projeto.|
+| **Objetivo do Teste** | Verificar se a Tela Projetos está apresentando as informações corretamente, baseado no cadastro do projeto.|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Login;<br>4) Preencher seus dados e clicar em “Entrar”;<br>5)Visualizar a Página Inicial;<br>6)Clicar no card "Projetos" ou no menu lateral;<br>7)Visualizar a página Projetos e verificar os dados.|
+| **Critérios de êxito** | As informações cadastradas devem estar disponibilizadas corretamente na página Projetos.|
+| **Responsável pela elaboração do caso de Teste** | Brenda Drumond |
+
+|Caso de Teste    | CT-07 - Lista Funcionários |
 |:---|:---|
 | Requisitos Associados | RF-X |
 | Objetivo do Teste | Descrição do objetivo do teste |
