@@ -13,7 +13,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF- 02: Local de navegação intuitivo sem dificuldade de entendimento;<br>RF- 01: Tela de login, com acesso diferente para cada perfil de usuário. |
 | **Objetivo do Teste** | Verificar se os cards direcionadores da Página Inicial estão encaminhando para as respectivas páginas corretamente. |
-| **Passos** | 1) Acessar o navegador;<br><br>2) Informar o endereço do site;<br><br>3) Visualizar a Página Inicial;<br><br>4) Clicar nos cards da página. |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4) Clicar nos cards da página. |
 | **Critérios de êxito** | Todos os cards da Página Inicial devem encaminhar o usuário para as páginas descritas.  |
 | **Responsável pela elaboração do caso de Teste** | Brenda Drumond |
 
