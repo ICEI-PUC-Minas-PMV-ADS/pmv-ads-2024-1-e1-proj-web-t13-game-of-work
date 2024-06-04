@@ -20,6 +20,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script defer src="cadFuncionario.js"></script>
+    <script defer type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+
 </head>
 
 <body>
@@ -30,9 +32,8 @@
     <div id="centro">
 
         <main class="conteudo">
-
             <div class="cabecalho-interno">
-                <p>Cadastrar Funcionário</p>
+                <p id="textoCabecalho">Cadastrar Funcionário</p>
             </div>
 
             <section class="caixa-de-dialogo">
@@ -66,7 +67,7 @@
                         <div class="senhaContainer">
                             <label for="senhaUsuarioInput" id="labelSenha">Senha</label><br>
                             <input type="password" name="senha" id="senhaUsuarioInput" >
-                            <i class="bi bi-eye-fill" id="verSenha" onclick="mostrarSenha()"></i>
+                            <i class="bi bi-eye-fill" id="verSenha"></i>
                         </div>
 
 
@@ -94,22 +95,22 @@
 
                     <div id="softSkills">
                         <span>
-                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number" maxlength="1" name="inputsoftSkill1" class="inputSkill">
+                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number" maxlength="1" name="inputsoftSkill1" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number" maxlength="1" name="inputsoftSkill2" class="inputSkill">
+                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number" maxlength="1" name="inputsoftSkill2" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number" maxlength="1" name="inputsoftSkill3" class="inputSkill">
+                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number" maxlength="1" name="inputsoftSkill3" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number" maxlength="1" name="inputsoftSkill4" class="inputSkill">
+                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number" maxlength="1" name="inputsoftSkill4" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number" maxlength="1" name="inputsoftSkill5" class="inputSkill">
+                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number" maxlength="1" name="inputsoftSkill5" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"maxlength="1" name="inputsoftSkill6" class="inputSkill">
+                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"maxlength="1" name="inputsoftSkill6" class="inputSkill inputSoftSkills">
                         </span>
                     </div>
 
@@ -117,28 +118,28 @@
 
                     <div id="hardSkills">
                         <span>
-                            <h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" maxlength="1" name="inputHardSkill1" class="inputSkill">
+                            <h4 class="hardSkill1 nomeHardSkill1 nomeHardSkills">HMTL:</h4><input type="number" maxlength="1" name="inputHardSkill1" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill2 nomeHardSkill2">SQL:</h4><input type="number" maxlength="1" name="inputHardSkill2" class="inputSkill">
+                            <h4 class="hardSkill2 nomeHardSkill2 nomeHardSkills">SQL:</h4><input type="number" maxlength="1" name="inputHardSkill2" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill3 nomeHardSkill3">CSS:</h4><input type="number" maxlength="1" name="inputHardSkill3" class="inputSkill">
+                            <h4 class="hardSkill3 nomeHardSkill3 nomeHardSkills">CSS:</h4><input type="number" maxlength="1" name="inputHardSkill3" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill4 nomeHardSkill4">Python:</h4><input type="number" maxlength="1" name="inputHardSkill4" class="inputSkill">
+                            <h4 class="hardSkill4 nomeHardSkill4 nomeHardSkills">Python:</h4><input type="number" maxlength="1" name="inputHardSkill4" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill5 nomeHardSkill5">JavaScript:</h4><input type="number" maxlength="1" name="inputHardSkill5" class="inputSkill">
+                            <h4 class="hardSkill5 nomeHardSkill5 nomeHardSkills">JavaScript:</h4><input type="number" maxlength="1" name="inputHardSkill5" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill6 nomeHardSkill6">C++:</h4><input type="number" maxlength="1" name="inputHardSkill6" class="inputSkill">
+                            <h4 class="hardSkill6 nomeHardSkill6 nomeHardSkills">C++:</h4><input type="number" maxlength="1" name="inputHardSkill6" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill7 nomeHardSkill7">C#:</h4><input type="number" maxlength="1" name="inputHardSkill7" class="inputSkill">
+                            <h4 class="hardSkill7 nomeHardSkill7 nomeHardSkills">C#:</h4><input type="number" maxlength="1" name="inputHardSkill7" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill8 nomeHardSkill8">Java:</h4><input type="number" maxlength="1" name="inputHardSkill8" class="inputSkill">
+                            <h4 class="hardSkill8 nomeHardSkill8 nomeHardSkills">Java:</h4><input type="number" maxlength="1" name="inputHardSkill8" class="inputSkill inputHardSkills">
                         </span>
                     </div>
 

@@ -23,6 +23,13 @@ const botaoCadastrar = document.querySelector('#botaoCadastrar')
 
 const inputSkill = document.getElementsByClassName("inputSkill")
 
+const inputSoftSkills = document.getElementsByClassName("inputSoftSkills")
+const inputHardSkills = document.getElementsByClassName("inputHardSkills")
+
+const nomeHardSkills = document.getElementsByClassName("nomeHardSkills")
+
+const verSenha = document.querySelector("#verSenha")
+
 
 //Expressão regular para validar usuário. Aceita apenas letras.
 const usuarioRegex = /^[a-zA-Z]+$/;
@@ -37,8 +44,87 @@ const senhaRegex = /^(?=.*[!@#$%^&*()_+|~-])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6
 var listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
+/* ----- CRIPTOGRAFIA -----*/
+// Chave de criptografia de 128 bits(16 bytes * 8 bits/byte = 128 bits)
+const key = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+
+function criptografa(texto) {
+
+    // Converte o texto para bytes
+    var textoBytes = aesjs.utils.utf8.toBytes(texto);
+
+    // The counter is optional, and if omitted will begin at 1
+    var aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
+    // Criptografa os bytes
+    var textoBytesCriptografado = aesCtr.encrypt(textoBytes);
+
+    // Converte os bytes criptografados para hexadecimal
+    var textoCriptografado = aesjs.utils.hex.fromBytes(textoBytesCriptografado);
+    return textoCriptografado;
+}
+
+function descriptografa(texto) {
+
+    // Converte o hexadecimal em bytes
+    var bytesCriptografados = aesjs.utils.hex.toBytes(texto);
+
+    // The counter mode of operation maintains internal state, so to
+    // decrypt a new instance must be instantiated.
+    var aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
+    // Descriptografa os bytes
+    var bytesDescriptografados = aesCtr.decrypt(bytesCriptografados);
+
+    // Converte os bytes descriptografados para texto
+    var textoDescriptografado = aesjs.utils.utf8.fromBytes(bytesDescriptografados);
+    return textoDescriptografado
+}
+
+
 function cadastrar() {
 
+    let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
+    let emailCadastrado = false;
+
+    listaUsuarios.forEach(usuario => {
+
+        if (usuario.email == emailUsuarioInput.value) {
+            emailCadastrado = true;
+        }
+
+    });
+
+    let sSkills = []
+    let hSkills = []
+
+    for (let i = 0; i < inputSoftSkills.length; i++) {
+        sSkills[i] = inputSoftSkills[i].value;
+    }
+
+    for (let i = 0; i < inputHardSkills.length; i++) {
+        hSkills[i] = inputHardSkills[i].value;
+    }
+
+    if (!emailCadastrado) {
+
+        listaUsuarios.push(
+            {
+                nome: nomeUsuarioInput.value,
+                email: emailUsuarioInput.value,
+                cargo: cargoSelect.value,
+                senha: criptografa(senhaUsuarioInput.value),
+                sobre_mim: sobreMimTextarea.value,
+                especialidade: especialidadeUsuarioInput.value,
+                objetivos: objetivosTextarea.value,
+                projetos: [],
+                hardSkills: hSkills,
+                softSkills: sSkills
+            })
+        localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
+
+        alert('Cadastrado com sucesso!!!');
+    } else {
+        alert("Este e-mail já está cadastrado!!!")
+    }
 }
 
 // Validação do nome do usuário. Não aceita carateres especiais e não aceita menos que 3 letras.
@@ -97,7 +183,7 @@ cargoSelect.addEventListener('change', () => {
 
     //Se nenhuma opção for selecionada
     if (cargoSelect.value === "Selecione..") {
-        
+
         labelCargo.setAttribute('style', 'color:#ff5959;');
         cargoSelect.setAttribute('style', 'border-color:#ff5959;');
     } else {
@@ -123,63 +209,35 @@ window.addEventListener('load', () => {
 });
 
 // Função para adicionar event listeners aos inputs de skills
-function adicionarValidacaoSkills() {
-    const inputSkills = document.getElementsByClassName('inputSkill');
-    for (var i = 0; i < inputSkills.length; i++) {
-        inputSkills[i].addEventListener('keypress', function(e) {
-            if (e.key === '-' || e.key === '+' || e.key === 'e' || e.key === 'E' || e.key === '.' || e.key === ',') {
-                e.preventDefault();
-            }
-            if (this.value.length >= 1) {
-                e.preventDefault();
-            }
-        });
-        inputSkills[i].addEventListener('input', function() {
-            if (this.value.length > 1) {
-                this.value = this.value.slice(0, 1);
-            }
-        });
-    }
+const inputSkills = document.getElementsByClassName('inputSkill');
+for (var i = 0; i < inputSkills.length; i++) {
+    inputSkills[i].addEventListener('keypress', function (e) {
+        if (e.key === '-' || e.key === '+' || e.key === 'e' || e.key === 'E' || e.key === '.' || e.key === ',') {
+            e.preventDefault();
+        }
+        if (this.value.length >= 1) {
+            e.preventDefault();
+        }
+    });
+    inputSkills[i].addEventListener('input', function () {
+        if (this.value.length > 1) {
+            this.value = this.value.slice(0, 1);
+        }
+    });
 }
 
 // Event listener para capturar a seleção do cargo
 cargoSelect.addEventListener('change', () => {
-    const cargoSelecionado = cargoSelect.value;
-    const cargo = listaCargos.find((c) => c.cargo === cargoSelecionado);
-
-    // Lógica para atualizar as hard skills com base no cargo selecionado
-    if (cargo) {
-        const hardSkillsElement = document.getElementById('hardSkills');
-        if (hardSkillsElement) {
-            // Limpa o conteúdo existente para começar do zero
-            hardSkillsElement.innerHTML = '';
-
-            // Adiciona os novos campos de hard skills com base no cargo selecionado
-            cargo.hardSkills.forEach((skill, index) => {
-                const span = document.createElement('span');
-                const h4 = document.createElement('h4');
-                const input = document.createElement('input');
-
-                h4.textContent = `${skill}:`;
-                input.type = 'number';
-                input.maxlength = '1';
-                input.name = `input${skill.replace(/\s+/g, '')}`; // Remove espaços e adiciona ao nome do input
-                input.classList.add('inputSkill'); // Adiciona a classe inputSkill aos inputs criados dinamicamente
-
-                // Lógica para definir a cor da hard skill dinamicamente
-                const skillClass = `hardSkill${index + 1}`;
-                span.classList.add(skillClass); // Adiciona a classe dinâmica de acordo com o índice
-
-                span.appendChild(h4);
-                span.appendChild(input);
-                hardSkillsElement.appendChild(span);
-            });
-
-            // Adiciona validação aos novos inputs de skills
-            adicionarValidacaoSkills();
+    let listaCargos = JSON.parse(localStorage.getItem('listaCargos'))
+    for (let i = 0; i < listaCargos.length; i++) {
+        if (listaCargos[i].cargo == cargoSelect.value) {
+            for (let j = 0; j < nomeHardSkills.length; j++) {
+                nomeHardSkills[j].innerHTML = listaCargos[i].hardSkills[j] + ':'
+            }
         }
     }
 });
+
 
 
 // Função de validação geral
@@ -220,17 +278,16 @@ function validarFormulario() {
 
     if (contador == 0) {
         cadastrar();
-        alert('Cadastrado com sucesso!!!');
     } else {
-        alert('Algo está errado, tente novamente.');
+        alert('Input preenchido incorretamente');
     }
 }
 
 // Event listener para o botão de cadastrar
-botaoCadastrar.addEventListener('click', validarFormulario);    
+botaoCadastrar.addEventListener('click', validarFormulario);
 
 
-function mostrarSenha() {
+function  mostrarSenha() {
     var senhaInput = document.getElementById("senhaUsuarioInput");
     var iconeVerSenha = document.getElementById("verSenha");
 
@@ -244,6 +301,12 @@ function mostrarSenha() {
         iconeVerSenha.classList.add("bi-eye-fill");
     }
 }
+
+verSenha.addEventListener('click', function(){
+
+    mostrarSenha()
+
+})
 
 
 
