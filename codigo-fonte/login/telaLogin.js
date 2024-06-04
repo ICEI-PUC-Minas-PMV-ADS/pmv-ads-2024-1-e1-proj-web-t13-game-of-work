@@ -6,6 +6,17 @@ const botaologar = document.querySelector("#logar")
 
 const erro = document.querySelector("#mensagem-erro")
 
+var nome;
+var email;
+var cargo;
+
+var usuarioLogado = {
+    nome: "",
+    email: "",
+    cargo: "",
+    token: ""
+};
+
 /* ----- CRIPTOGRAFIA -----*/
 // Chave de criptografia de 128 bits(16 bytes * 8 bits/byte = 128 bits)
 const key = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
@@ -64,12 +75,14 @@ iconeVerSenha.addEventListener('click', function () {
 
 //Função para realizar login. Deve estar vinculada com o localStorage
 function logar() {
-    
-    var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || '[]');
-    
-    console.log(inputEmail.value == validacaoUsuario.email)
-    console.log(inputSenha.value == validacaoUsuario.senha)
-    console.log(teste)
+    var listaUsuarios = [];
+    var validacaoUsuario = {
+        nome: "",
+        email: "",
+        senha: "",
+        cargo: ""
+    }
+    var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios') || "[]");
     listaUsuarios.forEach((usuario) => {
 
         if (inputEmail.value == usuario.email && inputSenha.value == descriptografa(usuario.senha)) {
@@ -95,7 +108,7 @@ function logar() {
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('cargo', JSON.stringify(cargo));
 
-        alert("LOGIN EFETUADO COM SUCESSO!!!")
+        window.location.assign("../paginaInicial/index_pagina_inicial.html");
     } else {
         alert("Email ou Senha incorretos")
     }

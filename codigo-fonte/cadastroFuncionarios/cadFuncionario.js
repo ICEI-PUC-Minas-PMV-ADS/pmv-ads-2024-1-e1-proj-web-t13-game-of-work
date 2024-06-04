@@ -79,6 +79,23 @@ function descriptografa(texto) {
     return textoDescriptografado
 }
 
+function limpaInputs(){
+
+    nomeUsuarioInput.value = ""
+    especialidadeUsuarioInput.value = ""
+    emailUsuarioInput.value = ""
+    senhaUsuarioInput.value = ""
+    cargoSelect.value = ""
+    sobreMimTextarea = ""
+    objetivosTextarea = ""
+    for (let i = 0; i < inputSoftSkills.length; i++) {
+        inputSoftSkills[i].value = ""
+    }
+
+    for (let i = 0; i < inputHardSkills.length; i++) {
+        inputHardSkills[i].value = ""
+    }
+}
 
 function cadastrar() {
 
@@ -122,10 +139,12 @@ function cadastrar() {
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
 
         alert('Cadastrado com sucesso!!!');
+        window.location.replace("../login/telaLogin.html");
     } else {
         alert("Este e-mail já está cadastrado!!!")
     }
 }
+
 
 // Validação do nome do usuário. Não aceita carateres especiais e não aceita menos que 3 letras.
 nomeUsuarioInput.addEventListener('keyup', () => {
