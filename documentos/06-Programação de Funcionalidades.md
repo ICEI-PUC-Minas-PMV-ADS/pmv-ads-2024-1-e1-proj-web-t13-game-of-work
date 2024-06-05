@@ -82,7 +82,7 @@ Catiane de Souza
 ### Tela Login
 
 <figure> 
-  <img src="img/login-concluido.jpg">
+  <img src="img/telaDeLogin.png">
   <figcaption>Figura 3: Tela de Login</figcaption>
 </figure> 
 
@@ -103,7 +103,7 @@ Catiane de Souza
 
 #### Instruções de acesso
 
-Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/paginaInicial/index_pagina_inicial.html">AQUI</a>
+Clique<a href="">AQUI</a>
 
 Digite um email e senha cadastrado para fazer o login. Caso não possua uma conta clique em cadastre-se.
 
@@ -111,6 +111,7 @@ Digite um email e senha cadastrado para fazer o login. Caso não possua uma cont
 
 Kayque Fonseca
 <hr>
+
 
 ### Tela Lista de Funcionários
 
@@ -185,3 +186,40 @@ Selecione na lista ao lado esquerdo da tela o Projeto que deseje mas detalhes, a
 
 Brenda Drumond e Catiane de Souza.
 <hr>
+
+### Tela Cadastro de funcionários 
+
+<figure> 
+  <img src="img/cadastrodeFuncionarios.png">
+  <figcaption>Figura 6: Tela Lista de Funcionários</figcaption>
+</figure> 
+
+#### Requisito atendido
+
+- RF-02	Local de navegação intuitivo sem dificuldade de entendimento.
+- RF-06	Na ficha do funcionário, deve ter seu objetivo profissional.
+- RF-08	Deve conter um breve resumo sobre o funcionário.
+- RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
+- RF-12 Deve permitir que faça o cadastro de um usuário.
+
+#### Artefatos da funcionalidade
+
+- cadastroFuncionario.html
+- cadastroFuncionario.css
+- cadFuncionario.js
+
+#### Estrutura de Dados
+
+- cadastroFuncionario.html
+
+#### Instruções de acesso
+
+Clique<a href="">AQUI</a>
+
+Faça cadastro inserindo as informações solicitadas.
+
+#### Responsável
+
+Kayque Fonseca
+<hr>
+
