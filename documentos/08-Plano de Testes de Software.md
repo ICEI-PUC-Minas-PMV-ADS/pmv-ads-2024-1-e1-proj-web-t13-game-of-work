@@ -20,20 +20,20 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 |Caso de Teste    | CT-02 - Login |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| **Requisitos** Associados | RF-01 Tela de login, com acesso diferente para cada perfil de usuário. |
+| Objetivo do Teste | Verificar se a validação de login está ocorrendo da maneira correta e verificar se o encaminhamento está ocorrendo para as páginas certas.|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página de Login;<br>4) Inserir e-mail e senha cadastrados;<br>5) Inserir e-mail e senha cadastrados.;<br>6) Clicar em "Cadastra-se". |
+| **Critérios de êxito** | Se já cadastrado deve direcionar para a Tela Inicial, caso contrário mostrar mensagem de erro. A opção "cadastre-se" deve encaminhar para a página de Cadastro de Funcionários  |
+| **Responsável pela elaboração do caso de Teste** | Kayque Fonseca |
 
 
 |Caso de Teste    | CT-03 - Cadastro Funcionários |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| **Requisitos Associados** | RF-02 Local de navegação intuitivo sem dificuldade de entendimento;<br>RF-06 Na ficha do funcionário, deve ter seu objetivo profissional;<br>RF-08 Deve conter um breve resumo sobre o funcionário;<br>RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência;<br>RF-12 Deve permitir que faça o cadastro de um usuário. |
+| **Objetivo do Teste** | Verificar se é possível cadastrar um funcionário. |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página de Cadastro de Funcionários;<br>4) Realizar o cadastro de um "funcionário" |
+| **Critérios de êxito** | Mensagens de erro caso as informações inseridas estejam fora do padrão, se todas as informações forem validadas deve exibir uma mensagem de sucesso seguido do direcionamento para a Tela de Login.  |
+| **Responsável pela elaboração do caso de Teste** | Kayque Fonseca |
 
 
 |Caso de Teste    | CT-04 - Tela Perfil |
@@ -45,7 +45,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | **Responsável pela elaboração do caso de Teste** | Catiane de Souza |
 
 
-|Caso de Teste    | CT-05 - Cadastro Proejtos |
+|Caso de Teste    | CT-05 - Cadastro de Projetos |
 |:---|:---|
 | Requisitos Associados | RF-X |
 | Objetivo do Teste | Descrição do objetivo do teste |
