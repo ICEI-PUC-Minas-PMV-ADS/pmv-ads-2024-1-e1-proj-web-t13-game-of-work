@@ -36,12 +36,6 @@ const botao__naoExcluirProjeto = document.querySelector('.botao__nao');
 
 const nome__excluirProjeto = document.querySelector('.nome__excluirProjeto');
 
-
-
-
-
-
-
 function deletarSkill(e){
     const skillClicada = e.target;
     var temClasse = false;

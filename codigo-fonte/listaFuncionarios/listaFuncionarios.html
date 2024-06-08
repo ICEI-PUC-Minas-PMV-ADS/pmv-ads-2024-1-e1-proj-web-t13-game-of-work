@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="listaFuncionarios.css">
-    <link rel="icon" href="../icones/icon.png" type="image/png">
+    <link rel="icon" href="../imagens/icones/icon.png" type="image/png">
     <title>Funcionários</title>
 </head>
 <body>
+    <div id="overlay"></div>
     <!------ MENU DE NAVEGAÇÃO ------>
     <header id="cabeçalho">
         <h1 id="logo">GameOfWork</h1>
@@ -33,7 +34,7 @@
         <div id="divFuncionarios">
             <div id="cards"></div>
             <div id="divDadosFuncionarios">
-                <div id="cabecalho"><img id="botaoFechar" src="../icones/close.png" alt=""></div>
+                <div id="cabecalho"><img id="botaoFechar" src="../imagens/icones/close.png" alt=""></div>
                 <div id="containerDadosFuncionarios">
                     <div id="dadosPessoais">
                         <h3 id="nome">Nome</h3>
@@ -74,6 +75,25 @@
             </div>
         </div>
     </div>
+
+    <div id="modal_addProjeto">
+        <div id="cabecalho_addProjeto"> <img id="fechar_modalAddProjeto" src="../imagens/icones/close.png" alt=""></div>
+        <div id="container_addProjeto">
+            <br>
+            <h3>Selecione um projeto para o usuário:</h3>
+            <br>
+            <h3 id="usuario_modalAddProjeto">Nome do usuário</h3>
+            <br>
+            <br>
+            <select name="" id="selectAddProjeto">
+                <option value="Projetos" id="optionPrincipal_addProjetos"disabled selected>Projetos</option>
+            </select>
+            <br>
+            <br>
+            <button id="botao_addProjeto">Adicionar Projeto</button>
+        </div>
+    </div>
+
     <script src="testeListaFuncionarios.js"></script>
     <script src="listaFuncionarios.js"></script>
 </body>

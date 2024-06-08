@@ -1,19 +1,268 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --cor-background: #D5D5D5;
+
+    --cor-primaria: #292929;
+    --cor-secundaria: #454545;
+    --cor-terciaria: #6B6B6B;
+
+    --cor-primaria-fonte: #F8F8F8;
+    --cor-secundaria-fonte: #F7F3A1;
+
+    --softS-color1: #ff5959;
+    --softS-color2: #9db7f5;
+    --softS-color3: #f5ac78;
+    --softS-color4: #a7db8d;
+    --softS-color5: #fae078;
+    --softS-color6: #fa92b2;
+
+    --hardS-color1: #f6975c;
+    --hardS-color2: #faca5b;
+    --hardS-color3: #f7ef5c;
+    --hardS-color4: #87c455;
+    --hardS-color5: #41c1d8;
+    --hardS-color6: #5b8acc;
+    --hardS-color7: #a169b9;
+    --hardS-color8: #ee4f85;
 }
-.card{
-    background-color: #242424;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+
+html, body
+{
+    height: 100vh;
+    background-color: var(--cor-background);
+
+}
+
+#logo{
+    font-size: 25px;
+    color: var(--cor-primaria-fonte);
+}
+
+#cabecalho {
+    background-color: var(--cor-primaria);
+    color: var(--hardS-color3);
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    font-size: 1.5rem; /* Adaptado para ser responsivo */
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+#containerInicio{
+    width: 100%;
+    background-color: var(--cor-background);
+    color: var(--cor-primaria-fonte);
+    margin: auto; /* Centraliza o container */
+    padding-top: 0.5%; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
+    font-family: "Press Start 2P", system-ui; 
+    position: relative;
+    height: 100%;
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    height: calc(100% - 100px); 
+}
+
+#menulateral {
+    width: 100%;
+    height: 100%;
+    background-color:var(--cor-secundaria);
+    display: block;
+    align-items: center;
+    justify-content: center;    
+    float: left;
+    box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
+    position: fixed; 
+    position: sticky;
+    top: 10px
+}
+
+.opcaoMenu {
+    border-bottom: 2px solid white;
+    margin: 0; 
+    padding: 3%; 
+    width: 90%;
+    margin-left: 50%; 
+    transform: translate(-50%);
+    font-family: "Press Start 2P", system-ui; 
+    color: var(--cor-primaria-fonte);
     cursor: pointer;
+    display: block;  /* faz cada link aparecer em sua própria linha */
+    text-decoration: none;  /* remove o sublinhado dos links */
 }
-.card:hover{
-    background-color: #4e4e4e;
+
+
+.opcaoMenu:hover {
+    background-color:var(--cor-secundaria);
 }
-.card h3{
-    color: goldenrod;
+
+
+#divOpcoes {
+    margin-top: 5%;
+    position: sticky;
+    top: 10px
 }
+
+#container_projetos {
+    width: 100%;
+    height: 100%;
+    background-color:var(--cor-background);
+    border-radius: 10px;  /* Arredonda todas as bordas */
+}
+
+
+#coluna_projetos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    
+}
+
+#linha_projetos {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cartao {
+    background-color: var(--cor-primaria);
+    font-family: "Press Start 2P", system-ui;
+    color: var(--cor-primaria-fonte);
+    font-size: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+
+.cartao:hover {
+    background-color: var(--cor-secundaria); /* Use uma cor mais clara aqui */
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+.cardProjetos{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    
+}
+
+.card-title {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin: 0;
+    color: var(--cor-primaria-fonte);
+}
+
+#descricao_projetos{
+ padding-bottom: 0.5%;
+
+}
+
+a{
+    text-decoration: none;  /* remove o sublinhado dos links */
+}
+
+#container_descricao{
+    height: 100%;
+    padding-left: 2%;
+    background-color: var(--cor-background);
+
+}
+
+#card_descricao{
+    background-color: var(--cor-secundaria);
+    border-width: 0px;
+    position: sticky;
+    top: 10px;
+    
+}
+
+.card-header{
+    background-color: var(--cor-primaria);
+    color:chartreuse;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+#coluna_descricao{
+    background-color: var(--cor-secundaria);
+    
+}
+
+.card-header h5{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+.card-body{
+    background-color: var(--cor-secundaria);
+}
+
+#card_bottom{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#linhadivisao{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria-fonte);
+
+}
+
+.card-title2{
+    font-size: 1.2em;
+    color: var(--cor-primaria-fonte);
+
+}
+
+.card-text2{
+    font-size: 0.8em;
+    margin: 0;
+    color: var(--cor-secundaria-fonte);
+}
+
+.prioridade{
+    font-size: 0.9em;
+
+}
+
+#candidatura{
+    background-color: var(--cor-primaria);
+    padding: 1%;
+    border-radius: 8px;
+
+}
+
+#linha_saibamais{
+    background-color: var(--cor-primaria);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+#vagas, #numeroVagas {
+    display:inline-block;
+}
+
+#numeroVagas {
+    color: var(--cor-secundaria-fonte);
+
+}
+
+
+#janelaDescricao{
