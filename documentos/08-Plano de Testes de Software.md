@@ -19,7 +19,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 
 | Caso de Teste    | CT-02 - Login |
-|:---|:---|
+|-------------------------------------|----------------------------------------------------------------------------------|
 | **Requisitos Associados** | RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.<br> RF-13 Deve permitir que o usuário faça o login na sua conta. |
 | **Objetivo do Teste** | Verificar se a validação de login está ocorrendo da maneira correta e verificar se o encaminhamento está ocorrendo para as páginas certas.|
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página de Login;<br>4) Inserir e-mail e senha cadastrados;<br>5) Inserir e-mail e senha cadastrados.;<br>6) Clicar em "Cadastra-se". |
