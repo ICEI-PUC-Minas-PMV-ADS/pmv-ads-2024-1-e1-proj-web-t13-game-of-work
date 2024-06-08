@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagens/icones/icon.png" type="image/png">
     <link rel="stylesheet" href="cadastro.css">
-    <title>Cadastro</title>
+    <title>Game Of Work</title>
 </head>
 <body>
     <!------ MENU DE NAVEGAÇÃO ------>
     <header id="cabeçalho">
         <h1 id="logo">GameOfWork</h1>
-        <h1 style="font-size: 20px;">Cadastro</h1>
-        <button type="button" class="btn btn-danger" id="botaoSair">Sair</button>
+        <h1 id="nomePagina">Cadastro</h1>
+        <a type="button" id="sair" href="../login/telaLogin.html">Sair</a>
     </header>
 
     <div id="funcionariosContainer">
@@ -69,12 +69,12 @@
             <Textarea maxlength="80" id="inputDescricaoProjeto"></Textarea>
 
             <div class="cargos">
-                <h4>Cargos:</h4>
+                <h4 id="cargosModal">Cargos:</h4>
                 <div class="cargosProj"></div>
             </div>
             
             <div class="skills">
-                <h4>Skills:</h4>
+                <h4 id="skillsModal">Skills:</h4>
                 <select class="selectSkillsProjeto" id="">
                     <option id="opcaoSkills" value="" selected disabled>Skills</option>
                 </select>
@@ -177,5 +177,6 @@
     <script src="cadastroProjeto.js"></script>
     <script src="editaFuncionario.js"></script>
     <script src="cadastro-bd.js"></script>
+    <script src="../javaScript/sessao.js"></script>    
 </body>
 </html>

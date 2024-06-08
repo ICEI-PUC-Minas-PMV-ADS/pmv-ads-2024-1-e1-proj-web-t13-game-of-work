@@ -39,13 +39,13 @@ body{
 /* ------ MENU DE NAVEGAÇÃO ------ */
 #cabeçalho {
     background-color: #292929;
-    color: var(--cor-secundaria-fonte);
+    color: var(--hardS-color3);
     font-family: "Press Start 2P", system-ui;
     display: flex;
     font-size: 1.5rem; /* Adaptado para ser responsivo */
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 17px;
 }
 #logo{
     font-size: 25px;
@@ -53,7 +53,7 @@ body{
     margin-left: 20px;
     
 }
-#botaoSair{
+#sair{
     font-size: 16px;
     background-color: #dc3545;
     padding: 10px;
@@ -64,12 +64,13 @@ body{
     cursor: pointer;
 
     margin-right: 20px;
+    text-decoration: none;
 
 }
-#botaoSair:hover{
+#sair:hover{
     background-color: #bb2d3b;
 }
-#botaoSair:active{
+#sair:active{
     background-color: #b02a37;
 }
 #funcionariosContainer{
@@ -314,6 +315,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     border: 2px solid #747474;
+    display: none;
 }
 #cabecalho_addProjeto{
     background-color: var(--cor-primaria);
@@ -342,6 +344,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 998;
+    display: none;
 }
 #fechar_modalAddProjeto{
     width: 20px;
@@ -371,4 +374,7 @@ body{
 }
 #optionPrincipal_addProjetos{
     display:none;
+}
+#nomePagina{
+    font-size: 25px;
 }

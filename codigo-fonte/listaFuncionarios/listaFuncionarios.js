@@ -199,13 +199,33 @@ for (let i = 0; i < listaCards.length; i++) {
                 }
 
                 let projeto1 = document.querySelector('#projeto1');
-                projeto1.innerHTML = "- " + (listaUsuarios[i].projetos[0]);
+                if (listaUsuarios[i].projetos[0]) {
+                    projeto1.innerHTML = "- " + (listaUsuarios[i].projetos[0]);
+                } else {
+                    projeto1.innerHTML = "- "
+                }
+
                 let projeto2 = document.querySelector('#projeto2');
-                projeto2.innerHTML = "- " + (listaUsuarios[i].projetos[1]);
+                if (listaUsuarios[i].projetos[1]) {
+                    projeto2.innerHTML = "- " + (listaUsuarios[i].projetos[1]);
+                } else {
+                    projeto2.innerHTML = "- "
+                }
+
                 let projeto3 = document.querySelector('#projeto3');
-                projeto3.innerHTML = "- " + (listaUsuarios[i].projetos[2]);
-                let projeto4 = document.querySelector('#projeto4');
+                if (listaUsuarios[i].projetos[2]) {
+                    projeto3.innerHTML = "- " + (listaUsuarios[i].projetos[2]);
+                } else {
+                    projeto3.innerHTML = "- "
+                }
+
                 projeto4.innerHTML = "- " + (listaUsuarios[i].projetos[3]);
+                if (listaUsuarios[i].projetos[3]) {
+                    projeto4.innerHTML = "- " + (listaUsuarios[i].projetos[3]);
+                } else {
+                    projeto4.innerHTML = "- "
+                }
+                
             
             }
             

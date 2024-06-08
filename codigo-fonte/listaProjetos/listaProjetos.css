@@ -138,6 +138,8 @@ html, body
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
 
+    cursor: pointer;
+
 }
 
 .cartao:hover {
@@ -263,6 +265,3 @@ a{
     color: var(--cor-secundaria-fonte);
 
 }
-
-
-#janelaDescricao{

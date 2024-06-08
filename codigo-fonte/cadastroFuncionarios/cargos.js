@@ -9,11 +9,11 @@ let __cargos = [
     },
     {
         cargo: 'Gestor',
-        hardSkills: ['-', '-', '-', '-', '-', '-', '-', '-']
+        hardSkills: ['Gestão de Tempo', 'Gestão de Recursos', 'Gestão de Riscos', 'Controle de Custos', 'Scrum', 'Kanban', 'Asana', 'Trello']
     },
     {
         cargo: 'RH',
-        hardSkills: ['-', '-', '-', '-', '-', '-', '-', '-']
+        hardSkills: ['Recrutamento e seleção', 'Gestão de Desempenho', 'Legislação Trabalhista', 'Treinamento', 'Diversidade e Inclusão', 'Gestão de Frequência', 'Gestão da Folha', 'Gestão de Benefícios']
     }
 ];
 
