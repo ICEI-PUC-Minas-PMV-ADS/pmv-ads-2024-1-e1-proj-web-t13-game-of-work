@@ -32,7 +32,7 @@ const verSenha = document.querySelector("#verSenha")
 
 
 //Expressão regular para validar usuário. Aceita apenas letras.
-const usuarioRegex = /^[a-zA-Z]+$/;
+const usuarioRegex = /^[a-zA-Z\s]+$/;
 
 // Expressão regular para validar o e-mail.
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
