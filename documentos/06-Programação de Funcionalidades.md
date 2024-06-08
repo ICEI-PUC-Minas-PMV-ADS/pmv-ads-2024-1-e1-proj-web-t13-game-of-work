@@ -5,7 +5,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 ### Tela Página Inicial
 
 <figure> 
-  <img src="img/telaInicial.png">
+  <img src="img/telaInicio.png">
   <figcaption>Figura 1: Tela Página Inicial</figcaption>
 </figure>
 
