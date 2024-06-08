@@ -68,27 +68,25 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 
 |ID    | Descrição                | Prioridade |
 |--------------------|---------------------------|----------------------------------|
-| RF- 01 | Tela de login, com acesso diferente para cada perfil de usuário. | ALTA | 
-| RF- 02 | Local de navegação intuitivo sem dificuldade de entendimento. | ALTA | 
-| RF- 03 | Deve permitir excluir um projeto. | MÉDIA | 
-| RF-04 | Na ficha do funcionário, deve ter um local para colocar o nível de cada competência. | ALTA | 
-| RF-05 | Na ficha do funcionário, deve ter uma imagem/avatar do mesmo. | BAIXA | 
-| RF-06 | Na ficha do funcionário, deve ter seu objetivo profissional. | BAIXA | 
-| RF-07 | Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico). | MÉDIA | 
-| RF-08 | Deve conter um breve resumo sobre o funcionário. | BAIXA | 
-| RF-09 | Opção de demonstrar os projetos que o funcisonário participou anteriormente. | MÉDIA | 
-| RF-10 | Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo. | MÉDIA | 
-| RF-11 | Deve permitir excluir um funcionário. | MÉDIA | 
-| RF-12 | Deve permitir que faça o cadastro de um usuário. | ALTA | 
-| RF-13 | Deve permitir que o usuário faça o login na sua conta. | ALTA | 
-| RF-14 | Deve permitir que faça o cadastro de um projeto. | ALTA | 
-| RF-15 | Deve exibir uma lista com os funcionários cadastrados. | ALTA | 
-| RF-16 | Exibir ficha do funcionário. | ALTA | 
-| RF-17 | Deve permitir alteração dos dados de um funcionário. | MÉDIA |
-| RF-18 | O usuário deve poder acessar o seu perfil para visualizar suas competências. | ALTA | 
-| RF-19 | O usuário deve conseguir sair de sua conta. | ALTA |
-| RF-20 | Deve exibir uma lista com os projetos cadastrados. | ALTA |
-| RF-21 | Deve exibir quais funcionários estão participando de um projeto. | ALTA |    
+| RF-01 | Tela de login, com acesso diferente para cada perfil de usuário. | ALTA |
+| RF-02 | Local de navegação intuitivo sem dificuldade de entendimento. | ALTA |
+| RF-03 | Área de observações para os gestores colocarem informações úteis para o projeto. | MÉDIA |
+| RF-04 | Na ficha do funcionário, deve ter um local para colocar o nível de cada competência. | ALTA |
+| RF-05 | Na ficha do funcionário, deve ter uma imagem/avatar do mesmo. | BAIXA |
+| RF-06 | Na ficha do funcionário, deve ter seu objetivo profissional. | BAIXA |
+| RF-07 | Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico). | MÉDIA |
+| RF-08 | Deve conter um breve resumo sobre o funcionário. | BAIXA |
+| RF-09 | Opção de demonstrar os projetos que o funcionário participou anteriormente. | MÉDIA |
+| RF-10 | Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo. | MÉDIA |
+| RF-11 | Deve permitir que faça o cadastro de um usuário. | ALTA |
+| RF-12 | Deve permitir que o usuário faça o login na sua conta. | ALTA |
+| RF-13 | Deve permitir que faça o cadastro de um projeto. | ALTA |
+| RF-14 | Deve exibir uma lista com os funcionários cadastrados. | ALTA |
+| RF-15 | Exibir ficha do funcionário. | ALTA |
+| RF-16 | O usuário deve poder acessar o seu perfil para visualizar suas competências. | ALTA |
+| RF-17 | O usuário deve conseguir sair de sua conta. | ALTA |
+| RF-18 | Deve exibir uma lista com os projetos cadastrados. | ALTA |
+| RF-19 | Deve exibir quais funcionários estão participando de um projeto. | ALTA |   
 
 
 **Prioridade: Alta / Média / Baixa. 
@@ -98,7 +96,7 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 |ID      | Descrição               |Prioridade |
 |--------------------|---------------------------|----------------------------------|
 | RNF-01 | A aplicação deve ter a utilização de cores não tão fortes para não incomodar a vista. | ALTA | 
-| RNF- 02 | A aplicação deve poder alternar entre modo claro e modo escuro. | BAIXA | 
+| RNF-02 | A aplicação deve poder alternar entre modo claro e modo escuro. | BAIXA | 
 | RNF-03 | O site deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge. | ALTA | 
 | RNF-04 | A aplicação deve conter menus com transições diferentes de abertura. | MÉDIA | 
 | RNF-05 | Os dados devem ser armazenados conforme a Lei Geral de Proteção de Dados | ALTA | 
