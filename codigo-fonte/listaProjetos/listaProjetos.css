@@ -46,20 +46,17 @@ html, body
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    position: fixed;  
     width: 100%;
 }
 
 #containerInicio{
     width: 100%;
-    height: 100%;
     background-color: var(--cor-background);
     color: var(--cor-primaria-fonte);
     margin: auto; /* Centraliza o container */
     padding-top: 0.5%; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
     font-family: "Press Start 2P", system-ui; 
     position: relative;
-    top: 7.9%;
     height: 100%;
     height: -webkit-calc(100% - 100px);
     height: -moz-calc(100% - 100px);
@@ -76,10 +73,8 @@ html, body
     float: left;
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
     position: fixed; 
-    width: 15%;
-    height: -webkit-calc(100% - 100px);
-    height: -moz-calc(100% - 100px); 
-    height: calc(100% - 100px); 
+    position: sticky;
+    top: 10px
 }
 
 .opcaoMenu {
@@ -104,6 +99,8 @@ html, body
 
 #divOpcoes {
     margin-top: 5%;
+    position: sticky;
+    top: 10px
 }
 
 #container_projetos {
@@ -143,6 +140,11 @@ html, body
 
 }
 
+.cartao:hover {
+    background-color: var(--cor-secundaria); /* Use uma cor mais clara aqui */
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
 .cardProjetos{
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -180,9 +182,10 @@ a{
 }
 
 #card_descricao{
-    height: 100%;
     background-color: var(--cor-secundaria);
     border-width: 0px;
+    position: sticky;
+    top: 10px;
     
 }
 
@@ -233,7 +236,7 @@ a{
     color: var(--cor-secundaria-fonte);
 }
 
-#Prioridade{
+.prioridade{
     font-size: 0.9em;
 
 }
@@ -252,3 +255,14 @@ a{
 
 }
 
+#vagas, #numeroVagas {
+    display:inline-block;
+}
+
+#numeroVagas {
+    color: var(--cor-secundaria-fonte);
+
+}
+
+
+#janelaDescricao{

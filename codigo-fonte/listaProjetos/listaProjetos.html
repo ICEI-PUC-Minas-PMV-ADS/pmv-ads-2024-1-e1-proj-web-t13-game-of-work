@@ -5,6 +5,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet"  href="listaProjetos.css">
+        <link rel="icon" href="../imagens/icones/icon.png">
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
 		<title>Game Of Work</title>
@@ -14,7 +15,7 @@
 		<header id="cabecalho">
 			<h1 id="logo">GameOfWork</h1>
 			<h3>Projetos</h3>
-			<a type="button" class="btn btn-danger" href="../Login/telalogin.html">Sair</a>
+			<a type="button" class="btn btn-danger" id="sair" href="../Login/telalogin.html">Sair</a>
 		</header>
         
 		<div id="containerInicio" class="row">
@@ -32,140 +33,9 @@
             <div class="col-lg-10 col-sm-12">
                 <div id="container_projetos" class="row" >
                     <div class="col-lg-6 col-sm-12" id="coluna_projetos">
-
                         <div class="row" id="linha_projetos">
-                            <div class="col-lg-6 cardProjetos">
-                                    <div class="card mb-3 cartao" id="card_cocacola">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoCoca.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">Coca Cola</h5>
-                                                <p id="Prioridade">Prioridade: ALTA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 cardProjetos">
-                                    <div class="card mb-3 cartao" id="card_gameofwork">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoWork.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">GameOfWork</h5>
-                                                <p id="Prioridade">Prioridade: BAIXA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Desenvovlimento de um sistema para facilitar a formação de equipes de projetos.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        
-
-
-
-                        <div class="row" id="linha_projetos">
-                            <div class="col-lg-6 cardProjetos">
-                                     <div class="card mb-3 cartao" id="card_vidasaudavel">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoSaude.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">Vida Saudável</h5>
-                                                <p id="Prioridade">Prioridade: MEDIA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Desenvolvimento de um software de gestão de saúde que auxilie na busca para uma alimentação saudável.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col-lg-6 cardProjetos">
-                                    <div class="card mb-3 cartao" id="card_mcdonalds">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoFood.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">McDonalds</h5>
-                                                <p id="Prioridade">Prioridade: BAIXA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Criação de um programa para controle de vendas realizadas através de plataformas de delivery.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="row" id="linha_projetos">
-                            <div class="col-lg-6 cardProjetos">
-                                    <div class="card mb-3 cartao" id="card_gestao">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoGestao.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">Gestão a Vista</h5>
-                                                <p id="Prioridade">Prioridade: ALTA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Criação de um sistema de tecnologia em nuvem, que possibilite o gerenciamento de pessoas.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 cardProjetos">
-                                    <div class="card mb-3 cartao" id="card_jogos">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img src="../imagens/projetos/projetoGame.png" class="img-fluid rounded-start" id="img_projetos">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <h5 class="card-title">Jogos</h5>
-                                                <p id="Prioridade">Prioridade: BAIXA</p>
-                                            </div>
-                                            <div class="row">
-                                                <br>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <p class="card-text">Desenvolvimento de um jogo eletrônico voltado para o folclore brasileiro.</p>
-                                            </div>
-                                        </div>                                   
-                                    </div>
-                                </a>
-                            </div>
                         </div>
                     </div>  
-
                     <div class="col-lg-6 col-sm-12" id="descricao_projetos">
                         <div class="row" id="container_descricao">
                             <div class="card" id="card_descricao">
@@ -173,7 +43,7 @@
                                     <div class="col-lg-12" id="linha_saibamais">
                                         <div class="row">
                                             <div class="col-lg-7">
-                                                <div class="card-header">
+                                                <div class="card-header" id="cardHeader">
                                                     <h5>Saiba Mais</h5>
                                                 </div>
 
@@ -184,31 +54,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row" id="linha">
+                                <div class="row" id="janelaDescricao">
                                     <div class="col-lg-12" id="coluna_descricao">
                                         <div class="card-body">
-                                            <h5 class="card-title2">Projeto: Coca Cola</h5>
-                                            <p class="card-text2">Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.</p>
+                                            <h5 class="card-title2" id="nomeProjeto">Projeto: Coca Cola</h5>
+                                            <p class="card-text2" id="descricaoProjeto">Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.</p>
                                                 <div class="row">
                                                     <br>
                                                 </div>
-                                            <h5 class="card-title2">Soft Skills:</h5>
-                                            <p class="card-text2">Comunicação, Liderança e Organização.</p>
-                                                <div class="row">
-                                                    <br>
-                                                </div>
-                                            <h5 class="card-title2">Hard Skills:</h5>
-                                            <p class="card-text2">JavaScript, CSS, HTML.</p>
+                                            <h5 class="card-title2">Skills:</h5>
+                                            <p class="card-text2" id="hardSkills">JavaScript, CSS, HTML.</p>
                                                 <div class="row">
                                                     <br>
                                                 </div>
                                             <h5 class="card-title2">Gestor:</h5>
-                                            <p class="card-text2">Brenda Drumond</p>
+                                            <p class="card-text2" id="nomeGestor">Brenda Drumond</p>
                                         </div>
                                         <div id="linhadivisao">
                                             <hr>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body" id="equipe">
                                             <h5 class="card-title2">Equipe:</h5>
                                             <p class="card-text2">Catiane de Souza</p>
                                             <p class="card-text2">Nikolas Mota</p>
@@ -218,10 +83,8 @@
                                             <hr>
                                         </div>
                                         <div id="card_bottom" class="card-body">
-                                            <h5 class="card-title2">Vagas Abertas:</h5>
-                                            <p class="card-text2">Desenvolvedor</p>
-                                            <p class="card-text2">Analista</p>
-                                            <p class="card-text2">Coordenador</p>
+                                            <h5 class="card-title2" id="vagas">Vagas Abertas:</h5>
+                                            <h5 id="numeroVagas">5</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -231,5 +94,6 @@
 		        </div>
             </div>
         <script src="../listaProjetos/listaProjetos.js"></script>
+        <script src="../javaScript/secao.js"></script>
   	</body>
 </html>
