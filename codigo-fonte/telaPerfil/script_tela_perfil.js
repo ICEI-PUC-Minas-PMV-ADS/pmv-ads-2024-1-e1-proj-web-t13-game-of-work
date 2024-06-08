@@ -12,7 +12,6 @@ cargo_usuario.innerHTML = cargo;
 var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 var listaCargos = JSON.parse(localStorage.getItem('listaCargos'));
 
-
 const valorSoftSkills = document.getElementsByClassName('valorSoftSkills')
 for (let i = 0; i < listaUsuarios.length; i++) {
     if (listaUsuarios[i].email==email) {
@@ -74,18 +73,33 @@ for (let i = 0; i < projetos.length; i++) {
 
 const avatar = document.querySelector('#avatar');
 if (cargo=='Gestor') {
-    avatar.src = "..\imagens\avatar\Avatar_Hayala.png"
+    avatar.src = '../imagens/avatar/Avatar_Hayala.png'
 }
 
 if (cargo=='RH') {
-    avatar.src = '..\imagens\avatar\Avatar_Catiane.png'
+    avatar.src = '../imagens/avatar/Avatar_Catiane.png'
 }
 
 if (cargo=='Desenvolvedor') {
-    avatar.src = '..\imagens\avatar\Avatar_Nikolas.png'
+    avatar.src = '../imagens/avatar/Avatar_Nikolas.png'
 }
 
 if (cargo=='Design') {
-    avatar.src = '..\imagens\avatar\Avatar_Kayque.png'
+    avatar.src = '../imagens/avatar/Avatar_Brenda.png'
 }
 
+var opcao_2 = document.querySelector('#opcao_2');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    opcao_2.setAttribute('style','display:block')
+
+} else{ 
+    opcao_2.setAttribute('style','display:none') 
+}
+
+var opcao_3 = document.querySelector('#opcao_3');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    opcao_3.setAttribute('style','display:block')
+
+} else{ 
+    opcao_3.setAttribute('style','display:none') 
+}
