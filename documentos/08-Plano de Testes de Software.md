@@ -11,7 +11,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 | Caso de Teste    | CT-01 - Tela Inicial |
 |:---|:---|
-| **Requisitos Associados** | RF- 02: Local de navegação intuitivo sem dificuldade de entendimento;<br>RF- 01: Tela de login, com acesso diferente para cada perfil de usuário. |
+| **Requisitos Associados** | RF- 02: Local de navegação intuitivo sem dificuldade de entendimento;<br>RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.<br> RF-19 O usuário deve conseguir sair de sua conta. |
 | **Objetivo do Teste** | Verificar se os cards direcionadores da Página Inicial estão encaminhando para as respectivas páginas corretamente. |
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4) Clicar nos cards da página. |
 | **Critérios de êxito** | Todos os cards da Página Inicial devem encaminhar o usuário para as páginas descritas.  |
@@ -20,7 +20,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 | Caso de Teste    | CT-02 - Login |
 |:---|:---|
-| **Requisitos Associados** | RF- 01: Tela de login, com acesso diferente para cada perfil de usuário. |
+| **Requisitos Associados** | RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.<br> RF-13 Deve permitir que o usuário faça o login na sua conta. |
 | **Objetivo do Teste** | Verificar se a validação de login está ocorrendo da maneira correta e verificar se o encaminhamento está ocorrendo para as páginas certas.|
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página de Login;<br>4) Inserir e-mail e senha cadastrados;<br>5) Inserir e-mail e senha cadastrados.;<br>6) Clicar em "Cadastra-se". |
 | **Critérios de êxito** | Se já cadastrado, deve direcionar para a Tela Inicial, caso contrário mostrar mensagem de erro. A opção "cadastre-se" deve encaminhar para a página de Cadastro de Funcionários. |
@@ -47,11 +47,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 |Caso de Teste    | CT-05 - Cadastro de Projetos |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| **Requisitos Associados** | RF-14 Deve permitir que faça o cadastro de um projeto.|
+| **Objetivo do Teste** | Cadastrar um novo projeto no sistma |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4) Clicar no botao "Novo Projeto"<br>5) Preencher os dados do projeto<br>6) Clicar no botão "Criar projeto" |
+| **Critérios de êxito** | O projeto deve ser criado e armazenado em "listaProjetos" no localStorage |
+| **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
 
 |Caso de Teste    | CT-06 - Tela Projetos |
 |:---|:---|
@@ -64,16 +64,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 |Caso de Teste    | CT-07 - Lista Funcionários |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| **Requisitos Associados** | RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.<br>RF-15 Deve exibir uma lista com os funcionários cadastrados.<br>RF-16 Exibir ficha do funcionário. |
+| **Objetivo do Teste** | Exibir uma lista com todos os funcionários cadastrados no sistema e exibir os dados de um funcionário selecionado|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Lista de Funcionários;<br>4)Clicar em um funcionário na lista |
+| **Critérios de êxito** | Ao entrar na página uma lista com todos os funcionários cadastrados deve ser exibida e, ao clilcar em um funcionário, os dados deste funcionário deverão aparecer na tela |
+| **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
