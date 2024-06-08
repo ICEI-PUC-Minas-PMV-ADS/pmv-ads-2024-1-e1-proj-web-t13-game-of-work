@@ -46,7 +46,6 @@ html, body
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    position: fixed;  
     width: 100%;
 }
 
@@ -58,15 +57,14 @@ html, body
     padding-top: 0.5%; /* Espaço entre o cabeçalho e o container, ajuste conforme necessário */
     font-family: "Press Start 2P", system-ui; 
     position: relative;
-    top: 7.9%;
-    height: 100%
+    height: 100%;
     height: -webkit-calc(100% - 100px);
     height: -moz-calc(100% - 100px);
     height: calc(100% - 100px); 
 }
 
 #menulateral {
-    width: 15%;
+    width: 100%;
     height: 100%;
     background-color:var(--cor-secundaria);
     display: block;
@@ -75,9 +73,8 @@ html, body
     float: left;
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
     position: fixed; 
-    height: -webkit-calc(100% - 100px);
-    height: -moz-calc(100% - 100px); 
-    height: calc(100% - 100px); 
+    position: sticky;
+    top: 10px
 }
 
 .opcaoMenu {
@@ -102,7 +99,10 @@ html, body
 
 #divOpcoes {
     margin-top: 5%;
+    position: sticky;
+    top: 10px
 }
+
 
 #container_menu {
     width: 100%;
@@ -142,14 +142,6 @@ html, body
     
 }
 
-.card-img {
-    width: 100%;
-    justify-content: center;
-    max-width: 200px;
-    margin-right: 20px;
-    border-radius: 8px;
-    
-} 
 
 #container_cards {
     width: 100%;
@@ -283,4 +275,16 @@ html, body
     margin-left: 20px;
     border-radius: 8px;
 }
+
+#card_menu:hover {
+    background-color: var(--cor-secundaria); /* Use uma cor mais clara aqui */
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+
+.card-img {
+    justify-content: center;
+    margin: 15px;
+    max-width: 140px;
+} 
 
