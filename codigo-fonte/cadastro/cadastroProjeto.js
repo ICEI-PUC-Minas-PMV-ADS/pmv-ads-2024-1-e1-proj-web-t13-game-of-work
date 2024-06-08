@@ -3,7 +3,7 @@ const botaoNovoProjeto = document.querySelector('.botao__novoProj');
 const modalNovoProjeto = document.querySelector('.modal__novoProj');
 const botaoFecharModal = document.querySelector('.botaoFechar');
 
-const listaCargos =  JSON.parse(localStorage.getItem("titleList"));
+var listaCargos =  JSON.parse(localStorage.getItem("listaCargos"));
 
 const selectCargos = document.querySelector('.selectCargosProjeto');
 const selectSkills = document.querySelector('.selectSkillsProjeto');
@@ -28,11 +28,12 @@ var nomeGestor = localStorage.nome;
 
 const botao__excluirProj = document.querySelector('.botao__excluirProj');
 const caixa__exibicao = document.querySelector('#caixa__exibicao');
+
 const modal__excluirProj = document.querySelector('.modal__excluirProj');
 const botao__fecharExcluirProjeto = modal__excluirProj.querySelector('.botaoFechar');
 
-const botao__simExcluirProjeto = document.querySelector('.botao__sim');
-const botao__naoExcluirProjeto = document.querySelector('.botao__nao');
+const botao__simExcluirProjeto = modal__excluirProj.querySelector('.botao__sim');
+const botao__naoExcluirProjeto = modal__excluirProj.querySelector('.botao__nao');
 
 const nome__excluirProjeto = document.querySelector('.nome__excluirProjeto');
 
@@ -124,7 +125,7 @@ botaoNovoProjeto.addEventListener('click', function(){
 overlay.addEventListener('click', function(){
     overlay.setAttribute('style', 'display: none');
     modalNovoProjeto.setAttribute('style', 'display: none');
-    modal_excluirProj.setAttribute('style', 'display: none');
+    modal__excluirProj.setAttribute('style', 'display: none');
 
 });
 // Fecha o modal caso clique no botão fechar (todos os valores dos inputs são zerados)
@@ -290,7 +291,6 @@ botao__excluirProj.addEventListener('click', function(){
     caixa__exibicao.innerText = '';
 
     let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
-    console.log(projetos);
 
     projetos.forEach(projeto => {
         

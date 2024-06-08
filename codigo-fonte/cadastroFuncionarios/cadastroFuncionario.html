@@ -4,10 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cadastro de Funcionário</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="cadastroFuncionario.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../imagens/icones/icon.png">
+    <script defer src="cargos.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script defer src="cadFuncionario.js"></script>
+    <script defer type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
 </head>
 
 <body>
@@ -18,9 +32,8 @@
     <div id="centro">
 
         <main class="conteudo">
-
             <div class="cabecalho-interno">
-                <p>Cadastrar Funcionário</p>
+                <p id="textoCabecalho">Cadastrar</p>
             </div>
 
             <section class="caixa-de-dialogo">
@@ -30,14 +43,15 @@
                     <div class="conteudo-interno-informacoes-pessoais1">
 
                         <div>
-                            <label for="nome">Nome</label><br>
+                            <label for="nomeUsuarioInput" id="labelNome">Nome</label><br>
                             <input type="text" name="nome" id="nomeUsuarioInput">
                         </div>
 
                         <div>
-                            <label for="nome">Especialidade</label><br>
+                            <label for="especialidadeUsuarioInput" id="labelEspecialidade">Especialidade</label><br>
                             <input type="text" name="especialidade" id="especialidadeUsuarioInput">
                         </div>
+
 
 
 
@@ -46,63 +60,57 @@
                     <div class="conteudo-interno-informacoes-pessoais2">
 
                         <div>
-                            <label for="email">Email</label><br>
+                            <label for="emailUsuarioInput" id="labelEmail">Email</label><br>
                             <input type="email" name="email" id="emailUsuarioInput">
                         </div>
 
-                        <div>
-                            <label for="senha" id="senha">Senha</label><br>
-                            <input type="password" name="senha" id="senhaUsuarioInput">
+                        <div class="senhaContainer">
+                            <label for="senhaUsuarioInput" id="labelSenha">Senha</label><br>
+                            <input type="password" name="senha" id="senhaUsuarioInput" >
+                            <i class="bi bi-eye-fill" id="verSenha"></i>
                         </div>
 
+
                         <div>
-                            <label for="cargo">Cargo</label><br>
-                            <select name="cargo" id="cargo">
-                                <option value="">Desenvolvedor</option>
-                                <option value="">Design</option>
-                                <option value="">Gestor</option>
-                                <option value="">RH</option>
+                            <label for="cargoSelect" id="labelCargo">Cargo</label><br>
+                            <select name="cargo" id="cargoSelect">
+                                <option value="" id="selecione" selected disabled>Selecione...</option>
                             </select>
                         </div>
+
 
                     </div>
 
 
 
                     <div id="descricao">
-                        <label for="sobre-mim">Sobre mim</label>
-                        <textarea name="sobre-mim"></textarea>
+                        <label for="sobreMimTextarea" id="sobreMim">Sobre mim</label>
+                        <textarea name="sobreMim" id="sobreMimTextarea"></textarea>
 
-                        <label for="objetivos">Objetivos</label>
-                        <textarea name="objetivos"></textarea>
+                        <label for="objetivosTextarea" id="objetivos">Objetivos</label>
+                        <textarea name="objetivosTextarea" id="objetivosTextarea"> </textarea>
                     </div>
 
 
 
                     <div id="softSkills">
                         <span>
-                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number"
-                                name="inputsoftSkill1">
+                            <h4 class="softSkill1 nomeSoftskill1">Comunicação:</h4><input type="number" maxlength="1" name="inputsoftSkill1" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number"
-                                name="inputsoftSkill2">
+                            <h4 class="softSkill2 nomeSoftskill2">Organização:</h4><input type="number" maxlength="1" name="inputsoftSkill2" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number"
-                                name="inputsoftSkill3">
+                            <h4 class="softSkill3 nomeSoftskill3">Criatividade:</h4><input type="number" maxlength="1" name="inputsoftSkill3" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number"
-                                name="inputsoftSkill4">
+                            <h4 class="softSkill4 nomeSoftskill4">Pens. Analítico:</h4><input type="number" maxlength="1" name="inputsoftSkill4" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number"
-                                name="inputsoftSkill5">
+                            <h4 class="softSkill5 nomeSoftskill5">Liderança:</h4><input type="number" maxlength="1" name="inputsoftSkill5" class="inputSkill inputSoftSkills">
                         </span>
                         <span>
-                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"
-                                name="inputsoftSkill6">
+                            <h4 class="softSkill6 nomeSoftskill6">Trab. em equipe:</h4><input type="number"maxlength="1" name="inputsoftSkill6" class="inputSkill inputSoftSkills">
                         </span>
                     </div>
 
@@ -110,31 +118,28 @@
 
                     <div id="hardSkills">
                         <span>
-                            <h4 class="hardSkill1 nomeHardSkill1">HMTL:</h4><input type="number" name="inputHardSkill1">
+                            <h4 class="hardSkill1 nomeHardSkill1 nomeHardSkills">HMTL:</h4><input type="number" maxlength="1" name="inputHardSkill1" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill2 nomeHardSkill2">SQL:</h4><input type="number" name="inputHardSkill2">
+                            <h4 class="hardSkill2 nomeHardSkill2 nomeHardSkills">SQL:</h4><input type="number" maxlength="1" name="inputHardSkill2" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill3 nomeHardSkill3">CSS:</h4><input type="number"
-                                name="inputHardSkill3">
+                            <h4 class="hardSkill3 nomeHardSkill3 nomeHardSkills">CSS:</h4><input type="number" maxlength="1" name="inputHardSkill3" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill4 nomeHardSkill4">Python:</h4><input type="number" name="inputHardSkill4">
+                            <h4 class="hardSkill4 nomeHardSkill4 nomeHardSkills">Python:</h4><input type="number" maxlength="1" name="inputHardSkill4" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill5 nomeHardSkill5">JavaScript:</h4><input type="number"
-                                name="inputHardSkill5">
+                            <h4 class="hardSkill5 nomeHardSkill5 nomeHardSkills">JavaScript:</h4><input type="number" maxlength="1" name="inputHardSkill5" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill6 nomeHardSkill6">C++:</h4><input type="number"
-                                name="inputHardSkill6">
+                            <h4 class="hardSkill6 nomeHardSkill6 nomeHardSkills">C++:</h4><input type="number" maxlength="1" name="inputHardSkill6" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill7 nomeHardSkill7">C#:</h4><input type="number" name="inputHardSkill7">
+                            <h4 class="hardSkill7 nomeHardSkill7 nomeHardSkills">C#:</h4><input type="number" maxlength="1" name="inputHardSkill7" class="inputSkill inputHardSkills">
                         </span>
                         <span>
-                            <h4 class="hardSkill8 nomeHardSkill8">Java:</h4><input type="number" name="inputHardSkill8">
+                            <h4 class="hardSkill8 nomeHardSkill8 nomeHardSkills">Java:</h4><input type="number" maxlength="1" name="inputHardSkill8" class="inputSkill inputHardSkills">
                         </span>
                     </div>
 
@@ -142,7 +147,7 @@
                 </section>
 
                 <div class="rodape-interno">
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="submit" class="btn btn-success" id="botaoCadastrar">Cadastrar</button>
                 </div>
             </section>
         </main>
@@ -151,7 +156,7 @@
 
 
     <footer class="rodape">
-        &copy; 2024 Game Of Work. Todos os direitos reservados.
+
     </footer>
 
 
@@ -161,15 +166,6 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

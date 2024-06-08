@@ -49,11 +49,40 @@ body{
     font-size: 1.5rem; /* Adaptado para ser responsivo */
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
 }
 #logo{
     font-size: 25px;
+    margin-left: 20px;
     color: var(--cor-primaria-fonte);
+
+    position: relative;
+    top: 3px;
+}
+
+#nomePagina{
+    font-size: 20px;
+
+    position: relative;
+    top: 3px;
+   
+}
+#botaoSair{
+    font-size: 16px;
+    background-color: #dc3545;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+    cursor: pointer;
+}
+#botaoSair:hover{
+    background-color: #bb2d3b;
+}
+#botaoSair:active{
+    background-color: #b02a37;
 }
 .divMenuLateral{
     height: 100%;
@@ -65,24 +94,27 @@ body{
     justify-content: center;    
     box-shadow: 0 4px 8px black; /* Sombra para efeito 3D */
 
-    min-width: 250px;
-    padding: 0 10px 0 10px;
+    min-width: 263px;
+    width: 100%;
 
-    height: 100%
+    height: calc(100% - 30px);
+    border-radius: 0 0 7px 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+
+    padding: 5px;
 }
 
 #divOpcoes{
     position: relative;
     top: 2%;
 }
-#opcao_1{
-    border-top: 2px solid white;
-}
+
 .opcaoMenu {
     border-bottom: 2px solid white;
     margin: 0; 
-    padding: 5%; 
-    width: 90%;
+    padding: 12px; 
+    width: 85%;
 
     margin-left: 50%; 
     transform: translate(-50%);
@@ -110,6 +142,8 @@ body{
     align-content: flex-start;
     flex-wrap: wrap;
 
+    margin-left: 30px;
+
 }
 .botoes button{
     background-color: var(--cor-secundaria);
@@ -136,8 +170,10 @@ body{
     max-width: 500px;
     padding: 20px;
     height: calc(100% - 39px);
+
+    box-sizing: border-box;
 }
-.projetoExibido{
+.projetoExibido, .funcionarioExibido{
     margin-bottom: 30px;
     cursor: pointer;
 
@@ -145,8 +181,7 @@ body{
     margin-right: 10px;
 
 }
-.projetoSelecionado{
-    border: 2px solid red;
+.projetoSelecionado, .funcionarioSelecionado{
     color: red;
 
     user-select: none;
@@ -393,8 +428,8 @@ body{
 
 
 
-.modal__excluirProj{
-    width: 400px;
+.modal__excluirProj, .modal__excluirFunc{
+    width: max-content;
     display: none;
     z-index: 999;
 
@@ -402,27 +437,32 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    box-sizing: border-box;
 }
-.modal__excluirProj .cabecalho{
+.modal__excluirProj .cabecalho, .modal__excluirFunc .cabecalho{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
+    box-sizing: border-box;
+
     background-color: var(--cor-primaria);
     border-radius:  10px 10px 0 0;
     padding: 15px;
-    width: 410px;
+    width: 100%;
 
 }
-.modal__excluirProj .cabecalho .botaoFechar{
+.modal__excluirProj .cabecalho .botaoFechar, .modal__excluirFunc .cabecalho .botaoFechar{
     width: 20px;
 }
-.modal__excluirProj .cabecalho .botaoFechar:hover{
+.modal__excluirProj .cabecalho .botaoFechar:hover, .modal__excluirFunc .cabecalho .botaoFechar:hover{
     cursor: pointer;
     opacity: 50%;
 }
-.modal__excluirProj .container{
+.modal__excluirProj .container, .modal__excluirFunc .container{
     background-color: var(--cor-secundaria);
+    box-sizing: border-box;
     width: 100%;
     padding: 20px;
 
@@ -432,38 +472,221 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.botoes__deletaProjeto{
+.botoes__deletaProjeto, .botoes__deletaFuncionario{
     display: flex;
     gap: 100px;
 }
-.modal__excluirProj .container .botao__nao{
+.modal__excluirProj .container .botao__nao, .modal__excluirFunc .container .botao__nao{
     background-color: #2fac2f;
 
 }
-.modal__excluirProj .container .botao__nao:hover{
+.modal__excluirProj .container .botao__nao:hover, .modal__excluirFunc .container .botao__nao:hover{
     background-color: #6cc76c;
 
 }
-.modal__excluirProj .container .botao__nao:active{
+.modal__excluirProj .container .botao__nao:active, .modal__excluirFunc .container .botao__nao:active{
     background-color: #127a12;
 
 }
-.modal__excluirProj .container .botao__sim{
+.modal__excluirProj .container .botao__sim, .modal__excluirFunc .container .botao__sim{
     background-color: #ec4242;
 
 }
-.modal__excluirProj .container .botao__sim:hover{
+.modal__excluirProj .container .botao__sim:hover, .modal__excluirFunc .container .botao__sim:hover{
     background-color: #fa7373;
 
 }
-.modal__excluirProj .container .botao__sim:active{
+.modal__excluirProj .container .botao__sim:active, .modal__excluirFunc .container .botao__sim:active{
     background-color: #a51414;
 
 }
-.modal__excluirProj .container .botao__sim, .modal__excluirProj .container .botao__nao{
+.modal__excluirProj .container .botao__sim, .modal__excluirProj .container .botao__nao, .modal__excluirFunc .container .botao__sim, .modal__excluirFunc .container .botao__nao{
     color: var(--cor-primaria-fonte);
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.modal__excluirFunc .container h3{
+    text-align: center;
+}
+
+.funcionarioSelecionado_edit{
+    color: #33b327;
+
+    user-select: none;
+}
+
+
+.modal__editFunc{
+    width: 750px;
+
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%) scale(0.9);
+
+    display: none;
+    z-index: 999;
+
+
+}
+.modal__editFunc .botaoFechar{
+    width: 20px;
+}
+.modal__editFunc .botaoFechar:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.modal__editFunc .container{
+    background-color: var(--cor-secundaria);
+
+    width: 100%;
+
+    border-radius:  0 0 10px 10px;
+    padding: 15px;
+
+    color: var(--cor-secundaria-fonte);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    box-sizing: border-box;
+
+}
+
+
+
+#nome__SS1{color: var(--softS-color1);}
+#nome__SS2{color: var(--softS-color2);}
+#nome__SS3{color: var(--softS-color3);}
+#nome__SS4{color: var(--softS-color4);}
+#nome__SS5{color: var(--softS-color5);}
+#nome__SS6{color: var(--softS-color6);}
+
+#nome__HS1{color: var(--hardS-color1);}
+#nome__HS2{color: var(--hardS-color2);}
+#nome__HS3{color: var(--hardS-color3);}
+#nome__HS4{color: var(--hardS-color4);}
+#nome__HS5{color: var(--hardS-color5);}
+#nome__HS6{color: var(--hardS-color6);}
+#nome__HS7{color: var(--hardS-color7);}
+#nome__HS8{color: var(--hardS-color8);}
+
+.input__skill{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+
+    text-align: center;
+    position: relative;
+    top: -11px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#nomeFuncionario_edit{
+    color: var(--cor-primaria-fonte);
+}
+
+#container__softSkills, #container__hardSkills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+#container__softSkills span, #container__hardSkills span{
+
+    width: 40%;
+    height: max-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 5px 20px 5px 0;
+}
+
+.botao__editar{
+    background-color: #77C252;
+
+    width: max-content;
+    color: var(--cor-primaria-fonte);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.botao__editar:hover{
+    background-color: #89d166;
+    cursor: pointer;
+}
+.botao__editar:active{
+    background-color: #569238;
+    cursor: pointer;
+}
+
+.modal__editFunc hr{
+   margin: 20px 0;
+   width: 100%;
+
+}
+
+#dadosFunc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+#nomeFuncionario_edit, #emailFuncionario_edit, #cargoFuncionario_edit{
+    margin-bottom: 20px;
+}
+#input__especialidade, #input__sobreMim{
+    margin-bottom: 20px;
+}
+#input__especialidade, #input__sobreMim, #input__objetivos{
+    width: 100%;
+    margin-top: 5px;
+}
+#input__especialidade{
+    height: 40px;
+    border-radius: 10px;
+}
+#input__sobreMim, #input__objetivos{
+    height: 60px;
+    resize: none;
+}
+
+.modal__editFunc h3, #modal__editFunc h2{
+    font-weight: normal;
+}
+
+.modal__editFunc .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    color: var(--cor-primaria-fonte);
+    background-color: var(--cor-primaria);
+    border-radius:  10px 10px 0 0;
+    padding: 15px;
+    width: 100%;
 }

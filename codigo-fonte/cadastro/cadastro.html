@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/icones/icon.png" type="image/png">
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 </head>
@@ -10,8 +11,8 @@
     <!------ MENU DE NAVEGAÇÃO ------>
     <header id="cabeçalho">
         <h1 id="logo">GameOfWork</h1>
-        <h1 style="font-size: 20px;">Página Inicial</h1>
-        <button type="button" class="btn btn-danger">Sair</button>
+        <h1 style="font-size: 20px;">Cadastro</h1>
+        <button type="button" class="btn btn-danger" id="botaoSair">Sair</button>
     </header>
 
     <div id="funcionariosContainer">
@@ -47,7 +48,7 @@
         
         <div class="cabecalho">
             <h2>Cadastro de projeto</h2>
-            <img class="botaoFechar" src="close.png" alt="">
+            <img class="botaoFechar" src="../imagens/icones/close.png" alt="">
         </div>
         <div class="container">
             <h3 class="nomeGestor">Gestor: </h3>
@@ -86,7 +87,7 @@
 
     <div class="modal__excluirProj">
         <div class="cabecalho">
-            <img class="botaoFechar" src="close.png" alt="">
+            <img class="botaoFechar" src="../imagens/icones/close.png" alt="">
         </div>
         <div class="container">
             <h3>DELETAR O PROJETO:</h3>
@@ -100,7 +101,81 @@
             </div>
         </div>
     </div>
+
+    <div class="modal__excluirFunc">
+        <div class="cabecalho">
+            <img class="botaoFechar" src="../imagens/icones/close.png" alt="">
+        </div>
+        <div class="container">
+            <h3>EXCLUIR O FUNCIONÁRIO:</h3>
+            <br>
+            <h3 class="email__excluirFuncionario">Funcionario 1</h3>
+            <br>
+            <br>
+            <div class="botoes__deletaFuncionario">
+                <button class="botao__nao">Não</button>
+                <button class="botao__sim">Sim</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__editFunc">
+
+
+        <div class="cabecalho">
+            <h3>Editar Funcionário</h3>
+            <img class="botaoFechar" src="../imagens/icones/close.png" alt="">
+        </div>
+
+
+        <div class="container">
+
+            <div class="dadosFunc">
+                    <h2 id="nomeFuncionario_edit">Nome</h2>
+                    <h3 id="emailFuncionario_edit">Email</h3>
+                    <h3 id="cargoFuncionario_edit">Cargo</h3>
+    
+                    <h3>Especialidade</h3>
+                    <input id="input__especialidade"type="text">
+        
+                    <h3>Sobre mim</h3>
+                    <textarea name="" id="input__sobreMim"></textarea>
+        
+                    <h3>Objetivos</h3>
+                    <textarea name="" id="input__objetivos"></textarea>
+            </div>
+
+            <hr>
+
+            <div id="container__softSkills">
+                <span><h3 id="nome__SS1">Comunicação:</h3> <input id="input__SS1" class="input__skill input__softSkill" type="number"></span>
+                <span><h3 id="nome__SS2">Organização:</h3> <input id="input__SS2" class="input__skill input__softSkill" type="number"></span>
+                <span><h3 id="nome__SS3">Criatividade:</h3> <input id="input__SS3" class="input__skill input__softSkill" type="number"></span>
+                <span><h3 id="nome__SS4">Pens. Analítico:</h3> <input id="input__SS4" class="input__skill input__softSkill" type="number"></span>
+                <span><h3 id="nome__SS5">Liderança:</h3> <input id="input__SS5" class="input__skill input__softSkill" type="number"></span>
+                <span><h3 id="nome__SS6">Trab. Equipe:</h3> <input id="input__SS6" class="input__skill input__softSkill" type="number"></span>
+            </div>
+
+            <hr>
+
+            <div id="container__hardSkills">
+                <span><h3 id="nome__HS1" class="hardSkill">HardSkill 1:</h3> <input id="input__HS1" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS2" class="hardSkill">HardSkill 2:</h3> <input id="input__HS2" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS3" class="hardSkill">HardSkill 3:</h3> <input id="input__HS3" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS4" class="hardSkill">HardSkill 4:</h3> <input id="input__HS4" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS5" class="hardSkill">HardSkill 5:</h3> <input id="input__HS5" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS6" class="hardSkill">HardSkill 6:</h3> <input id="input__HS6" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS7" class="hardSkill">HardSkill 7:</h3> <input id="input__HS7" class="input__skill input__hardSkill" type="number"></span>
+                <span><h3 id="nome__HS8" class="hardSkill">HardSkill 8:</h3> <input id="input__HS8" class="input__skill input__hardSkill" type="number"></span>
+            </div>
+          
+            <button class="botao__editar">Editar</button>
+           
+        </div>
+    </div>
+
     <script src="cadastroProjeto.js"></script>
+    <script src="editaFuncionario.js"></script>
     <script src="cadastro-bd.js"></script>
 </body>
 </html>

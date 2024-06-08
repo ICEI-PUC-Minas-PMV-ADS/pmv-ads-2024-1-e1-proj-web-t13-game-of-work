@@ -384,7 +384,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   ----------------- LISTA DE FUNCIONÁRIOS ----------------- 
 
-  let userList = [
+  let listaUsuarios = [
     {
       nome: 'Cássio Marques de Araújo',
       cargo: 'Gestor',
@@ -394,7 +394,9 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
       hardSkills: [7,2,1,0,9,2,3,4],
       projetos: ['Roubar Coelho','','',''],
       email: 'cascaoLimoeiro@gmail.com',
-      senha: 'naotomarbanho27'
+      senha: 'naotomarbanho27',
+      objetivos: 'Nunca tomar banho',
+      sobre_mim: 'Odeio tomar banho'
     },
     {
       nome: 'Magali Fernandes de Lima',
@@ -405,7 +407,9 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
       hardSkills: [7,1,4,2,8,4,2,6],
       projetos: ['Almoço','Janta','',''],
       email: 'magaliMelancia@gmail.com',
-      senha: 'mingau22'
+      senha: 'mingau22',
+      objetivos: 'Adoro comer melancia',
+      sobre_mim: 'Comer mais melancia'
     },
     {
       nome: 'Cebolácio Menezes da Silva Júnior',
@@ -416,7 +420,9 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
       hardSkills: [1,5,7,1,8,6,3,8],
       projetos: ['Roubar coelho','Não apanhar','Se esconder',''],
       email: 'cebolinha@gmail.com',
-      senha: 'planoinfalivel83'
+      senha: 'planoinfalivel83',
+      objetivos: 'Roubar o coelho da Mônica',
+      sobre_mim: 'Tenho medo de calvice'
     },
     {
       nome: 'Monica Sousa',
@@ -427,12 +433,28 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
       hardSkills: [6,3,8,8,9,2,9,0],
       projetos: ['Proteger o coelho','Bater no Cebolinha','Voltar pra casa','Ver a magali'],
       email: 'monicaSansao@gmail.com',
-      senha: 'sansao45'
-    }
+      senha: 'sansao45',
+      objetivos: 'Bater no cebolinha',
+      sobre_mim: 'Odeio o cebolinha'
+    },
+    {
+      nome: 'Professor Hayala',
+      cargo: 'Gestor',
+      especialidade: 'Gestão de Projetos',
+
+      softSkills: [6,2,7,1,8,6],
+      hardSkills: [6,3,8,8,9,2,9,0],
+      projetos: ['Desenvolvimento Web - Eixo1'],
+      email: 'hayala@sga.pucminas.br',
+      senha: 'Senha123',
+      objetivos: 'Ensino na área de gestão de projetos',
+      sobre_mim: 'Sou professor da PUC-Minas em BH'
+    },
+
   ];
 
-  localStorage.setItem("userList", JSON.stringify(userList));
-  userlist = JSON.parse(localStorage.getItem("userList"));
+  localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
+  userlist = JSON.parse(localStorage.getItem("listaUsuarios"));
 
   ----------------- LISTA DE PROJETOS ----------------- 
 
@@ -524,7 +546,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   ----------------- PERFIL ----------------- 
 
-  let userList = [
+  let listaUsuarios = [
     {
       nome: 'Cássio Marques de Araújo',
       cargo: 'Gestor',
@@ -571,8 +593,8 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     }
   ];
 
-  localStorage.setItem("userList", JSON.stringify(userList));
-  userlist = JSON.parse(localStorage.getItem("userList"));
+  localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
+  userlist = JSON.parse(localStorage.getItem("listaUsuarios"));
 
     ----- USUÁRIOS LOGADOS -----
 
@@ -622,7 +644,7 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
   ----------------- CARGOS ----------------- 
 
-  let titleList = [
+  listaCargos = [
     {
       cargo: 'Desenvolvedor',
       hardSkills: ['JavaScript','SQL','Python','Java','TypeScript','Bash','C#','PHP']
@@ -641,8 +663,8 @@ let listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
     }
   ];
 
-  localStorage.setItem("titleList", JSON.stringify(titleList));
-  titleList = JSON.parse(localStorage.getItem("titleList"));
+  localStorage.setItem("listaCargos", JSON.stringify(listaCargos));
+  listaCargos = JSON.parse(localStorage.getItem("listaCargos"));
 
 
 */
