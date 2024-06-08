@@ -10,7 +10,7 @@ Os requisitos para realização dos testes de software são:
 Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 | Caso de Teste    | CT-01 - Tela Inicial |
-|:---|:---|
+|-------------------------------------|----------------------------------------------------------------------------------|
 | **Requisitos Associados** | RF- 02: Local de navegação intuitivo sem dificuldade de entendimento;<br>RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.<br> RF-19 O usuário deve conseguir sair de sua conta. |
 | **Objetivo do Teste** | Verificar se os cards direcionadores da Página Inicial estão encaminhando para as respectivas páginas corretamente. |
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4) Clicar nos cards da página. |
