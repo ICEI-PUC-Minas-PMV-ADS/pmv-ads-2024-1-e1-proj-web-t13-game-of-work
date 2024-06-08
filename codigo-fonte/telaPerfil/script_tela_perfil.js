@@ -3,6 +3,7 @@ let cargo = localStorage.getItem('cargo');
 let email = localStorage.getItem('email');
 let token = localStorage.getItem('token');
 
+
 var nome_usuario = document.querySelector('#nome_usuario');
 nome_usuario.innerHTML = nome;
 
@@ -11,6 +12,7 @@ cargo_usuario.innerHTML = cargo;
 
 var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 var listaCargos = JSON.parse(localStorage.getItem('listaCargos'));
+var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos'));
 
 const valorSoftSkills = document.getElementsByClassName('valorSoftSkills')
 for (let i = 0; i < listaUsuarios.length; i++) {
@@ -61,7 +63,7 @@ for (let i = 0; i < listaUsuarios.length; i++) {
 const projetos_o = document.querySelector('#projetos_o');
 for (let i = 0; i < listaUsuarios.length; i++) {
     if (listaUsuarios[i].email==email) {   
-        var projetos = listaUsuarios[i].projetos    
+        var projetos = listaProjetos[i].projetos    
      }
 }
 
