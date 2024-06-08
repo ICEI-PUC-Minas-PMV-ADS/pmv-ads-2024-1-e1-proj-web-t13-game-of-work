@@ -69,3 +69,28 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Lista de Funcionários;<br>4)Clicar em um funcionário na lista |
 | **Critérios de êxito** | Ao entrar na página uma lista com todos os funcionários cadastrados deve ser exibida e, ao clilcar em um funcionário, os dados deste funcionário deverão aparecer na tela |
 | **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
+
+|Caso de Teste    | CT-08 - Exclusão de Funcionário |
+|:---|:---|
+| **Requisitos Associados** | RF-11 Deve permitir excluir um funcionário. |
+| **Objetivo do Teste** | Excluir os dados do funcionário do sistema|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Excluir Funcionário"<br>5)Dar um duplo clique no funcionário selecionado<br>6)Clicar em "Sim" |
+| **Critérios de êxito** | Todos os dados do funcionário selecionado devem ser excluídos do sistema |
+| **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
+
+|Caso de Teste    | CT-09 - Exclusão de Projeto |
+|:---|:---|
+| **Requisitos Associados** | RF-03 Deve permitir excluir um projeto. |
+| **Objetivo do Teste** | Excluir os dados de um projeto|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Excluir Projeto"<br>5)Dar um duplo clique no projeto selecionado<br>6)Clicar em "Sim" |
+| **Critérios de êxito** | Todos os dados do projeto selecionado devem ser excluídos do sistema |
+| **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
+
+|Caso de Teste    | CT-10 - Alteração de dados de funcionário|
+|:---|:---|
+| **Requisitos Associados** | RF-17 Deve permitir alteração dos dados de um funcionário. |
+| **Objetivo do Teste** | Alterar os dados de um funcionário|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Editar Funcionário"<br>5)Dar um duplo clique no funcionário selecionado<br>6)Alterar os dados do funcionário<br>7)Clicar em "Editar" |
+| **Critérios de êxito** | Os dados do funcionário devem ser trocados pelos novos dados preenchidos |
+| **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
+
