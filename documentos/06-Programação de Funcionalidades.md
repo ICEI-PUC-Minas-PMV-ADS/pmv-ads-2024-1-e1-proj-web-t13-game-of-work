@@ -191,7 +191,7 @@ Brenda Drumond e Catiane de Souza.
 
 <figure> 
   <img src="img/cadastrodeFuncionarios.png">
-  <figcaption>Figura 6: Tela Lista de Funcionários</figcaption>
+  <figcaption>Figura 6: Tela Cadastro de Funcionários</figcaption>
 </figure> 
 
 #### Requisito atendido
@@ -214,7 +214,7 @@ Brenda Drumond e Catiane de Souza.
 
 #### Instruções de acesso
 
-Clique<a href="">AQUI</a>
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/cadastroFuncionarios/cadastroFuncionario.html">AQUI</a>
 
 Faça cadastro inserindo as informações solicitadas.
 
@@ -222,4 +222,40 @@ Faça cadastro inserindo as informações solicitadas.
 
 Kayque Fonseca
 <hr>
+
+### Tela de Cadastro
+
+<figure> 
+  <img src="img/cadastro.png">
+  <figcaption>Figura 6: Tela de Cadastro</figcaption>
+</figure> 
+
+#### Requisito atendido
+
+- RF-02	Local de navegação intuitivo sem dificuldade de entendimento.
+- RF-03	Deve permitir excluir um projeto.
+- RF-11	Deve permitir excluir um funcionário.
+- RF-14 Deve permitir que faça o cadastro de um projeto.
+- RF-17 Deve permitir alteração dos dados de um funcionário.
+
+#### Artefatos da funcionalidade
+
+- cadastro.html
+- cadastro.css
+- cadastroProjeto.js
+- cadastro-bd.js
+
+#### Estrutura de Dados
+
+- cadastro.html
+
+#### Instruções de acesso
+
+Clique<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/codigo-fonte/cadastro/cadastro.html">AQUI</a>
+
+Clique no botao "Excluir Projeto" para excluir um projeto, clique no botao "Novo projeto" para cadastrar um novo projeto, clique no botao "Excluir funcionário" para excluir um funcionário ou clique no botão "Editar funcionário" para editar um funcionário.
+
+#### Responsável
+
+Nikolas Victor Mota
 
