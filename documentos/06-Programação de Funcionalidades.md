@@ -151,7 +151,7 @@ Nikolas Victor Mota
 ### Tela Lista de Projetos
 
 <figure> 
-  <img src="img/listaProjetos.png">
+  <img src="img/telaProjetos.png">
   <figcaption>Figura 5: Tela Lista de Projetos</figcaption>
 </figure> 
 
