@@ -1,33 +1,59 @@
-localStorage.setItem('cargo', 'Gestor');
+let nome = localStorage.getItem('nome');
+let cargo = localStorage.getItem('cargo');
+let email = localStorage.getItem('email');
+let token = localStorage.getItem('token');
 
+var bemvindo = document.querySelector('#bemvindo');
+bemvindo.innerHTML = `Seja bem-vindo: ${nome}`;
 
-const card_funcionarios = document.querySelector('#card_funcionarios');
-const card_projetos = document.querySelector('#card_projetos');
-const card_perfil = document.querySelector('#card_perfil');
-const card_cadastro = document.querySelector('#card_cadastro');
-const opcao_cadastro = document.querySelector('#opcao_2');
-var cargo_atual;
-card_funcionarios.classList.remove('col-lg-3');
-card_projetos.classList.remove('col-lg-3');
-card_perfil.classList.remove('col-lg-3');
-card_cadastro.classList.remove('col-lg-3');
-card_funcionarios.classList.add('col-lg-4');
-card_projetos.classList.add('col-lg-4');
-card_perfil.classList.add('col-lg-4');
-card_cadastro.classList.add('col-lg-4');
+var acesso = document.querySelector('#acesso');
+acesso.innerHTML = `Você está acessando com o perfil: ${cargo}.`;
 
-cargo_atual = localStorage.cargo;
+var cadastro = document.querySelector('.cadastro');
+var opcao_2 = document.querySelector('#opcao_2');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    cadastro.setAttribute('style','display:block')
+    opcao_2.setAttribute('style','display:block')
 
-if (cargo_atual == 'Gestor') {
-    
-    card_funcionarios.classList.remove('col-lg-4');
-    card_projetos.classList.remove('col-lg-4');
-    card_perfil.classList.remove('col-lg-4');
-    card_cadastro.classList.remove('col-lg-4');
-    card_funcionarios.classList.add('col-lg-3');
-    card_projetos.classList.add('col-lg-3');
-    card_perfil.classList.add('col-lg-3');
-    card_cadastro.classList.add('col-lg-3');
-    card_cadastro.setAttribute('style', 'display: block');
-    opcao_cadastro.setAttribute('style', 'display: block');
+} else{ 
+    cadastro.setAttribute('style','display:none')
+    opcao_2.setAttribute('style','display:none') 
 }
+
+var funcionarios = document.querySelector('.funcionarios');
+var opcao_3 = document.querySelector('#opcao_3');
+if (cargo=='Gestor' || cargo=='RH' ) {
+    funcionarios.setAttribute('style','display:block')
+    opcao_3.setAttribute('style','display:block')
+
+} else{ 
+    funcionarios.setAttribute('style','display:none')
+    opcao_3.setAttribute('style','display:none') 
+}
+
+
+
+//Teste 
+/*
+mathRandom = Math.random().toString(16).substr(2);
+token = mathRandom + mathRandom;
+
+localStorage.setItem("token", token);
+
+localStorage.setItem('nome', 'Cássio Marques de Araújo');
+localStorage.setItem('email', 'cascaoLimoeiro@gmail.com');
+localStorage.setItem('cargo', 'Gestor');
+*/
+
+/*
+let mathRandom = Math.random().toString(16).substr(2);
+  let token = mathRandom + mathRandom;
+   
+  localStorage.setItem("token", token);
+ 
+  localStorage.setItem('nome', 'Magali Fernandes de Lima');
+  localStorage.setItem('email', 'magaliMelancia@gmail.com');
+  localStorage.setItem('cargo', 'Desenvolvedor');
+*/
+
+
