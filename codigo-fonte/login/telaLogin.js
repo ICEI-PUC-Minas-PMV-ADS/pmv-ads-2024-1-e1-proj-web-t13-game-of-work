@@ -95,7 +95,7 @@ function logar() {
 
             email = usuario.email;
             nome = usuario.nome;
-            cargo = usuario.nome
+            cargo = usuario.cargo
         }
     })
     if (inputEmail.value == validacaoUsuario.email && inputSenha.value == validacaoUsuario.senha && inputEmail.value != "" && inputSenha.value != "") {
@@ -104,9 +104,9 @@ function logar() {
 
         localStorage.setItem("token", token);
 
-        localStorage.setItem('nome', JSON.stringify(nome));
-        localStorage.setItem('email', JSON.stringify(email));
-        localStorage.setItem('cargo', JSON.stringify(cargo));
+        localStorage.setItem('nome', nome);
+        localStorage.setItem('email', email);
+        localStorage.setItem('cargo', cargo);
 
         window.location.assign("../paginaInicial/index_pagina_inicial.html");
     } else {
