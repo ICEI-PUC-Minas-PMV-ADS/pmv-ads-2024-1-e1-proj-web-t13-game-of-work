@@ -55,3 +55,5 @@ let mathRandom = Math.random().toString(16).substr(2);
   localStorage.setItem('email', 'magaliMelancia@gmail.com');
   localStorage.setItem('cargo', 'Desenvolvedor');
 */
+
+
