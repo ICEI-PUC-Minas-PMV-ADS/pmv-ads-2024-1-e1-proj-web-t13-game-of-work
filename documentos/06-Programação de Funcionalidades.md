@@ -41,7 +41,7 @@ Brenda Drumond
 ### Tela Perfil
 
 <figure> 
-  <img src="img/telaPerfil.png">
+  <img src="img/paginaPerfil.png">
   <figcaption>Figura 2: Tela de Perfil</figcaption>
 </figure> 
 
