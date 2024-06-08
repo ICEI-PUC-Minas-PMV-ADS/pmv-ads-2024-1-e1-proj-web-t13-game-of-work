@@ -132,6 +132,7 @@ html, body
 
 .card:hover{
     background-color: var(--cor-terciaria);
+    cursor: pointer;
 }
 
 .card-title {
