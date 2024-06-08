@@ -18,12 +18,12 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | **Responsável pela elaboração do caso de Teste** | Brenda Drumond |
 
 
-|Caso de Teste    | CT-02 - Login |
+| Caso de Teste    | CT-02 - Login |
 |:---|:---|
-| **Requisitos** Associados | RF-01 Tela de login, com acesso diferente para cada perfil de usuário. |
-| Objetivo do Teste | Verificar se a validação de login está ocorrendo da maneira correta e verificar se o encaminhamento está ocorrendo para as páginas certas.|
+| **Requisitos Associados** | RF- 01: Tela de login, com acesso diferente para cada perfil de usuário. |
+| **Objetivo do Teste** | Verificar se a validação de login está ocorrendo da maneira correta e verificar se o encaminhamento está ocorrendo para as páginas certas.|
 | **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página de Login;<br>4) Inserir e-mail e senha cadastrados;<br>5) Inserir e-mail e senha cadastrados.;<br>6) Clicar em "Cadastra-se". |
-| **Critérios de êxito** | Se já cadastrado deve direcionar para a Tela Inicial, caso contrário mostrar mensagem de erro. A opção "cadastre-se" deve encaminhar para a página de Cadastro de Funcionários  |
+| **Critérios de êxito** | Se já cadastrado, deve direcionar para a Tela Inicial, caso contrário mostrar mensagem de erro. A opção "cadastre-se" deve encaminhar para a página de Cadastro de Funcionários. |
 | **Responsável pela elaboração do caso de Teste** | Kayque Fonseca |
 
 
