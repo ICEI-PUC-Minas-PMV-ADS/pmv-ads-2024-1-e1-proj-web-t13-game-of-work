@@ -40,7 +40,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.<br>RF-05 Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.<br>RF-06 Na ficha do funcionário, deve ter seu objetivo profissional.<br>RF-07 Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).<br>RF-08 Deve conter um breve resumo sobre o funcionário.<br>RF-09 Opção de demonstrar os projetos que o funcionário participou anteriormente.<br>RF-16 O usuário deve poder acessar o seu perfil para visualizar suas competências.|
 | **Objetivo do Teste** | Verificar se a Tela Perfil está apresentando as informações cadastradas corretamente, baseado no login cadastrado anteriormente.|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Login;<br>4) Preencher seus dados e clicar em “Entrar”;<br>5)Visualizar a Página Inicial;<br>6)Clicar no card "Perfil" ou no menu lateral;<br>7)Visualizar a página Perfil e verificar os dados.|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4)Clicar no card "Perfil" ou no menu lateral;<br>5)Visualizar a página Perfil e verificar os dados.|
 | **Critérios de êxito** | As informações cadastradas devem estar disponibilizadas corretamente na página Perfil. |
 | **Responsável pela elaboração do caso de Teste** | Catiane de Souza |
 
@@ -57,7 +57,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-03 Área de observações para os gestores colocarem informações úteis para o projeto.<br>RF-10 Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo.<br>RF-18 Deve exibir uma lista com os projetos cadastrados.<br>RF-19 Deve exibir quais funcionários estão participando de um projeto.|
 | **Objetivo do Teste** | Verificar se a Tela Projetos está apresentando as informações corretamente, baseado no cadastro do projeto.|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Login;<br>4) Preencher seus dados e clicar em “Entrar”;<br>5) Visualizar a Página Inicial;<br>6) Clicar no card "Projetos" ou no menu lateral;<br>7) Visualizar a página Projetos e verificar os dados.|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4) Clicar no card "Projetos" ou no menu lateral;<br>5) Visualizar a página Projetos e verificar os dados.|
 | **Critérios de êxito** | As informações cadastradas devem estar disponibilizadas corretamente na página Projetos.|
 | **Responsável pela elaboração do caso de Teste** | Brenda Drumond |
 
