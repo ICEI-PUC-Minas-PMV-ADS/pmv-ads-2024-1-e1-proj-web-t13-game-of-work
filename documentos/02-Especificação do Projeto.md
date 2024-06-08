@@ -86,8 +86,10 @@ Com base na análise dos perfis foram identificadas as seguintes histórias de u
 | RF-16 | O usuário deve poder acessar o seu perfil para visualizar suas competências. | ALTA |
 | RF-17 | O usuário deve conseguir sair de sua conta. | ALTA |
 | RF-18 | Deve exibir uma lista com os projetos cadastrados. | ALTA |
-| RF-19 | Deve exibir quais funcionários estão participando de um projeto. | ALTA |   
-
+| RF-19 | Deve exibir quais funcionários estão participando de um projeto. | ALTA |  
+| RF-20	| Deve permitir excluir um projeto. | ALTA |
+| RF-21	| Deve permitir excluir um funcionário. | ALTA |
+| RF-22 | Deve permitir alteração dos dados de um funcionário. | MÉDIA |
 
 **Prioridade: Alta / Média / Baixa. 
 
