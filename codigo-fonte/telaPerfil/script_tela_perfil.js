@@ -63,7 +63,7 @@ for (let i = 0; i < listaUsuarios.length; i++) {
 const projetos_o = document.querySelector('#projetos_o');
 for (let i = 0; i < listaUsuarios.length; i++) {
     if (listaUsuarios[i].email==email) {   
-        var projetos = listaProjetos[i].projetos    
+        var projetos = listaUsuarios[i].projetos    
      }
 }
 
