@@ -11,9 +11,8 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-- RF- 02: Local de navegação intuitivo sem dificuldade de entendimento.
-- RF- 01: Tela de login, com acesso diferente para cada perfil de usuário.
-
+- RF-02	Local de navegação intuitivo sem dificuldade de entendimento.
+- RF-17	O usuário deve conseguir sair de sua conta.
 
 
 #### Artefatos da funcionalidade
@@ -49,13 +48,11 @@ Brenda Drumond
 
 - RF-04	Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
 - RF-05	Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.
-- RF-07	Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).
 - RF-06	Na ficha do funcionário, deve ter seu objetivo profissional.
+- RF-07	Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).
 - RF-08	Deve conter um breve resumo sobre o funcionário.
 - RF-09	Opção de demonstrar os projetos que o funcionário participou anteriormente.
-- RF-16 Exibir ficha do funcionário.
-- RF-18 O usuário deve poder acessar o seu perfil para visualizar suas competências.
-
+- RF-16	O usuário deve poder acessar o seu perfil para visualizar suas competências.
 
 #### Artefatos da funcionalidade
 
@@ -88,7 +85,8 @@ Catiane de Souza
 
 #### Requisito atendido
 
-- RF-01 Tela de login, com acesso diferente para cada perfil de usuário.
+- RF-01	Tela de login, com acesso diferente para cada perfil de usuário.
+- RF-12	Deve permitir que o usuário faça o login na sua conta.
 
 #### Artefatos da funcionalidade
 
@@ -122,9 +120,9 @@ Kayque Fonseca
 
 #### Requisito atendido
 
-- RF-15 Deve exibir uma lista com os funcionários cadastrados.
-- RF-16 Exibir ficha do funcionário.
-
+- RF-14	Deve exibir uma lista com os funcionários cadastrados.
+- RF-15	Exibir ficha do funcionário.
+  
 #### Artefatos da funcionalidade
 
 - listaFuncionarios.html
@@ -157,11 +155,10 @@ Nikolas Victor Mota
 
 #### Requisito atendido
 
+- RF-03	Área de observações para os gestores colocarem informações úteis para o projeto.
 - RF-10	Tem que ser possível selecionar os projetos que estão em prioridade por conta de prazo.
-- RF-15 Deve exibir uma lista com os projetos cadastrados.
-- RF-14	Deve permitir que faça o cadastro de um projeto.
-- RF-20	Deve exibir uma lista com os projetos cadastrados.
-- RF-21	Deve exibir quais funcionários estão participando de um projeto.
+- RF-18	Deve exibir uma lista com os projetos cadastrados.
+- RF-19	Deve exibir quais funcionários estão participando de um projeto.
 
 #### Artefatos da funcionalidade
 
@@ -196,11 +193,7 @@ Brenda Drumond e Catiane de Souza.
 
 #### Requisito atendido
 
-- RF-02	Local de navegação intuitivo sem dificuldade de entendimento.
-- RF-06	Na ficha do funcionário, deve ter seu objetivo profissional.
-- RF-08	Deve conter um breve resumo sobre o funcionário.
-- RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.
-- RF-12 Deve permitir que faça o cadastro de um usuário.
+- RF-11	Deve permitir que faça o cadastro de um usuário.
 
 #### Artefatos da funcionalidade
 
@@ -232,11 +225,10 @@ Kayque Fonseca
 
 #### Requisito atendido
 
-- RF-02	Local de navegação intuitivo sem dificuldade de entendimento.
-- RF-03	Deve permitir excluir um projeto.
-- RF-11	Deve permitir excluir um funcionário.
-- RF-14 Deve permitir que faça o cadastro de um projeto.
-- RF-17 Deve permitir alteração dos dados de um funcionário.
+- RF-13	Deve permitir que faça o cadastro de um projeto.
+- RF-20	Deve permitir excluir um projeto.
+- RF-21	Deve permitir excluir um funcionário.
+- RF-22 Deve permitir alteração dos dados de um funcionário.
 
 #### Artefatos da funcionalidade
 
