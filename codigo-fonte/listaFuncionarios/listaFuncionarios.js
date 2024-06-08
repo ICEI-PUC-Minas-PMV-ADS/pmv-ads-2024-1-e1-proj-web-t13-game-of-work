@@ -15,6 +15,14 @@ const listaCards = document.getElementsByClassName('card');
 
 const testandoErro = null;
 
+var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos'));
+const selectProjetos = document.querySelector('#selectAddProjeto');
+
+const fecharModal_addProjetos = document.querySelector('#fechar_modalAddProjeto')
+const modal_addProjetos = document.querySelector('#modal_addProjeto');
+const nome_addProjetos = document.querySelector('#usuario_modalAddProjeto')
+var nomeClicado = "";
+
 // Pega os usuários cadastrados e cria uma lista com todos os usuários.
 listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 function criaLista(listaUsuarios){
@@ -28,6 +36,7 @@ function criaLista(listaUsuarios){
 
         let nome = document.createElement('h3');
         nome.innerHTML = listaUsuarios[i].nome;
+        nomeClicado = listaUsuarios[i].nome;
 
         let cargo = document.createElement('h4');
         cargo.innerHTML = listaUsuarios[i].cargo;
@@ -96,6 +105,7 @@ for (let i = 0; i < listaCards.length; i++) {
     
     listaCards[i].addEventListener('click', function(){
 
+        
         divDadosPessoais.setAttribute('style', 'visibility: visible');
         divSoftSkills.setAttribute('style', 'visibility: visible');
         divHardSkills.setAttribute('style', 'visibility: visible');
@@ -120,6 +130,7 @@ for (let i = 0; i < listaCards.length; i++) {
                 
                 let campoNome = document.querySelector('#nome');
                 campoNome.innerHTML = listaUsuarios[i].nome;
+                
 
                 let campoCargo = document.querySelector('#cargo');
                 campoCargo.innerHTML = listaUsuarios[i].cargo;
@@ -220,3 +231,27 @@ botaoFechar.addEventListener('click', function(){
             cardSelecionado.classList.remove('cardSelecionado');
         }
 });
+
+for (let i = 0; i < listaProjetos.length; i++) {
+    const option = document.createElement('option');
+    option.classList.add('opcoesProjetos');
+    option.innerHTML = listaProjetos[i].nome;
+    console.log(option)
+    selectProjetos.appendChild(option);
+}
+
+fecharModal_addProjetos.addEventListener('click', function(){
+    modal_addProjetos.setAttribute('style', 'display: none');
+    overlay.setAttribute('style', 'display: none');
+});
+
+overlay.addEventListener('click', function(){
+    modal_addProjetos.setAttribute('style', 'display: none');
+    overlay.setAttribute('style', 'display: none');
+});
+
+botaoAddProjeto.addEventListener('click', function(){
+    modal_addProjetos.setAttribute('style', 'display: block');
+    overlay.setAttribute('style', 'display: block');
+    nome_addProjetos.innerHTML = nomeClicado;
+})
