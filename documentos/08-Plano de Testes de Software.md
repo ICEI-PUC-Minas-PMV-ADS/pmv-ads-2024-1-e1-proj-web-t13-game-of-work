@@ -40,7 +40,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-04 Na ficha do funcionário, deve ter um local para colocar o nível de cada competência.<br>RF-05 Na ficha do funcionário, deve ter uma imagem/avatar do mesmo.<br>RF-06 Na ficha do funcionário, deve ter seu objetivo profissional.<br>RF-07 Deve conter área para as formações acadêmicas (fora o conhecimento adquirido técnico).<br>RF-08 Deve conter um breve resumo sobre o funcionário.<br>RF-09 Opção de demonstrar os projetos que o funcionário participou anteriormente.<br>RF-16 O usuário deve poder acessar o seu perfil para visualizar suas competências.|
 | **Objetivo do Teste** | Verificar se a Tela Perfil está apresentando as informações cadastradas corretamente, baseado no login cadastrado anteriormente.|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4)Clicar no card "Perfil" ou no menu lateral;<br>5)Visualizar a página Perfil e verificar os dados.|
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a Página Inicial;<br>4) Clicar no card "Perfil" ou no menu lateral;<br>5) Visualizar a página Perfil e verificar os dados.|
 | **Critérios de êxito** | As informações cadastradas devem estar disponibilizadas corretamente na página Perfil. |
 | **Responsável pela elaboração do caso de Teste** | Catiane de Souza |
 
@@ -66,7 +66,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-14	Deve exibir uma lista com os funcionários cadastrados.<br>RF-15	Exibir ficha do funcionário. |
 | **Objetivo do Teste** | Exibir uma lista com todos os funcionários cadastrados no sistema e exibir os dados de um funcionário selecionado|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Lista de Funcionários;<br>4)Clicar em um funcionário na lista |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Lista de Funcionários;<br>4) Clicar em um funcionário na lista |
 | **Critérios de êxito** | Ao entrar na página uma lista com todos os funcionários cadastrados deve ser exibida e, ao clilcar em um funcionário, os dados deste funcionário deverão aparecer na tela |
 | **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
 
@@ -74,7 +74,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-20 Deve permitir excluir um funcionário. |
 | **Objetivo do Teste** | Excluir os dados do funcionário do sistema|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Excluir Funcionário"<br>5)Dar um duplo clique no funcionário selecionado<br>6)Clicar em "Sim" |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4) Clicar no botão "Excluir Funcionário"<br>5) Dar um duplo clique no funcionário selecionado<br>6)Clicar em "Sim" |
 | **Critérios de êxito** | Todos os dados do funcionário selecionado devem ser excluídos do sistema |
 | **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
 
@@ -82,7 +82,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-21 Deve permitir excluir um projeto. |
 | **Objetivo do Teste** | Excluir os dados de um projeto|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Excluir Projeto"<br>5)Dar um duplo clique no projeto selecionado<br>6)Clicar em "Sim" |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4) Clicar no botão "Excluir Projeto"<br>5)Dar um duplo clique no projeto selecionado<br>6) Clicar em "Sim" |
 | **Critérios de êxito** | Todos os dados do projeto selecionado devem ser excluídos do sistema |
 | **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
 
@@ -90,7 +90,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |:---|:---|
 | **Requisitos Associados** | RF-22 Deve permitir alteração dos dados de um funcionário. |
 | **Objetivo do Teste** | Alterar os dados de um funcionário|
-| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4)Clicar no botão "Editar Funcionário"<br>5)Dar um duplo clique no funcionário selecionado<br>6)Alterar os dados do funcionário<br>7)Clicar em "Editar" |
+| **Passos** | 1) Acessar o navegador;<br>2) Informar o endereço do site;<br>3) Visualizar a página Cadastro;<br>4) Clicar no botão "Editar Funcionário"<br>5) Dar um duplo clique no funcionário selecionado<br>6) Alterar os dados do funcionário<br>7) Clicar em "Editar" |
 | **Critérios de êxito** | Os dados do funcionário devem ser trocados pelos novos dados preenchidos |
 | **Responsável pela elaborar do caso de Teste** | Nikolas Victor Mota|
 
