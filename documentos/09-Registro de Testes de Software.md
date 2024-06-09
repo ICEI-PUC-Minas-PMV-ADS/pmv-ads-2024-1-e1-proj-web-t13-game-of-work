@@ -65,7 +65,7 @@ _Link Video_
   </li>
   <hr>
   
-    <li> CT-07 - Lista Funcionários
+  <li> CT-07 - Lista Funcionários
 
   Responsável: Kayque Fonseca
 
@@ -77,7 +77,7 @@ _Link Video_
   </li>
   <hr>
   
-    <li> CT-08 - Exclusão de Funcionário
+  <li> CT-08 - Exclusão de Funcionário
 
   Responsável: Kayque Fonseca
 
@@ -86,10 +86,10 @@ _Link Video_
   </li>
   <hr>
 
-    </li>
+  </li>
   <hr>
   
-    <li> CT-09 - Exclusão de Projeto
+  <li> CT-09 - Exclusão de Projeto
 
   Responsável: Kayque Fonseca
 
@@ -98,10 +98,10 @@ _Link Video_
   </li>
   <hr>
 
-      </li>
+  </li>
   <hr>
   
-    <li> CT-10 - Alteração de dados de funcionário
+  <li> CT-10 - Alteração de dados de funcionário
 
   Responsável: Kayque Fonseca
 
