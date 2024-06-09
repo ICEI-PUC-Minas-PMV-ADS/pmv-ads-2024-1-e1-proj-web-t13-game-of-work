@@ -82,7 +82,7 @@ _Link Video_
 
   Responsável: Kayque Fonseca
 
-_Link Video_
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/ad7a42ef-81b6-4c2e-8b21-596ca920880f
 
   </li>
   <hr>
