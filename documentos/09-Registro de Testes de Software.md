@@ -41,7 +41,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
   <li> CT-04 - Tela Perfil
 
   Responsável: Brenda Drumond
-  
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/165854427/abad62ff-d37e-4585-8a67-2affca42566f
 
   </li>
   <hr>
