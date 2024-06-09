@@ -13,7 +13,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
         
   Responsável: Catiane de Souza.
 
-Acesso com perfil "Gestor": Nos perfis Gestor e RH, todos os cards estão dinsponíveis.
+Acesso com perfil "Gestor": Nos perfis Gestor e RH, todos os cards estão disponíveis.
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164746654/54d590ca-9192-4283-bcba-29212146972a
 
@@ -73,7 +73,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
 
   Responsável: Kayque Fonseca
 
-_Link Video_
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/6419f90a-7abe-41fe-b1dc-a7d35e3f1ac6
 
   </li>
   <hr>
