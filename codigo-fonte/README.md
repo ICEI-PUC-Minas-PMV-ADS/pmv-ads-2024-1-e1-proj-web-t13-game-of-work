@@ -7,7 +7,8 @@ Para simplificar o uso e organização do Git, as pastas e artefatos foram organ
 - Pasta src\telaPerfil: telaPerfil.html, telaPerfil.css, telaPerfil.js - Desenvolvedora responsável: Catiane de Souza.
 - Pasta src\login: telaLogin.html, telaLogin.css, telaLogin.js - Desenvolvedor responsável: Kayque Fonseca.
 - Pasta src\listaFuncionarios: listaFuncionarios.html, listaFuncionarios.css, listaFuncionarios.js - Desenvolvedor responsável: Nikolas Victor Mota.
-- Pasta src\listaProjetos: listaProjetos.html, listaProjetos.css, listaProjetos.js - Desenvolvedor responsável: Brenda Drumond e Catiane de Souza.
+- Pasta src\cadastro: cadastro.html, cadastro.css, cadastro-bd.js, cadastroProjetos.js, editaFuncionario.js - Desenvolvedor responsável: Nikolas Victor Mota.
+- Pasta src\listaProjetos: listaProjetos.html, listaProjetos.css, listaProjetos.js - Desenvolvedora responsável: Brenda Drumond e Catiane de Souza.
 
 ## Instalação do Site
 
