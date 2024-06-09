@@ -42,7 +42,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
 
   Responsável: Brenda Drumond
   
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/165854427/11eaf420-582c-40c7-a60e-0ad4bfa58bca
 
   </li>
   <hr>
