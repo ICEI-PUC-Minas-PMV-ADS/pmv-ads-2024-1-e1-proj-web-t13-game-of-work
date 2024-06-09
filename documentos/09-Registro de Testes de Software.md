@@ -74,17 +74,11 @@ _Link Video_
   </li>
   <hr>
   
-  </li>
-  <hr>
-  
   <li> CT-08 - Exclusão de Funcionário
 
   Responsável: Kayque Fonseca
 
 _Link Video_
-
-  </li>
-  <hr>
 
   </li>
   <hr>
@@ -94,9 +88,6 @@ _Link Video_
   Responsável: Kayque Fonseca
 
 _Link Video_
-
-  </li>
-  <hr>
 
   </li>
   <hr>
