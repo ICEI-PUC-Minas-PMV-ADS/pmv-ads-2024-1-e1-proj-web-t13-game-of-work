@@ -64,7 +64,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
 
   Responsável: Kayque Fonseca
 
-_Link Video_
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/be57625b-041b-41a6-9c99-6a94b2c9185c
 
   </li>
   <hr>
