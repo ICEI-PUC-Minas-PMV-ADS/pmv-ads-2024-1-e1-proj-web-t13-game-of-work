@@ -51,16 +51,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
   </li>
   <hr>
   
-  <li> CT-05 - Cadastro de Projetos
-
-  Responsável: Kayque Fonseca
-
-_Link Video_
-
-  </li>
-  <hr>
-  
-  <li> CT-06 - Tela Projetos
+  <li> CT-05 - Cadastro de Projetos e CT-06 - Tela Projetos
 
   Responsável: Catiane de Souza
 
