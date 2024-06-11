@@ -4,6 +4,8 @@ var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos') || '[]');
 
 function cadastrarProjeto(){
     
+    listaProjetos = JSON.parse(localStorage.getItem('listaProjetos') || '[]');
+
     var nomeProjeto = document.querySelector('.inputNomeProjeto');
     var numeroVagasProjeto = document.querySelector('.inputVagasProjeto');
     var descricaoProjeto = document.querySelector('#inputDescricaoProjeto');
@@ -35,6 +37,7 @@ function cadastrarProjeto(){
     // Identificando erros
     for (let i = 0; i < listaProjetos.length; i++) {
         if (listaProjetos[i].nome == nomeProjeto.value) {
+            console.log(listaProjetos);
             erro = 'projetoJaExiste';
         }
     }
@@ -86,17 +89,30 @@ function cadastrarProjeto(){
             listaProjetos.push({
 
                 nome: nomeProjeto.value,
-                gestor: nomeGestor,
+                gestor: emailGestor,
                 vagas: numeroVagasProjeto.value,
                 descricao: descricaoProjeto.value,
                 cargos: cargosProjeto,
                 skills: skillsProjeto,
-                participantes: [nomeGestor]
+                participantes: [emailGestor]
                 
                 
             });
         
             localStorage.setItem('listaProjetos', JSON.stringify(listaProjetos));
+
+            let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+
+            for (let i = 0; i < listaUsuarios.length; i++) {
+                if (listaUsuarios[i].email == emailGestor) {
+                    let projetos = listaUsuarios[i].projetos;
+
+                    projetos.push(nomeProjeto.value);
+                    listaUsuarios[i].projetos = projetos;
+
+                    localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+                }
+            }
                    
             mensagemErro.setAttribute('style', 'color:green');
             mensagemErro.innerHTML = 'Projeto cadastrado!';
@@ -118,6 +134,20 @@ botao__criarProjeto.addEventListener('click', cadastrarProjeto);
 botao__simExcluirProjeto.addEventListener('click', function(){
     let projetos = JSON.parse(localStorage.getItem('listaProjetos'));
     let nomeDoProjeto = nome__excluirProjeto.innerHTML;
+    let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+
+    for (let j = 0; j < listaUsuarios.length; j++) {
+        for (let k = 0; k < listaUsuarios[j].projetos.length; k++) {
+            if (listaUsuarios[j].projetos[k] == nomeDoProjeto) {
+                let projetos2 = listaUsuarios[j].projetos;
+                projetos2.splice(k,1);
+                listaUsuarios[j].projetos = projetos2;
+
+                localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+            }
+        }
+        
+    }
     
     for (let i = 0; i < projetos.length; i++) {
         if (projetos[i].nome == nomeDoProjeto) {

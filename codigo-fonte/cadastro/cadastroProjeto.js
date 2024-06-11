@@ -2,6 +2,7 @@ const overlay = document.querySelector('#overlay');
 const botaoNovoProjeto = document.querySelector('.botao__novoProj');
 const modalNovoProjeto = document.querySelector('.modal__novoProj');
 const botaoFecharModal = document.querySelector('.botaoFechar');
+const email = localStorage.getItem('email');
 
 var listaCargos =  JSON.parse(localStorage.getItem("listaCargos"));
 
@@ -23,7 +24,7 @@ var cargosSelecionados = [];
 var skillsSelecionadas;
 
 var gestor = document.querySelector('.nomeGestor');
-var nomeGestor = localStorage.nome;
+var emailGestor = localStorage.email;
 
 
 const botao__excluirProj = document.querySelector('.botao__excluirProj');
@@ -117,10 +118,20 @@ function fechaModal(){
 
 // Mostra o modal na tela
 botaoNovoProjeto.addEventListener('click', function(){
-    overlay.setAttribute('style', 'display: block');
-    modalNovoProjeto.setAttribute('style', 'display: block');
-    caixa__exibicao.innerText = '';
+    let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (listaUsuarios[i].email == email) {
+            if (listaUsuarios[i].projetos.length < 4) {
+                overlay.setAttribute('style', 'display: block');
+                modalNovoProjeto.setAttribute('style', 'display: block');
+                caixa__exibicao.innerText = '';
+            } else {
+                alert('Você já está vinculado a 4 projetos, saia de um projeto caso queira criar um novo!')
+            }
+        }
+    }
 });
+
 // Fecha o modal caso clique fora dele (os valores dos inputs são mantidos)
 overlay.addEventListener('click', function(){
     overlay.setAttribute('style', 'display: none');
@@ -132,7 +143,7 @@ overlay.addEventListener('click', function(){
 botaoFecharModal.addEventListener('click', fechaModal);
 
 // Aplicao o nome do gestor loggado ao modal
-gestor.innerHTML = gestor.innerHTML + nomeGestor;
+gestor.innerHTML = gestor.innerHTML + emailGestor;
 
 // Cria as opções de cargo baseada na lista de cargos
 listaCargos.forEach(cargo => {

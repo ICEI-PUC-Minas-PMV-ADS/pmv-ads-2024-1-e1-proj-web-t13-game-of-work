@@ -4,6 +4,7 @@ const divHardSkills = document.querySelector('#hardSkills');
 const divProjetos = document.querySelector('#projetos');
 
 const botaoAddProjeto = document.querySelector('#botaoAddProjeto');
+const botaoRemoverProjeto = document.querySelector('#botaoRemoverProjeto');
 const botaoFechar = document.querySelector('#botaoFechar');
 
 const hr = document.getElementsByTagName('hr');
@@ -15,13 +16,27 @@ const listaCards = document.getElementsByClassName('card');
 
 const testandoErro = null;
 
-var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos'));
+var listaProjetos = JSON.parse(localStorage.getItem('listaProjetos') || '[]');
+
 const selectProjetos = document.querySelector('#selectAddProjeto');
+const selectRemoveProjetos = document.querySelector('#selectRemoveProjeto');
 
 const fecharModal_addProjetos = document.querySelector('#fechar_modalAddProjeto')
 const modal_addProjetos = document.querySelector('#modal_addProjeto');
-const nome_addProjetos = document.querySelector('#usuario_modalAddProjeto')
+const nome_addProjetos = document.querySelector('#usuario_modalAddProjeto');
+const botao__AdicionarProjeto = document.querySelector('#botao_addProjeto');
+
+const fecharModal_removeProjetos = document.querySelector('#fechar_modalRemoveProjeto')
+const modal_removeProjetos = document.querySelector('#modal_removeProjeto');
+const nome_removeProjetos = document.querySelector('#usuario_modalRemoveProjeto');
+const botao__RemoverProjeto = document.querySelector('#botao_removeProjeto');
+
 var nomeClicado = "";
+var emailSelecionado = "";
+
+const selectAddProjeto = document.querySelector('#selectAddProjeto');
+var numProjetos = 0;
+var numRemoveProjetos = 4;
 
 // Pega os usuários cadastrados e cria uma lista com todos os usuários.
 listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
@@ -111,6 +126,7 @@ for (let i = 0; i < listaCards.length; i++) {
         divHardSkills.setAttribute('style', 'visibility: visible');
         divProjetos.setAttribute('style', 'visibility: visible');
         botaoAddProjeto.setAttribute('style', 'visibility: visible');
+        botaoRemoverProjeto.setAttribute('style', 'visibility: visible')
 
         for (let k = 0; k < hr.length; k++) {
             hr[k].setAttribute('style', 'visibility: visible');
@@ -122,7 +138,7 @@ for (let i = 0; i < listaCards.length; i++) {
         }
         listaCards[i].classList.toggle('cardSelecionado');
 
-        let emailSelecionado = listaCards[i].querySelector('.email').innerHTML;
+        emailSelecionado = listaCards[i].querySelector('.email').innerHTML;
 
         for (let i = 0; i < listaUsuarios.length; i++) {
             
@@ -198,35 +214,57 @@ for (let i = 0; i < listaCards.length; i++) {
                     }
                 }
 
+                numProjetos = 0;
+                numRemoveProjetos = 4;
+
                 let projeto1 = document.querySelector('#projeto1');
                 if (listaUsuarios[i].projetos[0]) {
                     projeto1.innerHTML = "- " + (listaUsuarios[i].projetos[0]);
+                    numProjetos++;
                 } else {
                     projeto1.innerHTML = "- "
+                    numRemoveProjetos--;
                 }
 
                 let projeto2 = document.querySelector('#projeto2');
                 if (listaUsuarios[i].projetos[1]) {
                     projeto2.innerHTML = "- " + (listaUsuarios[i].projetos[1]);
+                    numProjetos++;
                 } else {
                     projeto2.innerHTML = "- "
+                    numRemoveProjetos--;
                 }
 
                 let projeto3 = document.querySelector('#projeto3');
                 if (listaUsuarios[i].projetos[2]) {
                     projeto3.innerHTML = "- " + (listaUsuarios[i].projetos[2]);
+                    numProjetos++;
                 } else {
                     projeto3.innerHTML = "- "
+                    numRemoveProjetos--;
                 }
 
                 projeto4.innerHTML = "- " + (listaUsuarios[i].projetos[3]);
                 if (listaUsuarios[i].projetos[3]) {
                     projeto4.innerHTML = "- " + (listaUsuarios[i].projetos[3]);
+                    numProjetos++;
                 } else {
                     projeto4.innerHTML = "- "
+                    numRemoveProjetos--;
+                }
+
+                if (numProjetos == 4 || listaProjetos.length == 0) {
+                    botaoAddProjeto.disabled = true;
+                } else {
+                    botaoAddProjeto.disabled = false;
+                }
+
+                if (numRemoveProjetos == 0 || listaProjetos.length == 0) {
+                    botaoRemoverProjeto.disabled = true;
+                } else {
+                    botaoRemoverProjeto.disabled = false;
                 }
                 
-            
             }
             
         }
@@ -241,6 +279,7 @@ botaoFechar.addEventListener('click', function(){
     divHardSkills.setAttribute('style', 'visibility: hidden');
     divProjetos.setAttribute('style', 'visibility: hidden');
     botaoAddProjeto.setAttribute('style', 'visibility: hidden');
+    botaoRemoverProjeto.setAttribute('style', 'visibility: hidden');
 
     for (let k = 0; k < hr.length; k++) {
         hr[k].setAttribute('style', 'visibility: hidden');
@@ -252,21 +291,9 @@ botaoFechar.addEventListener('click', function(){
         }
 });
 
-for (let i = 0; i < listaProjetos.length; i++) {
-    const option = document.createElement('option');
-    option.classList.add('opcoesProjetos');
-    option.innerHTML = listaProjetos[i].nome;
-    console.log(option)
-    selectProjetos.appendChild(option);
-}
-
-fecharModal_addProjetos.addEventListener('click', function(){
-    modal_addProjetos.setAttribute('style', 'display: none');
-    overlay.setAttribute('style', 'display: none');
-});
-
 overlay.addEventListener('click', function(){
     modal_addProjetos.setAttribute('style', 'display: none');
+    modal_removeProjetos.setAttribute('style', 'display: none');
     overlay.setAttribute('style', 'display: none');
 });
 
@@ -274,4 +301,204 @@ botaoAddProjeto.addEventListener('click', function(){
     modal_addProjetos.setAttribute('style', 'display: block');
     overlay.setAttribute('style', 'display: block');
     nome_addProjetos.innerHTML = nomeClicado;
+
+    selectProjetos.innerText = '';
+        
+    const optionPrincipal = document.createElement('option');
+    optionPrincipal.id = 'optionPrincipal_addProjetos';
+    optionPrincipal.value = '';
+    optionPrincipal.selected = true;
+    optionPrincipal.disabled = true;
+    optionPrincipal.innerHTML = 'Projetos';
+
+    selectProjetos.appendChild(optionPrincipal);
+
+    for (let i = 0; i < listaProjetos.length; i++) {
+    
+        if (parseInt(listaProjetos[i].vagas) > 0) {
+            const option = document.createElement('option');
+            option.classList.add('opcoesProjetos');
+            option.innerHTML = listaProjetos[i].nome;
+    
+            selectProjetos.appendChild(option);
+        }
+    }
+    
+    fecharModal_addProjetos.addEventListener('click', function(){
+        modal_addProjetos.setAttribute('style', 'display: none');
+        overlay.setAttribute('style', 'display: none');
+    });
+
+    let opcoesProjeto = document.getElementsByClassName('opcoesProjetos') || [];
+
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (listaUsuarios[i].email == emailSelecionado) {
+            
+           for (let j = 0; j < opcoesProjeto.length; j++) {
+                
+                for (let k = 0; k < listaUsuarios[i].projetos.length; k++) {
+                    
+                    if (opcoesProjeto[j].value == listaUsuarios[i].projetos[k]) {
+                        opcoesProjeto[j].remove();
+                    }
+                }
+           }
+        }
+    }
 })
+
+
+botao__AdicionarProjeto.addEventListener('click', function(){
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        
+        if (listaUsuarios[i].email == emailSelecionado) {
+            
+            let projetos = [];
+
+            for (let j = 0; j < listaUsuarios[i].projetos.length; j++) {
+                
+                projetos[j] = listaUsuarios[i].projetos[j]
+                
+            }
+
+
+            if (selectAddProjeto.value != '') {
+                let nomeProjeto = selectAddProjeto.value
+                projetos.push(nomeProjeto);
+                listaUsuarios[i].projetos = projetos;
+
+                localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+
+                for (let j = 0; j < listaProjetos.length; j++) {
+                    if (nomeProjeto == listaProjetos[j].nome) {
+                        let participantes = listaProjetos[j].participantes;
+                        let vagas = parseInt(listaProjetos[j].vagas);
+                        vagas = vagas - 1;
+
+                        listaProjetos[j].vagas = vagas.toString();
+                        participantes.push(emailSelecionado);
+
+                        listaProjetos[j].participantes = participantes;
+
+                        localStorage.setItem('listaProjetos', JSON.stringify(listaProjetos));
+                    }
+                }
+
+                alert('Projeto adicionado com sucesso!');
+
+                divDadosPessoais.setAttribute('style', 'visibility: hidden');
+                divSoftSkills.setAttribute('style', 'visibility: hidden');
+                divHardSkills.setAttribute('style', 'visibility: hidden');
+                divProjetos.setAttribute('style', 'visibility: hidden');
+                botaoAddProjeto.setAttribute('style', 'visibility: hidden');
+                botaoRemoverProjeto.setAttribute('style', 'visibility: hidden');
+
+                for (let k = 0; k < hr.length; k++) {
+                    hr[k].setAttribute('style', 'visibility: hidden');
+                }
+
+                modal_addProjetos.setAttribute('style', 'display: none');
+                overlay.setAttribute('style', 'display: none');
+            } else{
+                alert('Selecione um projeto!')
+            }
+            
+        }
+        
+    }
+});
+
+botaoRemoverProjeto.addEventListener('click', function(){
+    modal_removeProjetos.setAttribute('style', 'display: block');
+    overlay.setAttribute('style', 'display: block');
+    nome_removeProjetos.innerHTML = nomeClicado;
+
+    fecharModal_removeProjetos.addEventListener('click', function(){
+        modal_removeProjetos.setAttribute('style', 'display: none');
+        overlay.setAttribute('style', 'display: none');
+    });
+
+
+    selectRemoveProjetos.innerText = '';
+        
+    const optionRemovePrincipal = document.createElement('option');
+    optionRemovePrincipal.id = 'optionPrincipal_removeProjetos';
+    optionRemovePrincipal.value = '';
+    optionRemovePrincipal.selected = true;
+    optionRemovePrincipal.disabled = true;
+    optionRemovePrincipal.innerHTML = 'Projetos';
+
+    selectRemoveProjetos.appendChild(optionRemovePrincipal);
+
+
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (listaUsuarios[i].email == emailSelecionado) {
+            
+            for (let j = 0; j < listaUsuarios[i].projetos.length; j++) {
+                const optionRemove = document.createElement('option');
+                optionRemove.classList.add('opcoesRemoveProjetos');
+                optionRemove.innerHTML = listaUsuarios[i].projetos[j];
+                selectRemoveProjetos.appendChild(optionRemove);
+            }
+        }
+    }
+});
+
+botao__RemoverProjeto.addEventListener('click', function(){
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (listaUsuarios[i].email == emailSelecionado) {
+            let projetos = listaUsuarios[i].projetos;
+            
+            let projetoRemoveSelecionado = selectRemoveProjetos.value;
+
+            if (projetoRemoveSelecionado != '') {
+                for (let j = 0; j < projetos.length; j++) {
+                    if (projetos[j] == projetoRemoveSelecionado) {
+                        projetos.splice(j,1);
+
+                        listaUsuarios[i].projetos = projetos;
+
+                        localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+
+                        for (let k = 0; k < listaProjetos.length; k++) {
+                            if (projetoRemoveSelecionado == listaProjetos[k].nome) {
+                                let participantes = listaProjetos[k].participantes;
+                                let vagas = parseInt(listaProjetos[k].vagas);
+                                vagas = vagas + 1;
+                                listaProjetos[k].vagas = vagas.toString();
+
+                                for (let l = 0; l < participantes.length; l++) {
+                                    if (participantes[l] == emailSelecionado) {
+                                        participantes.splice(l,1);
+                                        listaProjetos[i].participantes = participantes;
+
+                                        localStorage.setItem('listaProjetos', JSON.stringify(listaProjetos));
+
+                                    }
+                                }
+                            }
+                        }
+
+                        alert('Projeto removido com sucesso!!');
+
+                        divDadosPessoais.setAttribute('style', 'visibility: hidden');
+                        divSoftSkills.setAttribute('style', 'visibility: hidden');
+                        divHardSkills.setAttribute('style', 'visibility: hidden');
+                        divProjetos.setAttribute('style', 'visibility: hidden');
+                        botaoAddProjeto.setAttribute('style', 'visibility: hidden');
+                        botaoRemoverProjeto.setAttribute('style', 'visibility: hidden');
+
+                        for (let k = 0; k < hr.length; k++) {
+                            hr[k].setAttribute('style', 'visibility: hidden');
+                        }
+
+                        modal_removeProjetos.setAttribute('style', 'display: none');
+                        overlay.setAttribute('style', 'display: none');
+                    }  
+                }
+            } else {
+                alert('Selecione um projeto!')
+            }
+        }
+    }
+});

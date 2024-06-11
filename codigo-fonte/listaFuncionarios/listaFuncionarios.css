@@ -289,6 +289,7 @@ body{
     border-radius: 10px;
 
     margin-top: 20px;
+    margin-right: 5%;
 
 }
 #botaoAddProjeto:hover{
@@ -299,11 +300,34 @@ body{
     background-color: #569238;
     cursor: pointer;
 }
+#botaoAddProjeto:disabled{
+    background-color: #9c9c9c;
+    cursor: not-allowed;
+}
+#botaoRemoverProjeto{
+    background-color: #d44f4f;
+    color: var(--cor-primaria-fonte);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+#botaoRemoverProjeto:hover{
+    background-color: #e46060;
+    cursor: pointer;
+}
+#botaoRemoverProjeto:active{
+    background-color: #aa3030;
+    cursor: pointer;
+}
+#botaoRemoverProjeto:disabled{
+    background-color: #9c9c9c;
+    cursor: not-allowed;
+}
 #projetos{
     display: flex;
     flex-direction: column;
 }
-#dadosPessoais, #softSkills, #hardSkills, #projetos, #botaoAddProjeto, #containerDadosFuncionarios hr{
+#dadosPessoais, #softSkills, #hardSkills, #projetos, #botaoAddProjeto, #botaoRemoverProjeto, #containerDadosFuncionarios hr{
     visibility: hidden;
 }
 #modal_addProjeto{
@@ -377,4 +401,77 @@ body{
 }
 #nomePagina{
     font-size: 25px;
+}
+#selectAddProjeto{
+    box-sizing: border-box;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+
+
+#modal_removeProjeto{
+    width: max-content;
+    border-radius: 10px;
+    z-index: 998;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #747474;
+    display: none;
+}
+#cabecalho_removeProjeto{
+    background-color: var(--cor-primaria);
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+
+}
+#container_removeProjeto{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+#fechar_modalRemoveProjeto{
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+#fechar_modalRemoveProjeto:hover{
+    opacity: 50%;
+}
+#selectRemoveProjeto{
+    box-sizing: border-box;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+}
+#botao_removeProjeto{
+    background-color: #d44f4f;
+    color: var(--cor-primaria-fonte);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#botao_removeProjeto:hover{
+    background-color: #e46060;
+}
+#botao_removeProjeto:active{
+    background-color: #aa3030;
+}
+#optionPrincipal_removeProjetos{
+    display:none;
 }

@@ -71,6 +71,7 @@
                         <h4 id="projeto4">Projeto 4</h4>
                     </div>
                     <button id="botaoAddProjeto">Add. novo Projeto</button>
+                    <button id="botaoRemoverProjeto">Remover Projeto</button>
                 </div>
             </div>
         </div>
@@ -86,13 +87,33 @@
             <br>
             <br>
             <select name="" id="selectAddProjeto">
-                <option value="Projetos" id="optionPrincipal_addProjetos"disabled selected>Projetos</option>
+                <option value="" id="optionPrincipal_addProjetos"disabled selected>Projetos</option>
             </select>
             <br>
             <br>
             <button id="botao_addProjeto">Adicionar Projeto</button>
         </div>
     </div>
+
+
+    <div id="modal_removeProjeto">
+        <div id="cabecalho_removeProjeto"> <img id="fechar_modalRemoveProjeto" src="../imagens/icones/close.png" alt=""></div>
+        <div id="container_removeProjeto">
+            <br>
+            <h3>Remover projeto do usuário:</h3>
+            <br>
+            <h3 id="usuario_modalRemoveProjeto">Nome do usuário</h3>
+            <br>
+            <br>
+            <select name="" id="selectRemoveProjeto">
+                <option value="" id="optionPrincipal_removeProjetos"disabled selected>Projetos</option>
+            </select>
+            <br>
+            <br>
+            <button id="botao_removeProjeto">Remover Projeto</button>
+        </div>
+    </div>
+
     <script src="listaFuncionarios.js"></script>
     <script src="../javaScript/sessao.js"></script>
     <script src="../javaScript/cargos.js"></script>    
