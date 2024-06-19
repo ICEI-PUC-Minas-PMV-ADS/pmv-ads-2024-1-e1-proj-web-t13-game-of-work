@@ -17,7 +17,7 @@ let secao = localStorage.getItem('token');
 
 if (secao==null) {
     alert("Seção Expirada");
-    window.location.replace("../Login/telalogin.html");
+    window.location.replace("../login/telalogin.html");
 }
 
 

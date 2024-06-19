@@ -70,11 +70,9 @@ const equipe = document.querySelector("#equipe")
 const numeroVagas = document.querySelector("#numeroVagas")
 
 var cartaoProjeto = document.getElementsByClassName("cardProjetos")
-console.log(cartaoProjeto)
 
 for (let i = 0; i < cartaoProjeto.length; i++) {
     let nome = cartaoProjeto[i].querySelector(".card-title").innerHTML
-    console.log(nome)
     cartaoProjeto[i].addEventListener("click",function(){
         for (let j = 0; j < listaProjetos.length; j++) {
             if (nome==listaProjetos[j].nome) {
@@ -125,56 +123,3 @@ if (cargo=='Gestor' || cargo=='RH' ) {
 } else{ 
     opcao_3.setAttribute('style','display:none') 
 }
-
-
-
-//Teste 
-/*
-listaProjetos = [
-    {
-        nome: 'Coca Cola',
-        descricao: 'Desenvovlimento de um site para divulgação de um novo sabor de Coca Cola.',
-        skills: ['PHP','JavaScript'],
-        gestor: 'Cebolácio Menezes da Silva Júnior',
-        participantes: ['Cebolinha','Cascão'],
-        vagas: '2'
-      },
-      {
-        nome: 'GameOfWork',
-        descricao: 'Desenvovlimento de um sistema para facilitar a formação de equipes de projetos.',
-        skills: ['Figma','Photoshop','JavaScript'],
-        gestor: 'Mãe da Magali',
-        participantes: ['Magali'],
-        vagas: '0'
-      },
-      {
-        nome: 'Vida Saudável',
-        descricao: 'Desenvolvimento de um software de gestão de saúde que auxilie na busca para uma alimentação saudável.',
-        skills: ['Photoshop','Gestão','Proatividade','PHP'],
-        gestor: 'Mãe da Magali',
-        participantes: ['Magali','Monica'],
-        vagas: '4'
-      },
-      {
-        nome: 'McDonalds',
-        descricao: 'Criação de um programa para controle de vendas realizadas através de plataformas de delivery.',
-        skills: ['PHP'],
-        gestor: 'Professor Hayala',
-        participantes: ['Cebolinha','Cascao','Bidu'],
-        vagas: '1'
-      },
-
-      {
-        nome: 'Gestão a Vista',
-        descricao: 'Criação de um sistema de tecnologia em nuvem, que possibilite o gerenciamento de pessoas.',
-        skills: ['PHP'],
-        gestor: 'Professor Hayala',
-        participantes: ['Cebolinha','Cascao','Bidu'],
-        vagas: '1'
-      }
-    ];
-   
-    localStorage.setItem("listaProjetos", JSON.stringify(listaProjetos));
-    userlist = JSON.parse(localStorage.getItem("listaProjetos"));
-*/
-
