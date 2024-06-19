@@ -25,7 +25,7 @@ for (let i = 0; i < listaProjetos.length; i++) {
     imagem.classList.add("img-fluid")
     imagem.classList.add("rounded-start")
     const randomIndex = Math.floor(Math.random() * imagens.length);
-    imagem.src="../imagens/projetos/" + imagens[randomIndex]
+    imagem.src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/main/codigo-fonte/imagens/Projetos/" + imagens[randomIndex]
     col_md_5.appendChild(imagem)
 
     const col_md_7 = document.createElement("col-md-7")
