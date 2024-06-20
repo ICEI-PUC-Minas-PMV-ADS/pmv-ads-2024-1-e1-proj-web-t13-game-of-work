@@ -3,7 +3,7 @@
 
 1. Apresentação de slides
 
-[Apresentação Slides.pdf](https://github.com/user-attachments/files/15921173/Apresentacao.Slides.pdf)
+[Game Of Work - Apresentação.pdf](https://github.com/user-attachments/files/15921188/Game.Of.Work.-.Apresentacao.pdf)
 
 2. Vídeo de apresentação do projeto
 
