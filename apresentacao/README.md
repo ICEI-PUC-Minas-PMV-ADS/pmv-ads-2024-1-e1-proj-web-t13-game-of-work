@@ -7,7 +7,9 @@
 
 2. Vídeo de apresentação do projeto
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/67c87c24-f174-442f-873f-34d9136f0413
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/06a68201-bf62-4ec4-9dc0-9019859e6e63
+
 
 <br>
 
