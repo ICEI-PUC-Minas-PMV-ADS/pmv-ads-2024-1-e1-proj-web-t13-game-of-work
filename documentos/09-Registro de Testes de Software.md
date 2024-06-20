@@ -95,6 +95,23 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of
 
   </li>
   <hr>
+
+  <li> CT-11 - Adicionar funcionário a um projeto
+
+  Responsável: Kayque Fonseca
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/9b175cb9-1cab-48b6-90ca-488a2a62c0f9
+
+  </li>
+  <hr>
+
+  <li> CT-12 - Remover funcionário de um projeto
+
+  Responsável: Kayque Fonseca
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work/assets/164432325/cbeea8dd-ea7d-4e2a-bc9f-6dd7a9502351
+
+  </li>
   
 </ol>
 
