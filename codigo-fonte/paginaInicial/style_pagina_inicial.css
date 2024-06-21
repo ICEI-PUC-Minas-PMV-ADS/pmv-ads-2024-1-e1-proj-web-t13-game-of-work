@@ -35,6 +35,11 @@ html, body
 #logo{
     font-size: 25px;
     color: var(--cor-primaria-fonte);
+    margin-left: 20px;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
 }
 
 #cabecalho {
@@ -45,7 +50,7 @@ html, body
     font-size: 1.5rem; /* Adaptado para ser responsivo */
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 22px;
     width: 100%;
 }
 
@@ -98,7 +103,7 @@ html, body
 
 
 #divOpcoes {
-    margin-top: 5%;
+    margin-top: 4%;
     position: sticky;
     top: 10px
 }
@@ -177,6 +182,7 @@ html, body
     height: 100%;
     background-color: var(--cor-secundaria);
     border-width: 0px;
+    cursor: default;
 }
 
 .card-header{
@@ -289,3 +295,9 @@ html, body
     max-width: 140px;
 } 
 
+#nomePagina{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}

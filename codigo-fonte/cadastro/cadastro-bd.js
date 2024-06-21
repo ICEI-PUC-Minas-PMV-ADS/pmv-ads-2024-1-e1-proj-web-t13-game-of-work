@@ -165,17 +165,23 @@ botao__simExcluirProjeto.addEventListener('click', function(){
 botao__simExcluirFuncionario.addEventListener('click', function(){
     let usuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
     let emailDoFuncionario = email__excluirFuncionario.innerHTML;
+    let emailLocalStorage = localStorage.getItem('email');
     
-    for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].email == emailDoFuncionario) {
-            
-            usuarios.splice(i, 1);
-            localStorage.setItem('listaUsuarios', JSON.stringify(usuarios));
 
-            alert(emailDoFuncionario + ' FOI EXCLUIDO!');
+    if (emailDoFuncionario == emailLocalStorage) {
+        alert('VOCÊ NÃO PODE DELETAR A SI MESMO!');
+    } else {
+        for (let i = 0; i < usuarios.length; i++) {
+            if (usuarios[i].email == emailDoFuncionario) {
+                
+                usuarios.splice(i, 1);
+                localStorage.setItem('listaUsuarios', JSON.stringify(usuarios));
+    
+                alert(emailDoFuncionario + ' FOI EXCLUIDO!');
+            }
+            caixa__exibicao.innerText = '';
+            
         }
-        caixa__exibicao.innerText = '';
-        
     }
 });
 

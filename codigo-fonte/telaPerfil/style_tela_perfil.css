@@ -38,16 +38,20 @@ html, body
     color: var(--hardS-color3);
     font-family: "Press Start 2P", system-ui;
     display: flex;
-    font-size: 1.5rem; /* Adaptado para ser responsivo */
+    font-size: 1.5rem;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 22px;
     width: 100%;
 }
 
 #logo{
     font-size: 25px;
     color: var(--cor-primaria-fonte);
+    margin-left: 20px;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
 }
 
 #menulateral {
@@ -86,7 +90,7 @@ html, body
 
 
 #divOpcoes {
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 #containerInicio{
@@ -245,4 +249,11 @@ td{
 
 #nome_usuario, #cargo_usuario {
     padding-left: 40px;
+}
+
+#nomePagina{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
 }
