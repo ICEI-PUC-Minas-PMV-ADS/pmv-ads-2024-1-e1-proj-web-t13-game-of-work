@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title: Game of Work
+authors:
+  - family-names: Estefany Drumond
+    given-names: Brenda
+  - family-names: de Souza Pereira
+    given-names: Catiane
+  - family-names: Gabriel Fonseca
+    given-names: Kayque
+  - family-names: Victor Mota
+    given-names: Nikolas
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Nepomuceno Curto
+    given-names: Hayala
+keywords:
+  - Gestão
+  - Projetos
+  - Funcionários
+  - RH
+  - Gamificaçãos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-game-of-work
+version: 1.0.0
+date-released: 2024-06-22
